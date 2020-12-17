@@ -10,6 +10,7 @@
     margin-top: 100px;
     padding: 20px;
     height: 550px;
+    width: 66.6%;
 }
 
 nav {
@@ -43,7 +44,7 @@ body {
 }
 
 form {
-    width: 33.3%;
+    width: 70%;
 }
 
 
@@ -55,3 +56,4 @@ footer {
 #carouselExampleCaptions {
     height: 400px;
 }
+
