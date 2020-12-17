@@ -9,7 +9,7 @@
 .jumbotron {
     margin-top: 100px;
     padding: 20px;
-    height: 500px;
+    height: 550px;
 }
 
 nav {
@@ -29,12 +29,12 @@ h1 {
 
 img {
     float: left;
-    height: 300px;
+    height: 400px;
     padding: 20px;
 }
 
 p {
-    font-family: 'Saira Condensed', sans-serif;;
+    font-family: 'Saira Condensed', sans-serif;
     padding: 20px;
 }
 
@@ -50,4 +50,8 @@ form {
 footer {
     margin-bottom: 40px;
     background-color: white;
+}
+
+#carouselExampleCaptions {
+    height: 400px;
 }
