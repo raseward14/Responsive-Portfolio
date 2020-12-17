@@ -1,0 +1,53 @@
+.nav-item {
+    font-size: 24px;
+}
+
+.lead {
+    text-align: center;
+}
+
+.jumbotron {
+    margin-top: 100px;
+    padding: 20px;
+    height: 500px;
+}
+
+nav {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    float: right;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+}
+
+h1 {
+    float: left;
+}
+
+img {
+    float: left;
+    height: 300px;
+    padding: 20px;
+}
+
+p {
+    font-family: 'Saira Condensed', sans-serif;;
+    padding: 20px;
+}
+
+body {
+    background-color: wheat;
+}
+
+form {
+    width: 33.3%;
+}
+
+
+footer {
+    margin-bottom: 40px;
+    background-color: white;
+}
