@@ -1,2 +1,2 @@
 # CSS-Bootstrap-Homework
-week 2 homework
+**[Check it out Here!](https://raseward14.github.io/Homework02HTML-CSS/)**
