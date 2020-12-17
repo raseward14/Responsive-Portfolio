@@ -1,2 +1,2 @@
 # CSS-Bootstrap-Homework
-Click ![Here](https://raseward14.github.io/CSS-Bootstrap-Homework/) to visit the live link
+**[Check it out Here!](https://raseward14.github.io/Homework02HTML-CSS/)**
