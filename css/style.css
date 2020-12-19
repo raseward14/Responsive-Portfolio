@@ -17,7 +17,6 @@
 .contact {
     float: left;
     margin-top: 100px;
-    background-color: transparent;
 }
 
 .clearfix {
@@ -79,12 +78,12 @@ aside {
 }
 
 div h5 {
-    color:blue;
+    color: black;
     font-weight: bold;
 }
 
 div p {
-    color:blue;
+    color: black;
     font-weight: bold;
 }
 
