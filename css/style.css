@@ -54,7 +54,7 @@ body[background] {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 form {
@@ -75,4 +75,21 @@ aside {
     float: left;
     margin-left: 20px;
     width: 25%;
+    opacity: 0.8;
 }
+
+div h5 {
+    color:blue;
+    font-weight: bold;
+}
+
+div p {
+    color:blue;
+    font-weight: bold;
+}
+
+button {
+    color: grey;
+}
+
+
