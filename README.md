@@ -12,11 +12,11 @@ All of the Bootstrap features come from version 4.5. This is the version we spen
 * [License](#license)
 
 ## Installation
-1. Visit ![getbootstrap.com](https://getbootstrap.com/)
+1. Visit [getbootstrap.com](https://getbootstrap.com/)
 2. Use this website to utilize CSS and Javascript in your webpage
 
 ## Usage
-![visual studio code image](assets/images/vsc.png)
+[visual studio code image](assets/images/vsc.png)
 
 ## Credits
 Here are a few resources that helped me get this project knocked out!
