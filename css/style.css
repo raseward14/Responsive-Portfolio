@@ -39,7 +39,7 @@ h1 {
 
 img {
     float: left;
-    height: 400px;
+    width: 50%;
     padding: 20px;
 }
 
@@ -88,5 +88,55 @@ div p {
 button {
     color: grey;
 }
+
+
+  /*
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+@media screen and (max-width: 768px) {
+    /* The body's bg color will be #333 */
+    body {
+    
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    /* The wrapper's width will be 600px */
+    .container {
+      width: 80%;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    /*the nav bar will turn into a hamburger menu*/
+    nav {
+        
+    }
+  }
+
+  /*
+  These rules take effect when the browser's width
+  is either 400px or less.
+*/
+@media screen and (max-width: 400px) {
+    /* The body's bg color will be #333 */
+    body {
+        padding: 5px;
+        margin: 5px;
+    }
+  
+    /* The wrapper's width will be 300px */
+    .container {
+        width: 100%;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    /*the nav bar will turn into a hamburger menu*/
+    nav {
+        content: collapse;
+    }
+  }
 
 
