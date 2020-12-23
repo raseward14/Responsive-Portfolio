@@ -1,5 +1,5 @@
-.nav-item {
-    font-size: 24px;
+* {
+    box-sizing: border-box;
 }
 
 .lead {
@@ -8,29 +8,55 @@
 
 .jumbotron {
     float: left;
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 20px;
     width: 100%
 }
 
 .contact {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .clearfix {
     clear: both;
 }
 
+.nav-link { 
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    color: #6C757D;
+    
+}
+
+.nav-link a{
+    color: #6C757D; 
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-link li{
+    list-style: none;
+}
+
 nav {
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    float: right;
-    width: 100%;
-    padding: 10px;
-    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e9ecef;
     z-index: 1;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #28a745;
+    margin: 4px;
+}
+
+.burger {
+    display: none;
 }
 
 h1 {
@@ -89,54 +115,161 @@ button {
     color: grey;
 }
 
+@media screen and (max-width: 1100px) {
+    .nav-link { 
+        display: flex;
+        justify-content: space-around;
+        width: 45%;
+        color: #6C757D;   
+    }
+}
 
   /*
   These rules take effect when the browser's width
   is either 768px or less.
 */
 @media screen and (max-width: 768px) {
-    /* The body's bg color will be #333 */
     body {
-    
-      padding: 20px;
-      margin: 20px;
+        overflow-x: hidden;
+        padding: 10px;
+        margin: 10px;
     }
-  
-    /* The wrapper's width will be 600px */
-    .container {
-      width: 80%;
-      padding: 20px;
-      margin: 20px;
+    
+    .nav-link {
+        position: absolute;
+        right: 0px;
+        height: 80vh;
+        top: 8vh;
+        width: 7rem;
+        position: absolute;
+        background-color: white;
+        color: #6C757D;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        letter-spacing: 2px;
+        font-size: 15px;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
     }
 
-    /*the nav bar will turn into a hamburger menu*/
     nav {
-        
+        position: absolute;
+        background-color: #e9ecef;
+        right: 0px;
+        top: 0px;
+        left: 0px;
     }
-  }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-link li {
+        opacity: 1;
+    }
+
+    .badge {
+        font-size: 20px;
+    }
+
+    .display-4 {
+        font-size: 35px;
+    }
+
+    image {
+        width: 70%;
+        padding: 2px;
+    }
+
+    p {
+        padding: 2px;
+    }
+}
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+@keyframes navLinkFade{
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
 
   /*
   These rules take effect when the browser's width
   is either 400px or less.
 */
 @media screen and (max-width: 400px) {
-    /* The body's bg color will be #333 */
     body {
-        padding: 5px;
-        margin: 5px;
+        overflow-x: hidden;
+        padding: 10px;
+        margin: 10px;
     }
-  
-    /* The wrapper's width will be 300px */
-    .container {
-        width: 100%;
-        padding: 5px;
-        margin: 5px;
+    
+    .nav-link {
+        position: absolute;
+        right: 0px;
+        height: 80vh;
+        top: 8vh;
+        width: 7rem;
+        position: absolute;
+        background-color: white;
+        color: #6C757D;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        letter-spacing: 2px;
+        font-size: 15px;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
     }
 
-    /*the nav bar will turn into a hamburger menu*/
     nav {
-        content: collapse;
+        position: absolute;
+        background-color: #e9ecef;
+        right: 0px;
+        top: 0px;
+        left: 0px;
     }
-  }
 
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
 
+    .nav-link li {
+        opacity: 1;
+    }
+
+    .badge {
+        font-size: 20px;
+    }
+
+    .display-4 {
+        font-size: 35px;
+    }
+
+    image {
+        width: 70%;
+        padding: 2px;
+    }
+
+    p {
+        padding: 2px;
+    }
+}
+
+    .nav-active {
+        transform: translateX(0%);
+    }
