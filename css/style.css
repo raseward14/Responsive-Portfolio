@@ -65,13 +65,15 @@ h1 {
 
 img {
     float: left;
-    width: 50%;
-    padding: 20px;
+    width: 200px;
+    padding: 10px;
 }
 
-p {
+.saira {
     font-family: 'Saira Condensed', sans-serif;
-    padding: 20px;
+    padding: 15px;
+    color: black;
+    font-weight: bold;
 }
 
 body[background] {
@@ -102,11 +104,6 @@ aside {
 }
 
 div h5 {
-    color: black;
-    font-weight: bold;
-}
-
-div p {
     color: black;
     font-weight: bold;
 }
