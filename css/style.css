@@ -3,6 +3,7 @@
 }
 
 .lead {
+    align-content: center;
     text-align: center;
 }
 
@@ -61,11 +62,12 @@ nav {
 
 h1 {
     float: left;
+    align-content: center;
 }
 
 img {
     float: left;
-    width: 200px;
+    width: 250px;
     padding: 10px;
 }
 
@@ -74,6 +76,7 @@ img {
     padding: 15px;
     color: black;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 body[background] {
@@ -93,12 +96,13 @@ footer {
     background-color: white;
 }
 
-#carouselExampleCaptions {
-    height: 400px;
+.carousel-caption {
+    color: black;
+    font-weight: bold;
 }
 
 aside {
-    margin-left: 5px;
+    margin-left: 10px;
     width: 100%;
     opacity: 0.8;
 }
@@ -108,10 +112,7 @@ div h5 {
     font-weight: bold;
 }
 
-button {
-    color: grey;
-}
-
+/*these rules take affect when the browsers width is 1100px or less*/
 @media screen and (max-width: 1100px) {
     .nav-link { 
         display: flex;
@@ -121,10 +122,30 @@ button {
     }
 }
 
-  /*
-  These rules take effect when the browser's width
-  is either 768px or less.
-*/
+/*these rules take affect when the browsers width is 1000px or less*/
+@media screen and (max-width: 1000px) {
+    .nav-link { 
+        display: flex;
+        justify-content: space-around;
+        width: 45%;
+        color: #6C757D;   
+    }
+
+    .badge {
+        font-size: 24px;
+    }
+
+    img {
+        width: 200px;
+    }
+
+    .display-4 {
+        font-size: 45px;
+    }
+
+}
+
+/*these rules take effect when the browser's width is 768px or less.*/
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
@@ -135,7 +156,7 @@ button {
     .nav-link {
         position: absolute;
         right: 0px;
-        height: 80vh;
+        height: 60vh;
         top: 8vh;
         width: 7rem;
         position: absolute;
@@ -169,6 +190,80 @@ button {
     }
 
     .badge {
+        position: relative;
+        left: -60px;
+        font-size: 20px;
+    }
+
+    .display-4 {
+        font-size: 35px;
+    }
+
+    img {
+        width: 150px;
+    }
+
+    .lead {
+        font-size: small;
+    }
+
+    p {
+        padding: 2px;
+    }
+}
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+/*these rules take effect when the browser's width is 360px or less.*/
+@media screen and (max-width: 415px) {
+    body {
+        overflow-x: hidden;
+        padding: 10px;
+        margin: 10px;
+        align-content: center;
+    }
+    
+    .nav-link {
+        position: absolute;
+        right: 0px;
+        height: 60vh;
+        top: 8vh;
+        width: 7rem;
+        position: absolute;
+        background-color: white;
+        color: #6C757D;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        letter-spacing: 2px;
+        font-size: 15px;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+    }
+
+    nav {
+        position: absolute;
+        background-color: #e9ecef;
+        right: 0px;
+        top: 0px;
+        left: 0px;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-link li {
+        opacity: 1;
+    }
+
+    .badge {
+        position: relative;
+        left: -30px;
         font-size: 20px;
     }
 
@@ -183,6 +278,15 @@ button {
 
     p {
         padding: 2px;
+    }
+
+    .contact {
+        margin-top: 20px;
+    }
+
+    aside {
+        width: 100%;
+        opacity: 0.8;
     }
 }
 
@@ -201,72 +305,3 @@ button {
     }
     
 }
-
-  /*
-  These rules take effect when the browser's width
-  is either 400px or less.
-*/
-@media screen and (max-width: 400px) {
-    body {
-        overflow-x: hidden;
-        padding: 10px;
-        margin: 10px;
-    }
-    
-    .nav-link {
-        position: absolute;
-        right: 0px;
-        height: 80vh;
-        top: 8vh;
-        width: 7rem;
-        position: absolute;
-        background-color: white;
-        color: #6C757D;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        letter-spacing: 2px;
-        font-size: 15px;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-
-    }
-
-    nav {
-        position: absolute;
-        background-color: #e9ecef;
-        right: 0px;
-        top: 0px;
-        left: 0px;
-    }
-
-    .burger {
-        display: block;
-        cursor: pointer;
-    }
-
-    .nav-link li {
-        opacity: 1;
-    }
-
-    .badge {
-        font-size: 20px;
-    }
-
-    .display-4 {
-        font-size: 35px;
-    }
-
-    image {
-        width: 70%;
-        padding: 2px;
-    }
-
-    p {
-        padding: 2px;
-    }
-}
-
-    .nav-active {
-        transform: translateX(0%);
-    }
