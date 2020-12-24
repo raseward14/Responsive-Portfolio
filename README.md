@@ -20,7 +20,7 @@ The remaining challenges came from creating and formatting the hamburger menu ne
 ## Usage
 Movbile 768px
 Mobile 360px
-[Mobile Friendly](assets/images/Capture360px.png)
+![Mobile Friendly](assets/images/Capture360px.png)
 
 ## Credits
 Here are a few resources that helped me get this project knocked out!
