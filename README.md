@@ -5,6 +5,8 @@ This webpage is designed to be my personal portfolio. It gives basic information
 All of the Bootstrap features come from version 4.5. This is the version we spent the most time on in class, and its the version I am most familiar with.
 **[Check it out Here!](https://raseward14.github.io/About-Me-Bootstrap-Webpage/)**
 
+The remaining challenges came from creating and formatting the hamburger menu needed for Mobile Responsiveness. I included several breakpoints to increase responsiveness; one at 1100px, another at 1000px, and two form mobile devices; one at 768px and another at 415px (both of which utilize the hamburger menu for navigation).
+
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -16,7 +18,9 @@ All of the Bootstrap features come from version 4.5. This is the version we spen
 2. Use this website to utilize CSS and Javascript in your webpage
 
 ## Usage
-[visual studio code image](assets/images/vsc.png)
+Movbile 768px
+Mobile 360px
+[Mobile Friendly](assets/images/Capture360px.png)
 
 ## Credits
 Here are a few resources that helped me get this project knocked out!
