@@ -1,4 +1,4 @@
-# About Me Bootstrap Webpage
+# Mobile Responsiveness Bootstrap Webpage
 ## Description
 This webpage is designed to be my personal portfolio. It gives basic information about me, my contact information, a means of getting in contact with me, and links to projects i've worked on in the past. It utilizes HTML as the framework, and Bootstrap CSS for design. The portfolio page integrates basic Javascript, linked to Bootstrap. I had a tough time figuring out how to link my HTML document to Bootstraps Javascript features, but managed to find the link after exploring Bootstrap a bit more.
 
