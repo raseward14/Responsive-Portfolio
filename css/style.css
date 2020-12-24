@@ -294,6 +294,7 @@ div h5 {
         transform: translateX(0%);
     }
 
+/*
 @keyframes navLinkFade{
     from {
         opacity: 0;
@@ -304,4 +305,4 @@ div h5 {
         transform: translateX(0px);
     }
     
-}
+}*/
