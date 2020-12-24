@@ -18,13 +18,13 @@ The remaining challenges came from creating and formatting the hamburger menu ne
 2. Use this website to utilize CSS and Javascript in your webpage
 
 ## Usage
-* Laptop and up 1100px
+* Laptop and up 1100px.  
 ![Mobile Friendly](Assets/Images/Capture1100px.PNG)
-* iPad 1000px
+* iPad 1000px.  
 ![Mobile Friendly](Assets/Images/Capture1000px.PNG)
-* Mobile 768px
+* Mobile 768px.  
 ![Mobile Friendly](Assets/Images/Capture768px.PNG)
-* iPhone6 360px
+* iPhone6 360px.  
 ![Mobile Friendly](Assets/Images/Capture360px.PNG)
 
 ## Credits
