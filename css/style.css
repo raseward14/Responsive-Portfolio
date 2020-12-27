@@ -2,51 +2,68 @@
     box-sizing: border-box;
 }
 
-.lead {
+body[background] {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+body {
+    overflow-x: hidden;
+    padding: 10px;
+    margin: 10px;
     align-content: center;
-    text-align: center;
 }
 
-.jumbotron {
-    float: left;
-    margin-top: 50px;
-    padding: 20px;
-    width: 100%
+.hide {
+    display: none;
 }
 
-.contact {
-    margin-top: 50px;
-}
-
-.clearfix {
-    clear: both;
-}
-
-.nav-link { 
+/*navbar*/
+.nav-link {
+    position: absolute;
+    right: 0px;
+    height: 30vh;
+    top: 6vh;
+    width: 8rem;
+    background-color: white;
+    color: #6C757D;
     display: flex;
     justify-content: space-around;
-    width: 35%;
-    color: #6C757D;
-    
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 2px;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+}
+
+.nav-link li{
+    list-style: none; 
 }
 
 .nav-link a{
     color: #6C757D; 
     letter-spacing: 2px;
     font-weight: bold;
-    font-size: 18px;
-}
-
-.nav-link li{
-    list-style: none;
+    font-size: 17px;
 }
 
 nav {
+    position: absolute;
+    background-color: #e9ecef;
+    right: 0px;
+    top: 0px;
+    left: 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #e9ecef;
     z-index: 1;
+}
+
+.burger {
+    display: block;
+    cursor: pointer;
 }
 
 .burger div {
@@ -56,101 +73,70 @@ nav {
     margin: 4px;
 }
 
-.burger {
-    display: none;
+.nav-link li {
+    opacity: 1;
 }
 
-h1 {
-    float: left;
+/*jumbotron*/
+.display {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.lead {
     align-content: center;
+    text-align: center;
+}
+
+.jumbotron {
+    float: left;
+    margin-top: 60px;
+    padding: 10px;
+    width: 100%
 }
 
 img {
     float: left;
-    width: 250px;
+    width: 100%;
     padding: 10px;
 }
 
 .saira {
     font-family: 'Saira Condensed', sans-serif;
-    padding: 15px;
-    color: black;
+    padding: 10px;
     font-weight: bold;
     letter-spacing: 1px;
-}
-
-body[background] {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    opacity: 0.8;
-}
-
-form {
-    width: 100%;
-}
-
-.form-group {
-    padding: 0px;
-}
-
-
-footer {
-    margin-bottom: 40px;
-    background-color: white;
-}
-
-.carousel-caption {
     color: black;
-    font-weight: bold;
+}
+
+image {
+    width: 70%;
+    padding: 2px;
+}
+
+p {
+    padding: 2px;
+}
+
+.contact {
+    margin-top: 20px;
 }
 
 aside {
-    margin-left: 10px;
     width: 100%;
     opacity: 0.8;
 }
-
-div h5 {
-    color: black;
-    font-weight: bold;
 }
 
-/*these rules take affect when the browsers width is 1100px or less*/
-@media screen and (max-width: 1100px) {
-    .nav-link { 
-        display: flex;
-        justify-content: space-around;
-        width: 45%;
-        color: #6C757D;   
-    }
+.nav-active {
+    transform: translateX(0%);
 }
 
-/*these rules take affect when the browsers width is 1000px or less*/
-@media screen and (max-width: 1000px) {
-    .nav-link { 
-        display: flex;
-        justify-content: space-around;
-        width: 45%;
-        color: #6C757D;   
-    }
 
-    .badge {
-        font-size: 24px;
-    }
 
-    img {
-        width: 200px;
-    }
-
-    .display-4 {
-        font-size: 45px;
-    }
-
-}
-
-/*these rules take effect when the browser's width is 768px or less.*/
-@media screen and (max-width: 768px) {
+/*these rules take effect when the browser's width is 576px or more.*/
+@media screen and (min-width: 576px) {
     body {
         overflow-x: hidden;
         padding: 10px;
@@ -163,7 +149,6 @@ div h5 {
         height: 60vh;
         top: 8vh;
         width: 7rem;
-        position: absolute;
         background-color: white;
         color: #6C757D;
         display: flex;
@@ -173,7 +158,6 @@ div h5 {
         font-size: 15px;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
-
     }
 
     nav {
@@ -193,18 +177,16 @@ div h5 {
         opacity: 1;
     }
 
-    .badge {
-        position: relative;
-        left: -60px;
-        font-size: 20px;
-    }
-
-    .display-4 {
+    /*Jumbotron*/
+    .display {
+        text-align: center;
         font-size: 35px;
+        font-weight: 300;
+        line-height: 1.2;
     }
 
     img {
-        width: 150px;
+        width: 100%;
     }
 
     .lead {
@@ -220,93 +202,210 @@ div h5 {
         transform: translateX(0%);
     }
 
-/*these rules take effect when the browser's width is 360px or less.*/
-@media screen and (max-width: 415px) {
-    body {
-        overflow-x: hidden;
-        padding: 10px;
-        margin: 10px;
-        align-content: center;
+/*these rules take effect when the browser's width is 768px or more.*/
+@media screen and (min-width: 768px) {
+    .hide {
+        display: block;
     }
     
-    .nav-link {
-        position: absolute;
-        right: 0px;
-        height: 60vh;
-        top: 8vh;
-        width: 7rem;
-        position: absolute;
-        background-color: white;
-        color: #6C757D;
+    /*navbar*/
+    .nav-link { 
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: space-around;
+        width: 35%;
+        color: #6C757D;
+        
+    }
+    
+    .nav-link a{
+        color: #6C757D; 
         letter-spacing: 2px;
-        font-size: 15px;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-
+        font-weight: bold;
+        font-size: 18px;
     }
-
+    
+    .nav-link li{
+        list-style: none;
+    }
+    
     nav {
-        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         background-color: #e9ecef;
-        right: 0px;
-        top: 0px;
-        left: 0px;
+        z-index: 1;
     }
-
+    
     .burger {
-        display: block;
-        cursor: pointer;
+        display: none;
     }
-
-    .nav-link li {
-        opacity: 1;
+    
+    /*jumbotron*/
+    .lead {
+        align-content: center;
+        text-align: center;
     }
-
-    .badge {
-        position: relative;
-        left: -30px;
-        font-size: 20px;
+    
+    .jumbotron {
+        float: left;
+        margin-top: 50px;
+        padding: 10px;
+        width: 100%
     }
-
-    .display-4 {
-        font-size: 35px;
+    
+    img {
+        float: left;
+        width: 100%;
+        padding: 10px;
     }
-
-    image {
-        width: 70%;
-        padding: 2px;
+    
+    .saira {
+        font-family: 'Saira Condensed', sans-serif;
+        padding: 10px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: black;
     }
-
-    p {
-        padding: 2px;
-    }
-
-    .contact {
-        margin-top: 20px;
-    }
-
+    
+    /*aside containing my contact information*/
     aside {
+        margin-left: 10px;
         width: 100%;
         opacity: 0.8;
     }
-}
-
-    .nav-active {
-        transform: translateX(0%);
-    }
-
-/*
-@keyframes navLinkFade{
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
+    
+    .contact {
+        margin-top: 50px;
     }
     
-}*/
+    /*form to enter contact information*/
+    form {
+        width: 100%;
+    }
+    
+    .form-group {
+        padding: 0px;
+    }
+    
+    /*carousel containing project snapshots*/
+    .carousel-caption {
+        color: black;
+        font-weight: bold;
+    }
+    
+    div h5 {
+        color: black;
+        font-weight: bold;
+    }
+    
+    /*page footer*/
+    footer {
+        margin-bottom: 40px;
+        background-color: white;
+    }
+
+
+/*these rules take affect when the browsers width is 992px or more*/
+@media screen and (min-width: 992px) {
+    body[background] {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        opacity: 0.8;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    /*navbar*/
+    .nav-link { 
+        display: flex;
+        justify-content: space-around;
+        width: 35%;
+        color: #6C757D;
+        
+    }
+
+    .nav-link a{
+        color: #6C757D; 
+        letter-spacing: 2px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #e9ecef;
+        z-index: 1;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    /*jumbotron*/
+    .lead {
+        align-content: center;
+        text-align: center;
+    }
+
+    .jumbotron {
+        float: left;
+        margin-top: 50px;
+        padding: 10px;
+        width: 100%
+    }
+
+    img {
+        float: left;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .saira {
+        font-family: 'Saira Condensed', sans-serif;
+        padding: 10px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: black;
+    }
+
+    /*aside containing my contact information*/
+    aside {
+        margin-left: 10px;
+        width: 100%;
+        opacity: 0.8;
+    }
+
+    .contact {
+        margin-top: 50px;
+    }
+
+    /*form to enter contact information*/
+    form {
+        width: 100%;
+    }
+
+    .form-group {
+        padding: 0px;
+    }
+
+    /*carousel containing project snapshots*/
+    .carousel-caption {
+        color: black;
+        font-weight: bold;
+    }
+
+    div h5 {
+        color: black;
+        font-weight: bold;
+    }
+
+    /*page footer*/
+    footer {
+        margin-bottom: 40px;
+        background-color: white;
+    }
