@@ -16,8 +16,8 @@ body {
     align-content: center;
 }
 
-.hide {
-    display: none;
+.stack {
+    display: inline;
 }
 
 /*navbar*/
@@ -27,7 +27,7 @@ body {
     height: 30vh;
     top: 6vh;
     width: 8rem;
-    background-color: white;
+    background-color: #e9ecef;
     color: #6C757D;
     display: flex;
     justify-content: space-around;
@@ -36,17 +36,6 @@ body {
     letter-spacing: 2px;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
-}
-
-.nav-link li{
-    list-style: none; 
-}
-
-.nav-link a{
-    color: #6C757D; 
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-size: 17px;
 }
 
 nav {
@@ -61,6 +50,18 @@ nav {
     z-index: 1;
 }
 
+.nav-link li{
+    list-style: none;
+    opacity: 1; 
+}
+
+.nav-link a{
+    color: #6C757D; 
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
 .burger {
     display: block;
     cursor: pointer;
@@ -71,10 +72,6 @@ nav {
     height: 3px;
     background-color: #28a745;
     margin: 4px;
-}
-
-.nav-link li {
-    opacity: 1;
 }
 
 /*jumbotron*/
@@ -91,14 +88,13 @@ nav {
 
 .jumbotron {
     float: left;
+    padding: 2rem 2rem;
     margin-top: 60px;
-    padding: 10px;
     width: 100%
 }
 
 img {
     float: left;
-    width: 100%;
     padding: 10px;
 }
 
@@ -108,11 +104,6 @@ img {
     font-weight: bold;
     letter-spacing: 1px;
     color: black;
-}
-
-image {
-    width: 70%;
-    padding: 2px;
 }
 
 p {
@@ -127,80 +118,28 @@ aside {
     width: 100%;
     opacity: 0.8;
 }
-}
 
 .nav-active {
     transform: translateX(0%);
 }
 
-
-
-/*these rules take effect when the browser's width is 576px or more.*/
-@media screen and (min-width: 576px) {
-    body {
-        overflow-x: hidden;
-        padding: 10px;
-        margin: 10px;
-    }
-    
-    .nav-link {
-        position: absolute;
-        right: 0px;
-        height: 60vh;
-        top: 8vh;
-        width: 7rem;
-        background-color: white;
-        color: #6C757D;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        letter-spacing: 2px;
-        font-size: 15px;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-
-    nav {
-        position: absolute;
-        background-color: #e9ecef;
-        right: 0px;
-        top: 0px;
-        left: 0px;
-    }
-
-    .burger {
-        display: block;
-        cursor: pointer;
-    }
-
-    .nav-link li {
-        opacity: 1;
-    }
-
-    /*Jumbotron*/
-    .display {
-        text-align: center;
-        font-size: 35px;
-        font-weight: 300;
-        line-height: 1.2;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    .lead {
-        font-size: small;
-    }
-
-    p {
-        padding: 2px;
-    }
+/*form to enter contact information*/
+form {
+    width: 100%;
 }
 
-    .nav-active {
-        transform: translateX(0%);
-    }
+.form-group {
+    padding: 0px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: #e9ecef;
+    height: 3rem;
+}
 
 /*these rules take effect when the browser's width is 768px or more.*/
 @media screen and (min-width: 768px) {
@@ -214,24 +153,13 @@ aside {
         justify-content: space-around;
         width: 35%;
         color: #6C757D;
+        transform: translateX(0%);
         
-    }
-    
-    .nav-link a{
-        color: #6C757D; 
-        letter-spacing: 2px;
-        font-weight: bold;
-        font-size: 18px;
-    }
-    
-    .nav-link li{
-        list-style: none;
     }
     
     nav {
         display: flex;
         justify-content: space-around;
-        align-items: center;
         background-color: #e9ecef;
         z-index: 1;
     }
@@ -251,12 +179,6 @@ aside {
         margin-top: 50px;
         padding: 10px;
         width: 100%
-    }
-    
-    img {
-        float: left;
-        width: 100%;
-        padding: 10px;
     }
     
     .saira {
@@ -297,16 +219,13 @@ aside {
         color: black;
         font-weight: bold;
     }
-    
-    /*page footer*/
-    footer {
-        margin-bottom: 40px;
-        background-color: white;
-    }
-
 
 /*these rules take affect when the browsers width is 992px or more*/
 @media screen and (min-width: 992px) {
+    .hide {
+        display: block;
+    }
+
     body[background] {
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -314,84 +233,22 @@ aside {
         opacity: 0.8;
     }
 
-    .hide {
-        display: block;
-    }
-
     /*navbar*/
     .nav-link { 
-        display: flex;
-        justify-content: space-around;
-        width: 35%;
-        color: #6C757D;
-        
-    }
-
-    .nav-link a{
-        color: #6C757D; 
-        letter-spacing: 2px;
-        font-weight: bold;
-        font-size: 18px;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #e9ecef;
-        z-index: 1;
+       display: block;
+       transform: translateX(0%)
     }
 
     .burger {
         display: none;
     }
 
-    /*jumbotron*/
-    .lead {
-        align-content: center;
-        text-align: center;
-    }
-
-    .jumbotron {
-        float: left;
-        margin-top: 50px;
-        padding: 10px;
-        width: 100%
-    }
-
-    img {
-        float: left;
-        width: 100%;
-        padding: 10px;
-    }
-
-    .saira {
-        font-family: 'Saira Condensed', sans-serif;
-        padding: 10px;
-        font-weight: bold;
-        letter-spacing: 1px;
-        color: black;
-    }
-
     /*aside containing my contact information*/
     aside {
         margin-left: 10px;
-        width: 100%;
-        opacity: 0.8;
     }
 
-    .contact {
-        margin-top: 50px;
-    }
-
-    /*form to enter contact information*/
-    form {
-        width: 100%;
-    }
-
-    .form-group {
-        padding: 0px;
-    }
+    
 
     /*carousel containing project snapshots*/
     .carousel-caption {
@@ -402,10 +259,4 @@ aside {
     div h5 {
         color: black;
         font-weight: bold;
-    }
-
-    /*page footer*/
-    footer {
-        margin-bottom: 40px;
-        background-color: white;
     }
