@@ -32,6 +32,7 @@ Here are a few resources that helped me get this project knocked out!
 * [bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 * [stackoverflow](https://stackoverflow.com/users/story/14695569)
 * [Dev Ed](https://www.youtube.com/watch?v=gXkqy0b4M5g&t=3s)
+* [CSS Tricks](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset)
 
 ## License
 ©2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
