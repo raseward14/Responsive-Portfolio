@@ -29,6 +29,11 @@ body {
     display: inline;
 }
 
+.sticker {
+    padding: 0px;
+    margin-right: 10px;
+}
+
 /*navbar*/
 .nav-link {
     position: absolute;
