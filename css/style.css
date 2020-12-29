@@ -170,6 +170,7 @@ footer div a {
     aside {
         margin-top: 60px;
     }
+}
 
 /*these rules take affect when the browsers width is 992px or more*/
 @media screen and (min-width: 992px) {
@@ -181,3 +182,4 @@ footer div a {
         color: #6C757D;
         transform: translateX(0%);  
     }  
+}
