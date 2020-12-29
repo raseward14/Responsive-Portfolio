@@ -2,11 +2,6 @@
     box-sizing: border-box;
 }
 
-main {
-    min-height: 80vh;
-    margin-bottom: 0px;
-}
-
 body[background] {
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -19,6 +14,13 @@ body {
     padding: 0px;
     margin: 0px;
     align-content: center;
+    min-height: 100vh;
+    margin-bottom: -60px;
+}
+
+aside {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .container {
@@ -43,8 +45,8 @@ body {
 }
 
 .push {
-    height: 50px;
-}
+    height: 60px;
+} 
 
 /*navbar*/
 .nav-link {
@@ -150,7 +152,7 @@ footer {
     left: 0;
     right: 0;
     background-color: #e9ecef;
-    height: 62px;
+    height: 60px;
     align-items: center;
     display: flex;
     justify-content: space-around;
@@ -181,6 +183,7 @@ footer div a {
 
     aside {
         margin-top: 60px;
+        
     }
 }
 
@@ -193,5 +196,6 @@ footer div a {
         width: 50px;
         color: #6C757D;
         transform: translateX(0%);  
-    }  
+    } 
+
 }
