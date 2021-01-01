@@ -11,20 +11,14 @@ body[background] {
 
 body {
     overflow-x: hidden;
-    padding: 0px;
-    margin: 0px;
     align-content: center;
-    min-height: 100vh;
-
+    min-height: 90vh;
+    margin-bottom: -6vh;
+    margin-top: 6vh;
 }
 
 aside {
     margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.container {
-    margin-top: 30px;
 }
 
 .saira {
@@ -45,7 +39,7 @@ aside {
 }
 
 .push {
-    height: 60px;
+    height: 22vh;
 } 
 
 /*navbar*/
@@ -70,7 +64,7 @@ nav {
     right: 0px;
     top: 0px;
     left: 0px;
-    background-color: #e9ecef;
+    background-color:#e9ecef;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -116,7 +110,7 @@ nav {
 .jumbotron {
     float: left;
     padding: 2rem 2rem;
-    margin-top: 60px;
+    margin-top: 30px;
     width: 100%
 }
 
@@ -151,8 +145,8 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #e9ecef;
-    height: 60px;
+    background-color: #800000;
+    height: 6vh;
     align-items: center;
     display: flex;
     justify-content: space-around;
@@ -187,8 +181,12 @@ footer div p {
     }
 
     aside {
-        margin-top: 60px;
+        margin-top: 30px;
     }
+
+    .push {
+        height: 13vh;
+    } 
 }
 
 /*these rules take affect when the browsers width is 992px or more*/
@@ -203,7 +201,7 @@ footer div p {
     } 
 
     .push {
-        height: 110px;
+        height: 39vh;
     } 
 
     body {
@@ -214,6 +212,6 @@ footer div p {
 /*these rules take affect when the browsers width is 992px or more*/
 @media screen and (min-width: 1200px) {
     .push {
-        height: 55px;
+        height: 33vh;
     }
 }
