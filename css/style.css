@@ -20,6 +20,14 @@ body {
 aside {
     margin-top: 20px;
     border-radius: 10%;
+    
+}
+
+aside div .card {
+    background-color: #e9ecef;
+}
+
+aside ul .list-group-item {
     background-color: #e9ecef;
 }
 
