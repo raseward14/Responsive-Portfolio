@@ -156,10 +156,11 @@ footer {
     left: 0;
     right: 0;
     background-color: #800000;
-    height: 6vh;
+    height: 10vh;
     align-items: center;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 footer div a {
@@ -195,7 +196,7 @@ footer div p {
     }
 
     .push {
-        height: 13vh;
+        height: 10vh;
     } 
 }
 
