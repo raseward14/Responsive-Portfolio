@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10vh 5vw 5vh 5vw;
+}
+
 body[background] {
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -14,11 +20,9 @@ body {
     align-content: center;
     min-height: 90vh;
     margin-bottom: -6vh;
-    margin-top: 6vh;
 }
 
 aside {
-    margin-top: 20px;
     border-radius: 10%;
     
 }
@@ -39,18 +43,11 @@ aside ul .list-group-item {
     color: black;
 }
 
-.stack {
-    display: inline;
-}
-
 .sticker {
     padding: 0px;
     margin-right: 10px;
 }
 
-.push {
-    height: 22vh;
-} 
 
 /*navbar*/
 .nav-link {
@@ -120,7 +117,6 @@ nav {
 .jumbotron {
     float: left;
     padding: 2rem 2rem;
-    margin-top: 30px;
     width: 100%
 }
 
@@ -157,7 +153,6 @@ footer {
     right: 0;
     background-color: #800000;
     height: 10vh;
-    align-items: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -186,43 +181,21 @@ footer div p {
         width: 35px;
         transform: translateX(0%);  
     }
-     
     .burger {
         display: none;
     }
-
-    aside {
-        margin-top: 30px;
-    }
-
-    .push {
-        height: 10vh;
-    } 
 }
 
 /*these rules take affect when the browsers width is 992px or more*/
 @media screen and (min-width: 992px) {
     /*navbar*/
-    .nav-link { 
-        display: contents;
-        justify-content: space-around;
+    .nav-link {  
         width: 50px;
-        color: #6C757D;
-        transform: translateX(0%);  
     } 
-
-    .push {
-        height: 39vh;
-    } 
-
     body {
         min-height: 90vh;
     }
-}
-
-/*these rules take affect when the browsers width is 992px or more*/
-@media screen and (min-width: 1200px) {
-    .push {
-        height: 33vh;
+    div .push {
+        height: 20vh;
     }
 }
