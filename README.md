@@ -36,4 +36,4 @@ Here are a few resources that helped me get this project knocked out!
 * [Night Sky Gaming](https://www.facebook.com/N%C4%ABght-Sk%C3%BF-Gaming-105017864808391/)
 
 ## License
-©2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+©2021 Richard Seward. All Rights Reserved.
