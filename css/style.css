@@ -4,7 +4,8 @@
 .flex-container {
     display: flex;
     flex-direction: column;
-    margin: 10vh 5vw 0vh 5vw;
+    margin: 10vh 5vw -10vh 5vw;
+    min-height: 100vh;
 }
 body[background] {
     background-repeat: no-repeat;
@@ -19,6 +20,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 aside {
     border-radius: 10%;
@@ -155,20 +157,26 @@ footer div p {
 }
 
 /* sticky footer push divs */
+.push-index-xs {
+    height: 11vh;
+}
 .push-portfolio-xs {
-    height: 45vh;
+    height: 23vh;
 }
 .push-contact-xs {
-    height: 12vh;
+    height: 22vh;
 }
 
 /* these rules take effect when the browser's width is 400px or more */
 @media screen and (min-width: 400px) {
+    .push-index-xs {
+        height: 12vh;
+    }
     .push-portfolio-xs {
-        height: 40vh;
+        height: 21vh;
     }
     .push-contact-xs {
-        height: 8vh;
+        height: 22vh;
     }
     }
 
