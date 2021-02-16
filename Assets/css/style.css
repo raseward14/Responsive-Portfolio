@@ -25,6 +25,7 @@ body {
 aside {
     border-radius: 10%;
     margin-bottom: 5vh;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 aside div .card {
     background-color: #e9ecef;
@@ -106,7 +107,8 @@ nav {
 .jumbotron {
     float: left;
     padding: 2rem 2rem;
-    width: 100%
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 img {
     float: left;
