@@ -33,6 +33,17 @@ aside div .card {
 aside ul .list-group-item {
     background-color: #e9ecef;
 }
+div.card.text-center {
+    padding: 0px 15px 0px 15px;
+    margin: 15px;
+    justify-self: start;
+}
+div.project-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
 .saira {
     font-family: 'Saira Condensed', sans-serif;
     padding: 10px;
