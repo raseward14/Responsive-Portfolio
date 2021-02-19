@@ -26,6 +26,8 @@ aside {
     border-radius: 10%;
     margin-bottom: 5vh;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-size: larger;
+    text-align: center;
 }
 aside div .card {
     background-color: #e9ecef;
@@ -33,13 +35,18 @@ aside div .card {
 aside ul .list-group-item {
     background-color: #e9ecef;
 }
+aside ul li a {
+    width: fit-content;
+}
 div.card.text-center {
     padding: 0px 15px 0px 15px;
-    margin: 15px;
+    /* margin: 15px; */
     justify-self: start;
+    width: 100%;
 }
 div.project-row {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 10px;
@@ -168,6 +175,10 @@ footer div p {
     display: inline;
     float: inline-end;
 }
+.portfolio-container {
+    margin-left: 25px;
+    margin-right: 25px;
+}
 
 /* sticky footer push divs */
 .push-index-xs {
@@ -214,6 +225,13 @@ footer div p {
     .burger {
         display: none;
     }
+    div.project-row {
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 25px;
+    }
 }
 
 /*these rules take affect when the browsers width is 992px or more*/
@@ -224,6 +242,9 @@ footer div p {
     } 
     .nav-link a {
         width: 130px;
+    }
+    div.project-row {
+        display: grid;
     }
 }
 
