@@ -138,6 +138,13 @@ img {
     transform: translateX(0%);
 }
 
+div.jumbotron p.saira {
+    font-size: larger;
+}
+p.card-text.saira {
+    font-size: larger;
+}
+
 /*form to enter contact information*/
 form {
     width: 100%;
@@ -248,6 +255,10 @@ footer div p {
     div.project-row {
         display: grid;
     }
+    .nav-link a{
+        font-size: 20px;
+    }
+
 }
 
 /* these rules take affect when the browsers width is 1200px or more */
@@ -264,4 +275,8 @@ footer div p {
     .push-contact-xs {
         height: 12vh;
     }
+    .nav-link a{
+        font-size: 24px;
+    }
+
 }
