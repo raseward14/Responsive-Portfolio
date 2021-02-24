@@ -29,6 +29,9 @@ aside {
     font-size: larger;
     text-align: center;
 }
+aside a {
+    margin: 2px;
+}
 aside div .card {
     background-color: #e9ecef;
 }
@@ -40,7 +43,6 @@ aside ul li a {
 }
 div.card.text-center {
     padding: 0px 15px 0px 15px;
-    /* margin: 15px; */
     justify-self: start;
     width: 100%;
 }
