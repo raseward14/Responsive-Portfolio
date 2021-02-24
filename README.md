@@ -34,6 +34,7 @@ Here are a few resources that helped me get this project knocked out!
 * [Dev Ed](https://www.youtube.com/watch?v=gXkqy0b4M5g&t=3s)
 * [CSS Tricks](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset)
 * [Night Sky Gaming](https://www.facebook.com/N%C4%ABght-Sk%C3%BF-Gaming-105017864808391/)
+* [stockoverflow downloadable PDF file](https://stackoverflow.com/questions/364946/how-to-make-pdf-file-downloadable-in-html-link)
 
 ## License
 ©2021 Richard Seward. All Rights Reserved.
