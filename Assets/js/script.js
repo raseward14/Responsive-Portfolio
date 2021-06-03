@@ -13,6 +13,10 @@ const navSlide = () => {
   });
 }
 
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
 navSlide();
 
 
