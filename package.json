@@ -1,0 +1,49 @@
+{
+  "name": "Responsive_Portfolio",
+  "version": "1.0.0",
+  "description": "my portfolio",
+  "main": "server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raseward14/Responsive_Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raseward14/Responsive_Portfolio/issues"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.0.1",
+    "cookie-parser": "~1.4.4",
+    "dotenv": "^9.0.2",
+    "express": "^4.16.3",
+    "if-env": "^1.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "mongodb": "^3.6.8",
+    "mongoose": "^5.3.16",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "reactstrap": "^8.9.0",
+    "victory": "^35.8.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.7"
+  },
+  "homepage": "https://github.com/raseward14/Responsive_Portfolio#readme"
+}
