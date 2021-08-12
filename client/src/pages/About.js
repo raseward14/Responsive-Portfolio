@@ -2,13 +2,13 @@
 import Nav from "../components/Navbar/index";
 import "./style.css";
 
-function Homepage() {
+function About() {
 
     return (
         <div className="themed-container">
-            <h1>Home</h1>
+            <h1>About</h1>
         </div>
     );
 };
 
-export default Homepage;
+export default About;

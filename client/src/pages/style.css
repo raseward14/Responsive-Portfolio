@@ -1,0 +1,10 @@
+* {
+    background-color: cadetblue;
+}
+
+.themed-container {
+    background-color: blue;
+    height: 80vh;
+    width: 1500px;
+    margin: auto;
+}

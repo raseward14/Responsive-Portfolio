@@ -3,8 +3,10 @@ import React, { useContext } from "react";
 
 // imports pages
 import Homepage from "./pages/Homepage";
+import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
+import Four from "./pages/Four";
 
 // import components
 import Navbar from "./components/Navbar";
@@ -26,6 +28,10 @@ function App() {
             <Homepage />
           </Route>
 
+          <Route exact path="/about">
+            <About />
+          </Route>
+
           <Route exact path="/portfolio">
             <Portfolio />
           </Route>
@@ -33,6 +39,10 @@ function App() {
           <Route exact path="/contact">
             <Contact />
           </Route>
+
+          {/* <Route path="*">
+            <Four />
+          </Route> */}
         </Switch>
       </div>
     </Router>

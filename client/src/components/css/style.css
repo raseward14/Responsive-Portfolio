@@ -54,7 +54,7 @@ div.project-row {
     grid-gap: 10px;
 }
 .saira {
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: monospace;
     padding: 10px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -72,8 +72,7 @@ div.project-row {
     height: 30vh;
     top: 7vh;
     width: 8rem;
-    background-color: #e9ecef;
-    color: #6C757D;
+    color: #11cf41;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -97,7 +96,7 @@ nav {
     opacity: 1; 
 }
 .nav-link a{
-    color: #6C757D; 
+    color: #11cf41; 
     letter-spacing: 1px;
     font-weight: bold;
     font-size: 17px;
