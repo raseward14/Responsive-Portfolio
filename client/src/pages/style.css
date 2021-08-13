@@ -1,10 +1,49 @@
 * {
-    background-color: cadetblue;
+    background-color: rgb(71, 242, 248);
 }
 
 .themed-container {
-    background-color: blue;
+    content: "";
+    clear: both;
+    overflow: auto;
+    /*display table prevents the scroll bar*/
+    display: table;
     height: 80vh;
     width: 1500px;
     margin: auto;
+    padding: 20px;
+    line-height: 32px;
+    background-color: blue;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.heading {
+    float: left;
+    width: calc(4 * (100% / 5));
+    height: 10%;
+    margin: 0px 0px 0px 0px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+aside {
+    float: left;
+    width: calc(100% / 5);
+    height: 100%;
+    clear: both;
+    border: 1px solid white;
+    background-color: thistle;
+
+}
+
+section {
+    float: left;
+   
+    height: 90%;
+    width: calc(4 * (100% / 5));
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
 }

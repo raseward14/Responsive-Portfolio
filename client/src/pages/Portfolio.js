@@ -6,7 +6,9 @@ function Portfolio() {
 
     return (
         <div className="themed-container">
-            <h1>Portfolio</h1>
+            <aside>navbar and useful icons and links</aside>
+            <h1 className="heading">Portfolio</h1>
+            <section>main content</section>
         </div>
     );
 };

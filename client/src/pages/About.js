@@ -6,7 +6,9 @@ function About() {
 
     return (
         <div className="themed-container">
-            <h1>About</h1>
+            <aside>navbar and useful icons and links</aside>
+            <h1 className="heading">About</h1>
+            <section>main content</section>
         </div>
     );
 };

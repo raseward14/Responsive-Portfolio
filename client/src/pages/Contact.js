@@ -6,7 +6,9 @@ function Contact() {
 
     return (
         <div className="themed-container">
-            <h1>Contact</h1>
+            <aside>navbar and useful icons and links</aside>
+            <h1 className="heading">Contact</h1>
+            <section>main content</section>
         </div>
     );
 };

@@ -6,7 +6,9 @@ function Homepage() {
 
     return (
         <div className="themed-container">
-            <h1>Home</h1>
+            <aside>navbar and useful icons and links</aside>
+            <h1 className="heading">Home</h1>
+            <section>main content</section>
         </div>
     );
 };
