@@ -1,5 +1,5 @@
 * {
-    background-color: rgb(71, 242, 248);
+    background-color: rgb(253, 212, 135);
 }
 
 div.themed-container {
@@ -14,9 +14,11 @@ div.themed-container {
     margin-top: 4%;
     padding: 20px;
     line-height: 32px;
-    background-color: blue;
-    border: 1px solid white;
+    background-color: white;
+    border: 1px solid black;
     text-align: center;
+    box-shadow: 5px 10px 18px black;
+    border-radius: 10px;
 }
 
 .heading {
@@ -25,8 +27,8 @@ div.themed-container {
     height: 10%;
     margin: 0px 0px 0px 0px;
     background-color: transparent;
-    color: white;
-    border: 1px solid white;
+    color: black;
+    border: 1px solid black;
 }
 
 aside {
@@ -34,7 +36,7 @@ aside {
     width: calc(100% / 5);
     height: 100%;
     clear: both;
-    border: 1px solid white;
+    border: 1px solid black;
     background-color: thistle;
 
 }
@@ -43,7 +45,7 @@ section {
     float: left;
     height: 90%;
     width: calc(4 * (100% / 5));
-    border: 1px solid white;
+    border: 1px solid black;
     background-color: transparent;
-    color: white;
+    color: black;
 }

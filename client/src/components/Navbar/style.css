@@ -1,0 +1,94 @@
+.nav-link {
+    height: 30vh;
+    top: 7vh;
+    width: 8rem;
+    color: #11cf41;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+}
+
+.nav-link li{
+    list-style: none;
+    opacity: 1; 
+
+}
+
+.nav-link a{
+    color: black; 
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 17px;
+    font-family:'Courier New', Courier, monospace;
+    background-color: transparent;
+}
+
+.burger {
+    display: block;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px;
+}
+
+/*these rules take effect when the browser's width is 768px or more.*/
+@media screen and (min-width: 768px) {
+    .nav-link { 
+        /* position: relative; */
+        top: 5px;
+        right: 50px;
+        height: 5vh;
+        /* flex-direction: row; */
+    }
+    .nav-link a {
+        /* display: flex; */
+        width: 120px;
+    }
+    /* .badge {
+        position: absolute;
+        left: 50px;
+        top: 5px;
+    } */
+    .burger {
+        display: none;
+    }
+}
+
+/*these rules take affect when the browsers width is 992px or more*/
+@media screen and (min-width: 992px) {
+    /*navbar*/
+    .nav-link {  
+        right: 25px;
+    } 
+    .nav-link a {
+        width: 130px;
+    }
+    /* div.project-row {
+        display: grid;
+    } */
+    .nav-link a{
+        font-size: 20px;
+    }
+
+}
+
+/* these rules take affect when the browsers width is 1200px or more */
+@media screen and (min-width: 1200px) {
+    /* .push-index-lg {
+        height: 12vh;
+    }
+    .push-contact-xs {
+        height: 12vh;
+    } */
+    .nav-link a{
+        font-size: 24px;
+    }
+
+}

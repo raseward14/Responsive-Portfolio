@@ -1,4 +1,5 @@
 // import "../css/style.css";
+import "./style.css";
 import { Nav, NavItem, NavLink } from "reactstrap";
 
 function Navbar() {
@@ -7,7 +8,7 @@ function Navbar() {
         <div>
             {/* <h1><span class="badge badge-secondary" id="top">Richard A Seward<img class="sticker"
                     src="../../../../Assets/Images/RAS-xxxs.jpg" alt="RAS sticker"></span></h1> */}
-            <ul class="nav-link">
+            <ul className="nav-link">
                 <li>
                     <a href="/">Home</a>
                 </li>
@@ -21,10 +22,10 @@ function Navbar() {
                     <a href="/portfolio">Portfolio</a>
                 </li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line1"></div>
-                <div class="line1"></div>
+            <div className="burger">
+                <div className="line1"></div>
+                <div className="line1"></div>
+                <div className="line1"></div>
             </div>
         </div>
     );
