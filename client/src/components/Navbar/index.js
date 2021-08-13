@@ -1,4 +1,4 @@
-import "../css/style.css";
+// import "../css/style.css";
 import { Nav, NavItem, NavLink } from "reactstrap";
 
 function Navbar() {
