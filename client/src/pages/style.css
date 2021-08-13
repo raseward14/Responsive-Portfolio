@@ -2,7 +2,7 @@
     background-color: rgb(71, 242, 248);
 }
 
-.themed-container {
+div.themed-container {
     content: "";
     clear: both;
     overflow: auto;
@@ -11,6 +11,7 @@
     height: 80vh;
     width: 1500px;
     margin: auto;
+    margin-top: 4%;
     padding: 20px;
     line-height: 32px;
     background-color: blue;
@@ -40,7 +41,6 @@ aside {
 
 section {
     float: left;
-   
     height: 90%;
     width: calc(4 * (100% / 5));
     border: 1px solid white;

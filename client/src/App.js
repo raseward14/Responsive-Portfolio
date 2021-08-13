@@ -9,7 +9,6 @@ import Contact from "./pages/Contact";
 import Four from "./pages/Four";
 
 // import components
-import Navbar from "./components/Navbar";
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,7 +20,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
 
         <Switch>
           <Route exact path="/">
