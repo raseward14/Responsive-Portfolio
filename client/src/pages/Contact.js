@@ -1,5 +1,6 @@
 // import components
 import Nav from "../components/Navbar/index";
+import Form from "../components/Form/index";
 import "./style.css";
 
 function Contact() {
@@ -8,7 +9,7 @@ function Contact() {
         <div className="themed-container">
             <aside><Nav /> and useful icons and links</aside>
             <h1 className="heading">Contact</h1>
-            <section>main content</section>
+            <section><Form /></section>
         </div>
     );
 };
