@@ -1,0 +1,23 @@
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    margin: auto;
+    width: 75%;
+}
+
+p {
+    width: 20%;
+    padding: 1%;  
+}
+
+.dateTime {
+    float: left;
+    font-size: 24px;
+    color: black;
+    margin: auto;
+    border: 1px black solid;
+}

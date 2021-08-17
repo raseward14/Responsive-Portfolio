@@ -9,9 +9,8 @@ div.themed-container {
     /*display table prevents the scroll bar*/
     display: table;
     height: 80vh;
-    width: 1500px;
+    width: 75%;
     margin: auto;
-    margin-top: 4%;
     padding: 20px;
     line-height: 32px;
     background-color: white;
@@ -49,3 +48,19 @@ section {
     background-color: transparent;
     color: black;
 }
+
+/*Form Styling*/
+.form-control {
+    /* justify-content: center;
+    align-items: center;
+    justify-content: center !important; */
+    width: 50% !important;
+  }
+  form {
+    margin: 0 auto !important;
+    text-align: -webkit-center;
+  }
+  
+  .form-group {
+    justify-content: center;
+  }

@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useContext } from "react";
+import React from "react";
 
 // imports pages
 import Homepage from "./pages/Homepage";
@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import Four from "./pages/Four";
 
 // import components
+import DateTime from './components/DateTime';
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,7 +21,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-
+      <DateTime></DateTime>
         <Switch>
           <Route exact path="/">
             <Homepage />

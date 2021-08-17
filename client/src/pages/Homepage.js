@@ -1,5 +1,8 @@
+// import React
+import React, { useState, useEffect } from "react";
 // import components
 import Nav from "../components/Navbar/index";
+// import style
 import "./style.css";
 
 function Homepage() {
