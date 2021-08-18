@@ -26,6 +26,6 @@ const contactSchema = new Schema({
   },
 });
 
-const Contact = mongoose.model("Loan", contactSchema);
+const Contact = mongoose.model("Contact", contactSchema);
 
 module.exports = Contact;
