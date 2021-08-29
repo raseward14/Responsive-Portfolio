@@ -3,7 +3,7 @@
 This webpage is designed to be my personal portfolio. It gives basic information about me, my contact information, a means of getting in contact with me, and links to projects i've worked on in the past. It utilizes HTML as the framework, and Bootstrap CSS for design. The portfolio page integrates basic Javascript, linked to Bootstrap. I had a tough time figuring out how to link my HTML document to Bootstraps Javascript features, but managed to find the link after exploring Bootstrap a bit more.
 
 All of the Bootstrap features come from version 4.5. This is the version we spent the most time on in class, and its the version I am most familiar with.
-**[Check it out Here!](https://raseward14.github.io/Responsive-Portfolio/)**
+**[Check it out Here!](https://sleepy-reaches-69699.herokuapp.com/)**
 
 The remaining challenges came from creating and formatting the hamburger menu needed for Mobile Responsiveness. I included several breakpoints to increase responsiveness; one at 1100px, another at 1000px, and two form mobile devices; one at 768px and another at 415px (both of which utilize the hamburger menu for navigation).
 
