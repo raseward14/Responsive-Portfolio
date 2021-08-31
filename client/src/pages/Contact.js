@@ -24,7 +24,9 @@ function Contact() {
         event.preventDefault();
         console.log('Here!')
 
-        if (formObject.name && formObject.phone || formObject.email) {
+        if (formObject.name 
+            // && formObject.phone || formObject.email
+            ) {
             contactAPIFunctions
                 .saveContact({
                     name: formObject.name,
