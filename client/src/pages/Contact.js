@@ -69,7 +69,7 @@ function Contact() {
                 <TextArea
                     onChange={handleInputChange}
                     name="message"
-                    placeholder="What brings you here?"
+                    placeholder="What brings you here? Whats the best way to reach you?"
                 />
                 <FormBtn
                     disabled={!(formObject.name && formObject.message && (formObject.phone || formObject.email))}
