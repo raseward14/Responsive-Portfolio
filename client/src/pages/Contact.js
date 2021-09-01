@@ -13,7 +13,7 @@ function Contact() {
     const [formObject, setFormObject] = useState({});
 
     function loadForm() {
-
+        
     };
 
     function handleClick(id) {
@@ -30,8 +30,7 @@ function Contact() {
         event.preventDefault();
         console.log('Here!')
 
-        if (formObject.name
-            // && formObject.phone || formObject.email
+        if (formObject.name && formObject.phone || formObject.email
         ) {
             contactAPIFunctions
                 .saveContact({
@@ -73,7 +72,7 @@ function Contact() {
                     placeholder="What brings you here?"
                 />
                 <FormBtn
-                    disabled={!(formObject.name && formObject.message) && (formObject.phone || formObject.email)}
+                    disabled={!(formObject.name && formObject.message && (formObject.phone || formObject.email))}
                     onClick={handlFormSubmit}
                 >Submit</FormBtn>
             </section>
