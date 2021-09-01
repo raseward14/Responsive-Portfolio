@@ -20,13 +20,19 @@ function Contact() {
 
     };
 
+    // updates component state when the user types in input field
+    function handleInputChange(event) {
+        const { name, value } = event.target;
+        setFormObject({ ...formObject, [name]: value });
+    }
+
     function handlFormSubmit(event) {
         event.preventDefault();
         console.log('Here!')
 
-        if (formObject.name 
+        if (formObject.name
             // && formObject.phone || formObject.email
-            ) {
+        ) {
             contactAPIFunctions
                 .saveContact({
                     name: formObject.name,
@@ -46,19 +52,23 @@ function Contact() {
             <aside><Nav /> and useful icons and links</aside>
             <h1 className="heading">Contact</h1>
             <section>
-                <Input 
+                <Input
+                    onChange={handleInputChange}
                     name="name"
                     placeholder="Whats your name?"
                 />
-                <Input 
+                <Input
+                    onChange={handleInputChange}
                     name="email"
                     placeholder="Whats your email address?"
                 />
-                <Input 
+                <Input
+                    onChange={handleInputChange}
                     name="phone"
                     placeholder="Whats your phone number?"
                 />
-                <TextArea 
+                <TextArea
+                    onChange={handleInputChange}
                     name="message"
                     placeholder="What brings you here?"
                 />
