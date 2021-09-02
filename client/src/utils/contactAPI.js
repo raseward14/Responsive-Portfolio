@@ -9,5 +9,9 @@ const saveContact = (contactData) => {
     console.log('contact saved')
     return axios.post("/api/contact", contactData);
 };
+// delete a contact
+const deleteContact = (id) => {
+  return axios.delete("/api/contact/" + id)
+}
 
-export { saveContact, getContacts };
+export { saveContact, getContacts, deleteContact };

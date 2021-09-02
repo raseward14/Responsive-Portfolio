@@ -54,22 +54,22 @@ function Contact() {
                 <Input
                     onChange={handleInputChange}
                     name="name"
-                    placeholder="Whats your name?"
+                    placeholder="name"
                 />
                 <Input
                     onChange={handleInputChange}
                     name="email"
-                    placeholder="Whats your email address?"
+                    placeholder="email"
                 />
                 <Input
                     onChange={handleInputChange}
                     name="phone"
-                    placeholder="Whats your phone number?"
+                    placeholder="phone"
                 />
                 <TextArea
                     onChange={handleInputChange}
                     name="message"
-                    placeholder="What brings you here? Whats the best way to reach you?"
+                    placeholder="Leave a message!"
                 />
                 <FormBtn
                     disabled={!(formObject.name && formObject.message && (formObject.phone || formObject.email))}
