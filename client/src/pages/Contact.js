@@ -11,9 +11,15 @@ import * as contactAPIFunctions from "../utils/contactAPI";
 
 function Contact() {
     const [formObject, setFormObject] = useState({});
+    const initialState = {
+        name: "",
+        email: "",
+        phone: "",
+        message: ""
+    }
 
-    function loadForm() {
-        
+    function clearState() {
+        setFormObject({ ...initialState })
     };
 
     function handleClick(id) {
@@ -29,9 +35,7 @@ function Contact() {
     function handlFormSubmit(event) {
         event.preventDefault();
         console.log('Here!')
-
-        if (formObject.name && formObject.phone || formObject.email
-        ) {
+        if (formObject.name && formObject.phone || formObject.email) {
             contactAPIFunctions
                 .saveContact({
                     name: formObject.name,
@@ -40,7 +44,7 @@ function Contact() {
                     message: formObject.message
                 })
                 .then(() => {
-                    loadForm();
+                    clearState();
                 })
                 .catch((err) => console.log(err));
         };
