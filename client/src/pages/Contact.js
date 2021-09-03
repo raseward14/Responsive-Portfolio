@@ -1,5 +1,5 @@
 // import React
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 // import style
 import "./style.css";
 // import components
@@ -11,20 +11,15 @@ import * as contactAPIFunctions from "../utils/contactAPI";
 
 function Contact() {
     const [formObject, setFormObject] = useState({});
-    const initialState = {
-        name: "",
-        email: "",
-        phone: "",
-        message: ""
-    }
-
-    function clearState() {
-        setFormObject({ ...initialState })
-    };
 
     function handleClick(id) {
 
     };
+
+    // resets component state to null on submit
+    function clearState() {
+    
+    }
 
     // updates component state when the user types in input field
     function handleInputChange(event) {
@@ -44,7 +39,7 @@ function Contact() {
                     message: formObject.message
                 })
                 .then(() => {
-                    clearState();
+                    // clearState();
                 })
                 .catch((err) => console.log(err));
         };
