@@ -56,13 +56,18 @@ section {
     justify-content: center !important; */
     width: 50% !important;
   }
-  form {
+
+form {
     margin: 0 auto !important;
     text-align: -webkit-center;
-  }
+}
   
-  .form-group {
+.form-group {
     justify-content: center;
-  }
+}
 
-  .btn:disabled{ cursor: not-allowed }
+#Button {
+    margin: 5px auto;
+    font-size: 24px;
+    font-family: monospace;
+}
