@@ -11,6 +11,7 @@ import * as contactAPIFunctions from "../utils/contactAPI";
 
 function Contact() {
     const [formObject, setFormObject] = useState({});
+    const [buttonText, setButtonText] = useState('Submit');
 
     function handleClick(id) {
 
@@ -46,6 +47,8 @@ function Contact() {
                 })
                 .then(() => {
                     clearState();
+                    setButtonText('Thank You!');
+                    document.getElementById("Button").disabled = true;
                 })
                 .catch((err) => console.log(err));
         };
@@ -81,9 +84,10 @@ function Contact() {
                     placeholder="Leave a message!"
                 />
                 <FormBtn
+                    id='Button'
                     disabled={!(formObject.name && formObject.message && (formObject.phone || formObject.email))}
                     onClick={handlFormSubmit}
-                >Submit</FormBtn>
+                >{buttonText}</FormBtn>
             </section>
         </div>
     );

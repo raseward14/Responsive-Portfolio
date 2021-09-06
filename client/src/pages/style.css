@@ -64,3 +64,5 @@ section {
   .form-group {
     justify-content: center;
   }
+
+  .btn:disabled{ cursor: not-allowed }
