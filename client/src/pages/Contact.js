@@ -18,7 +18,14 @@ function Contact() {
 
     // resets component state to null on submit
     function clearState() {
-    
+         let nameInput = document.getElementById('name');
+         let emailInput = document.getElementById('email');
+         let phoneInput = document.getElementById('phone');
+         let messageInput = document.getElementById('message');
+         nameInput.value='';
+         emailInput.value='';
+         phoneInput.value='';
+         messageInput.value='';
     }
 
     // updates component state when the user types in input field
@@ -29,7 +36,6 @@ function Contact() {
 
     function handlFormSubmit(event) {
         event.preventDefault();
-        console.log('Here!')
         if (formObject.name && formObject.phone || formObject.email) {
             contactAPIFunctions
                 .saveContact({
@@ -39,7 +45,7 @@ function Contact() {
                     message: formObject.message
                 })
                 .then(() => {
-                    // clearState();
+                    clearState();
                 })
                 .catch((err) => console.log(err));
         };
@@ -51,21 +57,25 @@ function Contact() {
             <h1 className="heading">Contact</h1>
             <section>
                 <Input
+                    id='name'
                     onChange={handleInputChange}
                     name="name"
                     placeholder="name"
                 />
                 <Input
+                    id='email'
                     onChange={handleInputChange}
                     name="email"
                     placeholder="email"
                 />
                 <Input
+                    id='phone'
                     onChange={handleInputChange}
                     name="phone"
                     placeholder="phone"
                 />
                 <TextArea
+                    id='message'
                     onChange={handleInputChange}
                     name="message"
                     placeholder="Leave a message!"
