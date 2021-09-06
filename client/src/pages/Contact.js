@@ -19,14 +19,12 @@ function Contact() {
 
     // resets component state to null on submit
     function clearState() {
-         let nameInput = document.getElementById('name');
-         let emailInput = document.getElementById('email');
-         let phoneInput = document.getElementById('phone');
-         let messageInput = document.getElementById('message');
-         nameInput.value='';
-         emailInput.value='';
-         phoneInput.value='';
-         messageInput.value='';
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('phone').value = '';
+        document.getElementById('message').value = '';
+        setButtonText('Thank You!');
+        document.getElementById("Button").disabled = true;
     }
 
     // updates component state when the user types in input field
@@ -47,8 +45,6 @@ function Contact() {
                 })
                 .then(() => {
                     clearState();
-                    setButtonText('Thank You!');
-                    document.getElementById("Button").disabled = true;
                 })
                 .catch((err) => console.log(err));
         };
