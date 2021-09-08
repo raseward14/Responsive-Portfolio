@@ -10,6 +10,7 @@ import Four from "./pages/Four";
 
 // import components
 import DateTime from './components/DateTime';
+import Ink from './components/Ink';
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,6 +23,7 @@ function App() {
     <Router>
       <div className="App">
       <DateTime></DateTime>
+      <Ink></Ink>
         <Switch>
           <Route exact path="/">
             <Homepage />
