@@ -36,6 +36,7 @@ Here are a few resources that helped me get this project knocked out!
 * [Night Sky Gaming](https://www.facebook.com/N%C4%ABght-Sk%C3%BF-Gaming-105017864808391/)
 * [stockoverflow downloadable PDF file](https://stackoverflow.com/questions/364946/how-to-make-pdf-file-downloadable-in-html-link)
 * [Yousef Ahmed](https://medium.com/create-a-clocking-in-system-on-react/create-a-react-app-displaying-the-current-date-and-time-using-hooks-21d946971556)
+* [w3 Schools Dropdown tutorial](https://www.w3schools.com/howto/howto_js_dropdown.asp)
 
 ## License
 ©2021 Richard Seward. All Rights Reserved.
