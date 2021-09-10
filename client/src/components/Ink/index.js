@@ -1,5 +1,7 @@
 import React from "react";
 import './style.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee, faTint } from '@fortawesome/free-solid-svg-icons'
 
 // exports Ink dropdown
 const Ink = (props) => {
@@ -10,11 +12,11 @@ const Ink = (props) => {
     }
 
     // Close the dropdown menu if the user clicks outside of it
-    window.onClick = function(event) {
+    window.onClick = function (event) {
         if (!event.target.matches(".dropbtn")) {
             var dropdowns = document.getElementsByClassName("dropdown-content");
             var i;
-            for (i=0, i<dropdowns.length; i++;) {
+            for (i = 0, i < dropdowns.length; i++;) {
                 var openDropdown = dropdowns[i];
                 if (openDropdown.classList.contains("show")) {
                     openDropdown.classList.remove("show")
@@ -23,15 +25,58 @@ const Ink = (props) => {
         }
     }
 
-    return(
+    const myDefaultStyle = {
+        color: "Tan",
+        fontSize: "2em"
+    };
+    const myRedStyle = {
+        color: "Tomato",
+        fontSize: "2em"
+    };
+    const myGreenStyle = {
+        color: "Green",
+        fontSize: "2em"
+    };
+    const myOrangeStyle = {
+        color: "Orange",
+        fontSize: "2em"
+    };const myPinkStyle = {
+        color: "Pink",
+        fontSize: "2em"
+    };const myBlueStyle = {
+        color: "Blue",
+        fontSize: "2em"
+    };
+
+    return (
         <div className="dropdown">
-            <button onClick={inkFunction} className="dropbtn">Dropdown</button>
+            <button onClick={inkFunction} className="dropbtn" style={myDefaultStyle}><FontAwesomeIcon icon={faTint} /></button>
             <div id="inkDropdown" className="dropdown-content">
-                <a>1</a>
-                <a>2</a>
-                <a>3</a>
-                <a>4</a>
-                <a>5</a>
+                <a>
+                    <span style={myRedStyle}>
+                        <FontAwesomeIcon icon={faTint} spin />
+                    </span>
+                </a>
+                <a>
+                    <span style={myGreenStyle}>
+                        <FontAwesomeIcon icon={faTint} spin />
+                    </span>
+                </a>
+                <a>
+                    <span style={myBlueStyle}>
+                        <FontAwesomeIcon icon={faTint} spin />
+                    </span>
+                </a>
+                <a>
+                    <span style={myOrangeStyle}>
+                        <FontAwesomeIcon icon={faTint} spin />
+                    </span>
+                </a>
+                <a>
+                    <span style={myPinkStyle}>
+                        <FontAwesomeIcon icon={faTint} spin />
+                    </span>
+                </a>
             </div>
         </div>
     );
