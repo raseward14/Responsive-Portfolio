@@ -1,7 +1,7 @@
 import React from "react";
 import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faTint } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faTint, faEyeDropper } from '@fortawesome/free-solid-svg-icons'
 
 // exports Ink dropdown
 const Ink = (props) => {
@@ -26,7 +26,7 @@ const Ink = (props) => {
     }
 
     const myDefaultStyle = {
-        color: "Tan",
+        color:  "Tan",
         fontSize: "2em"
     };
     const myRedStyle = {
@@ -50,31 +50,31 @@ const Ink = (props) => {
 
     return (
         <div className="dropdown">
-            <button onClick={inkFunction} className="dropbtn" style={myDefaultStyle}><FontAwesomeIcon icon={faTint} /></button>
+            <button onClick={inkFunction} className="dropbtn" style={myDefaultStyle}><FontAwesomeIcon icon={faEyeDropper} /></button>
             <div id="inkDropdown" className="dropdown-content">
                 <a>
                     <span style={myRedStyle}>
-                        <FontAwesomeIcon icon={faTint} spin />
+                        <FontAwesomeIcon icon={faTint} />
                     </span>
                 </a>
                 <a>
                     <span style={myGreenStyle}>
-                        <FontAwesomeIcon icon={faTint} spin />
+                        <FontAwesomeIcon icon={faTint} />
                     </span>
                 </a>
                 <a>
                     <span style={myBlueStyle}>
-                        <FontAwesomeIcon icon={faTint} spin />
+                        <FontAwesomeIcon icon={faTint} />
                     </span>
                 </a>
                 <a>
                     <span style={myOrangeStyle}>
-                        <FontAwesomeIcon icon={faTint} spin />
+                        <FontAwesomeIcon icon={faTint} />
                     </span>
                 </a>
                 <a>
                     <span style={myPinkStyle}>
-                        <FontAwesomeIcon icon={faTint} spin />
+                        <FontAwesomeIcon icon={faTint} />
                     </span>
                 </a>
             </div>
