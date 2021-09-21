@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
+import Ink from '../Ink'
 
 export const DateTime = () => {
     var [date, setDate] = useState(new Date());
@@ -13,10 +14,11 @@ export const DateTime = () => {
     });
 
     return (
-        <div className="clearfix">
-            <p className="dateTime"> Date: {date.toLocaleDateString()}</p>
-            <p className="dateTime"> Time: {date.toLocaleTimeString()}</p>
-        </div>
+            <div className="clearfix">
+                <p className="dateTime"> Date: {date.toLocaleDateString()}</p>
+                <p className="dateTime"> Time: {date.toLocaleTimeString()}</p>
+                <Ink></Ink>
+            </div>
     );
 };
 

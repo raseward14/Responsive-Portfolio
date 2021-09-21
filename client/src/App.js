@@ -23,7 +23,6 @@ function App() {
     <Router>
       <div className="App">
       <DateTime></DateTime>
-      <Ink></Ink>
         <Switch>
           <Route exact path="/">
             <Homepage />

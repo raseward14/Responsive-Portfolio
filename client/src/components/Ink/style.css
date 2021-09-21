@@ -1,9 +1,9 @@
 /* Dropdown Button */
 .dropbtn {
     background-color: rgb(181, 33, 240);
-    padding: 16px;
-    border-radius: 50%;
+    padding: 10px;
     border: none;
+    margin: auto;
 }
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
@@ -14,8 +14,9 @@
 /*The .dropdown class uses position:relative, which is needed when we want the dropdown content to be placed right below the dropdown button (using position:absolute).*/
 .dropdown {
     position: relative;
-    display: inline-block;
-    left: 90vw;
+    left: 0vw;
+    float: right;
+    margin: auto;
 }
 /* Dropdown content (Hidden by default) */
 /*The .dropdown-content class holds the actual dropdown menu. It is hidden by default, and will be displayed on hover (see below). Note the min-width is set to 160px. Feel free to change this. Tip: If you want the width of the dropdown content to be as wide as the dropdown button, set the width to 100% (and overflow:auto to enable scroll on small screens).*/

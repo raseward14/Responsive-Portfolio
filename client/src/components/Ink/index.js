@@ -50,7 +50,7 @@ const Ink = (props) => {
 
     return (
         <div className="dropdown">
-            <button onClick={inkFunction} className="dropbtn" style={myDefaultStyle}><FontAwesomeIcon icon={faEyeDropper} /></button>
+            <button onClick={inkFunction} className="dropbtn" style={myDefaultStyle}><FontAwesomeIcon icon={faEyeDropper} rotate=""/></button>
             <div id="inkDropdown" className="dropdown-content">
                 <a>
                     <span style={myRedStyle}>
