@@ -12,18 +12,33 @@ const Ink = (props) => {
     }
 
     // Close the dropdown menu if the user clicks outside of it
-    window.onClick = function (event) {
-        if (!event.target.matches(".dropbtn")) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0, i < dropdowns.length; i++;) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains("show")) {
-                    openDropdown.classList.remove("show")
-                }
-            }
+    document.addEventListener("click", e => {
+        const isDropdownButton = e.target.matches("data-dropdown-button")
+        if (!isDropdownButton && e.target.closest("data-dropdown") != null) return
+
+        let currentDropdown
+        if (isDropdownButton) {
+            currentDropdown = e.target.closest("data-dropdown")
+            currentDropdown.classList.toggle('active')
         }
-    }
+
+        document.querySelectorAll("data-dropdown.active").forEach(dropdown => {
+            if(dropdown === currentDropdown) return
+            dropdown.classList.remove("active")
+        })
+    })
+    // window.onClick = function (event) {
+    //     if (!event.target.matches(".dropbtn")) {
+    //         var dropdowns = document.getElementsByClassName("dropdown-content");
+    //         var i;
+    //         for (i = 0, i < dropdowns.length; i++;) {
+    //             var openDropdown = dropdowns[i];
+    //             if (openDropdown.classList.contains("show")) {
+    //                 openDropdown.classList.remove("show")
+    //             }
+    //         }
+    //     }
+    // }
 
     const myDefaultStyle = {
         color:  "Tan",
@@ -49,8 +64,8 @@ const Ink = (props) => {
     };
 
     return (
-        <div className="dropdown">
-            <button onClick={inkFunction} className="dropbtn" style={myDefaultStyle}><FontAwesomeIcon icon={faEyeDropper} rotate=""/></button>
+        <div className="dropdown" data-dropdown>
+            <button onClick={inkFunction} className="dropbtn" style={myDefaultStyle}><FontAwesomeIcon icon={faEyeDropper} data-dropdown-button/></button>
             <div id="inkDropdown" className="dropdown-content">
                 <a>
                     <span style={myRedStyle}>

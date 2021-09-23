@@ -1,12 +1,17 @@
 /* Dropdown Button */
 .dropbtn {
-    background-color: rgb(181, 33, 240);
+    background-color: white;
     padding: 10px;
+    border-radius: 0.25rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
     border: none;
     margin: auto;
+    position: relative;
+    top: 0.5rem;
+    border: 1px solid black;
 }
 /* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover {
     background-color: darkgray;
 }
 
@@ -21,20 +26,26 @@
 /* Dropdown content (Hidden by default) */
 /*The .dropdown-content class holds the actual dropdown menu. It is hidden by default, and will be displayed on hover (see below). Note the min-width is set to 160px. Feel free to change this. Tip: If you want the width of the dropdown content to be as wide as the dropdown button, set the width to 100% (and overflow:auto to enable scroll on small screens).*/
 
-/*Instead of using a border, we have used the box-shadow property to make the dropdown menu look like a "card". We also use z-index to place the dropdown in front of other elements.*/
+/*Instead of using a border, we have used the box-shadow property to make the dropdown menu look like a "card". We also use z-index to place the dropdown in front of other elements. dropdown menu*/
 .dropdown-content {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
     position: absolute;
-    background-color: #6ce43d;
+    top: calc(100% + 0.5rem);
+    border-radius: 0.25rem;
+    border: 1px solid black;
     min-width: 100%;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
     z-index: 1;
+    transform: translateY(-60px);
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
 }
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content > a {
+    background-color: white;
     color: black;
-    padding: 12px 16px;
+    padding: 0.75rem;
     text-decoration: none;
     display: block;
     text-align: center;
@@ -46,5 +57,7 @@
 
 /* Showt the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
-    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
