@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faTint, faEyeDropper } from '@fortawesome/free-solid-svg-icons'
 
 // exports Ink dropdown
 const Ink = (props) => {
+    // const [backgroundColor, setBackgroundColor] = useState('');
+    useEffect(() => {
+        document.body.style.backgroundColor = '#282c34';
+    })
 
     // When the user clicks on the button, toggle between hiding and showing the dropdown content
     const inkFunction = () => {
@@ -27,18 +31,6 @@ const Ink = (props) => {
             dropdown.classList.remove("active")
         })
     })
-    // window.onClick = function (event) {
-    //     if (!event.target.matches(".dropbtn")) {
-    //         var dropdowns = document.getElementsByClassName("dropdown-content");
-    //         var i;
-    //         for (i = 0, i < dropdowns.length; i++;) {
-    //             var openDropdown = dropdowns[i];
-    //             if (openDropdown.classList.contains("show")) {
-    //                 openDropdown.classList.remove("show")
-    //             }
-    //         }
-    //     }
-    // }
 
     const myDefaultStyle = {
         color:  "Tan",

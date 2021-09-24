@@ -7,7 +7,8 @@
     border: none;
     margin: auto;
     position: relative;
-    top: 0.5rem;
+    /* top: 0.5rem; */
+    /* left: 6.5rem; */
     border: 1px solid black;
 }
 /* Dropdown button on hover & focus */
@@ -19,7 +20,8 @@
 /*The .dropdown class uses position:relative, which is needed when we want the dropdown content to be placed right below the dropdown button (using position:absolute).*/
 .dropdown {
     position: relative;
-    left: 0vw;
+    left: 6.5rem;
+    top: 4.5rem;
     float: right;
     margin: auto;
 }
@@ -31,7 +33,6 @@
     opacity: 0;
     pointer-events: none;
     position: absolute;
-    top: calc(100% + 0.5rem);
     border-radius: 0.25rem;
     border: 1px solid black;
     min-width: 100%;

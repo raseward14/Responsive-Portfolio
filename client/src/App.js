@@ -22,7 +22,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <DateTime></DateTime>
+      <DateTime className="DateTime"></DateTime>
+      {/* <Ink className="Ink"></Ink> */}
         <Switch>
           <Route exact path="/">
             <Homepage />
