@@ -5,11 +5,11 @@ import "./style.css";
 function Portfolio() {
 
     return (
-        <div className="themed-container">
+        <>
             <aside><Nav /> and useful icons and links</aside>
             <h1 className="heading">Portfolio</h1>
             <section>main content</section>
-        </div>
+        </>
     );
 };
 

@@ -21,34 +21,23 @@ import {
 function App() {
   return (
     <Router>
-      <div className="App">
-      <DateTime className="DateTime"></DateTime>
-      {/* <Ink className="Ink"></Ink> */}
-        <Switch>
-          <Route exact path="/">
-            <Homepage />
-          </Route>
-
-          <Route exact path="/about">
-            <About />
-          </Route>
-
-          <Route exact path="/portfolio">
-            <Portfolio />
-          </Route>
-
-          <Route exact path="/contact">
-            <Contact />
-          </Route>
-
-          {/* <Route path="*">
+      {/* <div className="App"> */}
+        <div id='page-body'>
+          <DateTime className="DateTime"></DateTime>
+          {/* <Ink className="Ink"></Ink> */}
+          <Switch>
+            <Route exact path="/" component={Homepage} />
+            <Route path="/about" component={About} />
+            <Route path="/portfolio" component={Portfolio} />
+            <Route path="/contact" component={Contact} />
+            {/* <Route path="*">
             <Four />
           </Route> */}
-        </Switch>
-      </div>
+          </Switch>
+        </div>
+      {/* </div> */}
     </Router>
-
   );
-}
+};
 
 export default App;

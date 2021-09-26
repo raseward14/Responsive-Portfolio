@@ -51,7 +51,7 @@ function Contact() {
     };
 
     return (
-        <div className="themed-container">
+        <>
             <aside><Nav /> and useful icons and links</aside>
             <h1 className="heading">Contact</h1>
             <section>
@@ -85,7 +85,7 @@ function Contact() {
                     onClick={handlFormSubmit}
                 >{buttonText}</FormBtn>
             </section>
-        </div>
+        </>
     );
 };
 
