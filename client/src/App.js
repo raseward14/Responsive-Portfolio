@@ -21,9 +21,9 @@ import {
 function App() {
   return (
     <Router>
-      {/* <div className="App"> */}
+      <div className="App">
+      <DateTime className="DateTime"></DateTime>
         <div id='page-body'>
-          <DateTime className="DateTime"></DateTime>
           {/* <Ink className="Ink"></Ink> */}
           <Switch>
             <Route exact path="/" component={Homepage} />
@@ -35,7 +35,7 @@ function App() {
           </Route> */}
           </Switch>
         </div>
-      {/* </div> */}
+      </div>
     </Router>
   );
 };
