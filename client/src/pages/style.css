@@ -49,3 +49,7 @@ form {
     font-size: 24px;
     font-family: monospace;
 }
+
+#four {
+    background-color: inherit;
+}

@@ -13,8 +13,8 @@ import DateTime from './components/DateTime';
 import Ink from './components/Ink';
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
+  Switch,
   Redirect,
 } from "react-router-dom";
 
@@ -30,9 +30,7 @@ function App() {
             <Route path="/about" component={About} />
             <Route path="/portfolio" component={Portfolio} />
             <Route path="/contact" component={Contact} />
-            {/* <Route path="*">
-            <Four />
-          </Route> */}
+            <Route component={Four} />
           </Switch>
         </div>
       </div>
