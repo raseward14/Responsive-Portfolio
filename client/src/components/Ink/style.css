@@ -7,18 +7,10 @@
     border: none;
     margin: auto;
     position: relative;
-    /* top: 0.5rem; */
-    /* left: 6.5rem; */
     border: 1px solid black;
 }
 /* Dropdown button on hover & focus */
 .dropbtn:hover {
-    background-color: darkgray;
-}
-.dropdown-content > a, span:hover {
-    background-color: darkgray;
-}
-.fa-circle:hover {
     background-color: darkgray;
 }
 
@@ -59,13 +51,7 @@
     display: block;
     text-align: center;
 }
-/*white the area around the icons*/
-.dropdown-content > a, span {
-    background-color: white;
-}
-.fa-circle {
-    background-color: white;
-}
+
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
     background-color: darkgray;
