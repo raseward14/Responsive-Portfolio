@@ -56,31 +56,31 @@ const Ink = (props) => {
 
     return (
         <div className="dropdown" data-dropdown>
-            <button onClick={inkFunction} className="dropbtn" style={{color:"black", fontSize:"2em", backgroundColor:'inherit'}}><FontAwesomeIcon className="fa-circle" icon={faEyeDropper} data-dropdown-button/></button>
+            <button onClick={inkFunction} className="dropbtn" style={{color:"black", fontSize:"2em", backgroundColor:'inherit'}}><FontAwesomeIcon className="fa-circle" icon={faEyeDropper} style={{backgroundColor:'white'}} data-dropdown-button/></button>
             <div id="inkDropdown" className="dropdown-content">
                 <a>
-                    <span style={myRedStyle}>
-                        <FontAwesomeIcon className="fa-circle" icon={faTint} />
+                    <span style={{color:'tomato', fontSize:'2em', backgroundColor:'inherit'}}>
+                        <FontAwesomeIcon style={{backgroundColor:'inherit'}} className="fa-circle" icon={faTint} />
                     </span>
                 </a>
                 <a>
-                    <span style={myGreenStyle}>
-                        <FontAwesomeIcon className="fa-circle" icon={faTint} />
+                    <span style={{color:'green', fontSize:'2em', backgroundColor:'inherit'}}>
+                        <FontAwesomeIcon style={{backgroundColor:'inherit'}} className="fa-circle" icon={faTint} />
                     </span>
                 </a>
                 <a>
-                    <span style={myBlueStyle}>
-                        <FontAwesomeIcon className="fa-circle" icon={faTint} />
+                    <span style={{color:'blue', fontSize:'2em', backgroundColor:'inherit'}}>
+                        <FontAwesomeIcon style={{backgroundColor:'inherit'}} className="fa-circle" icon={faTint} />
                     </span>
                 </a>
                 <a>
-                    <span style={myOrangeStyle}>
-                        <FontAwesomeIcon className="fa-circle" icon={faTint} />
+                    <span style={{color:'orange', fontSize:'2em', backgroundColor:'inherit'}}>
+                        <FontAwesomeIcon style={{backgroundColor:'inherit'}} className="fa-circle" icon={faTint} />
                     </span>
                 </a>
                 <a>
-                    <span style={myPinkStyle}>
-                        <FontAwesomeIcon className="fa-circle" icon={faTint} />
+                    <span style={{color:'pink', fontSize:'2em', backgroundColor:'inherit'}}>
+                        <FontAwesomeIcon style={{backgroundColor:'inherit'}} className="fa-circle" icon={faTint} />
                     </span>
                 </a>
             </div>
