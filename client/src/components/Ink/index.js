@@ -7,7 +7,6 @@ import { faCoffee, faTint, faEyeDropper } from '@fortawesome/free-solid-svg-icon
 const Ink = (props) => {
     // const [backgroundColor, setBackgroundColor] = useState('');
     useEffect(() => {
-        document.body.style.backgroundColor = '#282c34';
     })
 
     // When the user clicks on the button, toggle between hiding and showing the dropdown content
@@ -57,31 +56,31 @@ const Ink = (props) => {
 
     return (
         <div className="dropdown" data-dropdown>
-            <button onClick={inkFunction} className="dropbtn" style={myDefaultStyle}><FontAwesomeIcon icon={faEyeDropper} data-dropdown-button/></button>
+            <button onClick={inkFunction} className="dropbtn" style={{color:"black", fontSize:"2em", backgroundColor:'inherit'}}><FontAwesomeIcon className="fa-circle" icon={faEyeDropper} data-dropdown-button/></button>
             <div id="inkDropdown" className="dropdown-content">
                 <a>
                     <span style={myRedStyle}>
-                        <FontAwesomeIcon icon={faTint} />
+                        <FontAwesomeIcon className="fa-circle" icon={faTint} />
                     </span>
                 </a>
                 <a>
                     <span style={myGreenStyle}>
-                        <FontAwesomeIcon icon={faTint} />
+                        <FontAwesomeIcon className="fa-circle" icon={faTint} />
                     </span>
                 </a>
                 <a>
                     <span style={myBlueStyle}>
-                        <FontAwesomeIcon icon={faTint} />
+                        <FontAwesomeIcon className="fa-circle" icon={faTint} />
                     </span>
                 </a>
                 <a>
                     <span style={myOrangeStyle}>
-                        <FontAwesomeIcon icon={faTint} />
+                        <FontAwesomeIcon className="fa-circle" icon={faTint} />
                     </span>
                 </a>
                 <a>
                     <span style={myPinkStyle}>
-                        <FontAwesomeIcon icon={faTint} />
+                        <FontAwesomeIcon className="fa-circle" icon={faTint} />
                     </span>
                 </a>
             </div>

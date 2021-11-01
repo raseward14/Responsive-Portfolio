@@ -51,5 +51,6 @@
     "concurrently": "^4.1.0",
     "nodemon": "^1.18.7"
   },
-  "homepage": "https://github.com/raseward14/Responsive_Portfolio#readme"
+  "homepage": "https://github.com/raseward14/Responsive_Portfolio#readme",
+  "keywords": []
 }

@@ -25,6 +25,9 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/portfoliodb", {
   useCreateIndex: true
 });
 
+// troubleshooting
+// https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb--how-to-get-connected-to-your-database
+// allows us to connect to our local db
 // testing to see if we are connected to the mongodb
 mongoose.connection
   .once('open', () => console.log('Connected to MongoDB'))
