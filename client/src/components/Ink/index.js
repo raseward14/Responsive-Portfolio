@@ -7,82 +7,45 @@ import { faCoffee, faTint, faEyeDropper } from '@fortawesome/free-solid-svg-icon
 const Ink = (props) => {
     // const [backgroundColor, setBackgroundColor] = useState('');
     useEffect(() => {
-    })
+    });
+
+    const colors = ['tomato', 'green', 'blue', 'orange', 'pink'];
 
     // When the user clicks on the button, toggle between hiding and showing the dropdown content
     const inkFunction = () => {
         document.getElementById("inkDropdown").classList.toggle("show");
-    }
+    };
 
     // Close the dropdown menu if the user clicks outside of it
     document.addEventListener("click", e => {
-        const isDropdownButton = e.target.matches("data-dropdown-button")
+        const isDropdownButton = e.target.matches("data-dropdown-button");
         if (!isDropdownButton && e.target.closest("data-dropdown") != null) return
 
         let currentDropdown
         if (isDropdownButton) {
             currentDropdown = e.target.closest("data-dropdown")
             currentDropdown.classList.toggle('active')
-        }
+        };
 
         document.querySelectorAll("data-dropdown.active").forEach(dropdown => {
-            if(dropdown === currentDropdown) return
+            if (dropdown === currentDropdown) return
             dropdown.classList.remove("active")
-        })
-    })
-
-    const myDefaultStyle = {
-        color:  "Tan",
-        fontSize: "2em"
-    };
-    const myRedStyle = {
-        color: "Tomato",
-        fontSize: "2em"
-    };
-    const myGreenStyle = {
-        color: "Green",
-        fontSize: "2em"
-    };
-    const myOrangeStyle = {
-        color: "Orange",
-        fontSize: "2em"
-    };const myPinkStyle = {
-        color: "Pink",
-        fontSize: "2em"
-    };const myBlueStyle = {
-        color: "Blue",
-        fontSize: "2em"
-    };
+        });
+    });
 
     return (
         <div className="dropdown" data-dropdown>
-            <button onClick={inkFunction} className="dropbtn" style={{color:"black", fontSize:"2em", backgroundColor:'inherit'}}><FontAwesomeIcon className="fa-circle" icon={faEyeDropper} style={{backgroundColor:'white'}} data-dropdown-button/></button>
+            <button onClick={inkFunction} className="dropbtn" style={{ color: "black", fontSize: "2em", backgroundColor: 'inherit' }}><FontAwesomeIcon className="fa-circle" icon={faEyeDropper} style={{ backgroundColor: 'white' }} data-dropdown-button /></button>
             <div id="inkDropdown" className="dropdown-content">
-                <a>
-                    <span style={{color:'tomato', fontSize:'2em', backgroundColor:'inherit'}}>
-                        <FontAwesomeIcon style={{backgroundColor:'inherit'}} className="fa-circle" icon={faTint} />
-                    </span>
-                </a>
-                <a>
-                    <span style={{color:'green', fontSize:'2em', backgroundColor:'inherit'}}>
-                        <FontAwesomeIcon style={{backgroundColor:'inherit'}} className="fa-circle" icon={faTint} />
-                    </span>
-                </a>
-                <a>
-                    <span style={{color:'blue', fontSize:'2em', backgroundColor:'inherit'}}>
-                        <FontAwesomeIcon style={{backgroundColor:'inherit'}} className="fa-circle" icon={faTint} />
-                    </span>
-                </a>
-                <a>
-                    <span style={{color:'orange', fontSize:'2em', backgroundColor:'inherit'}}>
-                        <FontAwesomeIcon style={{backgroundColor:'inherit'}} className="fa-circle" icon={faTint} />
-                    </span>
-                </a>
-                <a>
-                    <span style={{color:'pink', fontSize:'2em', backgroundColor:'inherit'}}>
-                        <FontAwesomeIcon style={{backgroundColor:'inherit'}} className="fa-circle" icon={faTint} />
-                    </span>
-                </a>
+                {colors.map((color, key) => {
+                    return (
+                        <a key={key}>
+                            <span style={{ color: `${color}`, fontSize: '2em', backgroundColor: 'inherit' }}>
+                                <FontAwesomeIcon className='fa-circle' icon={faTint} />
+                            </span>
+                        </a>
+                    )
+                })}
             </div>
         </div>
     );
