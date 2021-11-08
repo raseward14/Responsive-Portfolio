@@ -1,5 +1,5 @@
 import './App.css';
-import React from "react";
+import React, { useState } from "react";
 
 // imports pages
 import Homepage from "./pages/Homepage";
@@ -19,6 +19,7 @@ import {
 } from "react-router-dom";
 
 function App() {
+  // const [backgroundColor, setBackgroundColor] = useState('')
   return (
     <Router>
       <div className="App">

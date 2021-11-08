@@ -5,33 +5,35 @@ import { faCoffee, faTint, faEyeDropper } from '@fortawesome/free-solid-svg-icon
 
 // exports Ink dropdown
 const Ink = (props) => {
-    // const [backgroundColor, setBackgroundColor] = useState('');
-    useEffect(() => {
-    });
-
     const colors = ['tomato', 'green', 'blue', 'orange', 'pink'];
+    const [usercolor, setUserColor] = useState('')
 
     // When the user clicks on the button, toggle between hiding and showing the dropdown content
     const inkFunction = () => {
         document.getElementById("inkDropdown").classList.toggle("show");
     };
 
-    // Close the dropdown menu if the user clicks outside of it
-    document.addEventListener("click", e => {
-        const isDropdownButton = e.target.matches("data-dropdown-button");
-        if (!isDropdownButton && e.target.closest("data-dropdown") != null) return
+    // When the user clicks a color, the background changes
+    const transform = async () => {
+        await console.log(usercolor)    
+    };
 
-        let currentDropdown
-        if (isDropdownButton) {
-            currentDropdown = e.target.closest("data-dropdown")
-            currentDropdown.classList.toggle('active')
-        };
+    // Close the dropdown menu if the user clicks outside of it **NOT WORKING**
+    // document.addEventListener("click", e => {
+    //     const isDropdownButton = e.target.matches("data-dropdown-button");
+    //     if (!isDropdownButton && e.target.closest("data-dropdown") != null) return
 
-        document.querySelectorAll("data-dropdown.active").forEach(dropdown => {
-            if (dropdown === currentDropdown) return
-            dropdown.classList.remove("active")
-        });
-    });
+    //     let currentDropdown
+    //     if (isDropdownButton) {
+    //         currentDropdown = e.target.closest("data-dropdown")
+    //         currentDropdown.classList.toggle('active')
+    //     };
+
+    //     document.querySelectorAll("data-dropdown.active").forEach(dropdown => {
+    //         if (dropdown === currentDropdown) return
+    //         dropdown.classList.remove("active")
+    //     });
+    // });
 
     return (
         <div className="dropdown" data-dropdown>
@@ -40,7 +42,10 @@ const Ink = (props) => {
                 {colors.map((color, key) => {
                     return (
                         <a key={key}>
-                            <span style={{ color: `${color}`, fontSize: '2em', backgroundColor: 'inherit' }}>
+                            <span style={{ color: `${color}`, fontSize: '2em', backgroundColor: 'inherit' }} onClick={()=> {
+                                setUserColor(`${color}`); 
+                                transform();
+                                }}>
                                 <FontAwesomeIcon className='fa-circle' icon={faTint} />
                             </span>
                         </a>
