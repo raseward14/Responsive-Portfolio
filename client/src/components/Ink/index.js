@@ -6,7 +6,7 @@ import { faCoffee, faTint, faEyeDropper } from '@fortawesome/free-solid-svg-icon
 // exports Ink dropdown
 const Ink = (props) => {
     const colors = ['tomato', 'green', 'blue', 'orange', 'pink'];
-    const [usercolor, setUserColor] = useState('')
+    const [usercolor, setUserColor] = useState('tan')
 
     // When the user clicks on the button, toggle between hiding and showing the dropdown content
     const inkFunction = () => {
@@ -14,8 +14,27 @@ const Ink = (props) => {
     };
 
     // When the user clicks a color, the background changes
-    const transform = async () => {
-        await console.log(usercolor)    
+    const handleClick = (e) => {
+        console.dir(e.targe.dataset.color);
+        // switch(usercolor) {
+        //     case 'tomato':
+        //         console.log('tomato');
+        //         break;
+        //     case 'green':
+        //         console.log('green');
+        //         break;
+        //     case 'blue':
+        //         console.log('blue');
+        //         break;
+        //     case 'orange':
+        //         console.log('orange');
+        //         break;
+        //     case 'pink':
+        //         console.log('pink');
+        //         break;
+        //     default:
+        //         console.log('tan');
+        // }
     };
 
     // Close the dropdown menu if the user clicks outside of it **NOT WORKING**
@@ -41,11 +60,8 @@ const Ink = (props) => {
             <div id="inkDropdown" className="dropdown-content">
                 {colors.map((color, key) => {
                     return (
-                        <a key={key}>
-                            <span style={{ color: `${color}`, fontSize: '2em', backgroundColor: 'inherit' }} onClick={()=> {
-                                setUserColor(`${color}`); 
-                                transform();
-                                }}>
+                        <a key={key} data-color={color} onClick={handleClick}>
+                            <span style={{ color: `${color}`, fontSize: '2em', backgroundColor: 'inherit' }}>
                                 <FontAwesomeIcon className='fa-circle' icon={faTint} />
                             </span>
                         </a>
