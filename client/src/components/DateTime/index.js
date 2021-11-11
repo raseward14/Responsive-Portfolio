@@ -17,7 +17,7 @@ export const DateTime = () => {
             <div className="clearfix">
                 <p className="dateTime"> Date: {date.toLocaleDateString()}</p>
                 <p className="dateTime"> Time: {date.toLocaleTimeString()}</p>
-                <Ink></Ink>
+                {/* <Ink></Ink> */}
             </div>
     );
 };

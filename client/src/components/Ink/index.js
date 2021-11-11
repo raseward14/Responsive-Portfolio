@@ -6,7 +6,7 @@ import { faCoffee, faTint, faEyeDropper } from '@fortawesome/free-solid-svg-icon
 // exports Ink dropdown
 const Ink = (props) => {
     const colors = ['tomato', 'green', 'blue', 'orange', 'pink'];
-    const [usercolor, setUserColor] = useState('tan')
+    const [currentcolor, setCurrentColor] = useState('tan')
 
     // When the user clicks on the button, toggle between hiding and showing the dropdown content
     const inkFunction = () => {
@@ -14,9 +14,10 @@ const Ink = (props) => {
     };
 
     // When the user clicks a color, the background changes
-    const handleClick = (e) => {
-        console.dir(e.targe.dataset.color);
-        // switch(usercolor) {
+    const handleClick = async (color) => {
+        setCurrentColor(color);
+        console.log(currentcolor);
+        // switch(currentcolor) {
         //     case 'tomato':
         //         console.log('tomato');
         //         break;
@@ -60,11 +61,11 @@ const Ink = (props) => {
             <div id="inkDropdown" className="dropdown-content">
                 {colors.map((color, key) => {
                     return (
-                        <a key={key} data-color={color} onClick={handleClick}>
+                        <div key={key} data-color={color} onClick={() => handleClick(color)}>
                             <span style={{ color: `${color}`, fontSize: '2em', backgroundColor: 'inherit' }}>
                                 <FontAwesomeIcon className='fa-circle' icon={faTint} />
                             </span>
-                        </a>
+                        </div>
                     )
                 })}
             </div>

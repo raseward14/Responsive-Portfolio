@@ -25,7 +25,7 @@ function App() {
       <div className="App">
       <DateTime className="DateTime"></DateTime>
         <div id='page-body'>
-          {/* <Ink className="Ink"></Ink> */}
+          <Ink className="Ink"></Ink>
           <Switch>
             <Route exact path="/" component={Homepage} />
             <Route path="/about" component={About} />
