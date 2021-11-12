@@ -4,9 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faTint, faEyeDropper } from '@fortawesome/free-solid-svg-icons'
 
 // exports Ink dropdown
-const Ink = (props) => {
-    const colors = ['tomato', 'green', 'blue', 'orange', 'pink'];
-    const [currentcolor, setCurrentColor] = useState('tan')
+const Ink = ({ setBackgroundColor }) => {
+    const colors = ['tomato', 'green', 'blue', 'orange', 'pink', '#05F725'];
 
     // When the user clicks on the button, toggle between hiding and showing the dropdown content
     const inkFunction = () => {
@@ -14,28 +13,9 @@ const Ink = (props) => {
     };
 
     // When the user clicks a color, the background changes
-    const handleClick = async (color) => {
-        setCurrentColor(color);
-        console.log(currentcolor);
-        // switch(currentcolor) {
-        //     case 'tomato':
-        //         console.log('tomato');
-        //         break;
-        //     case 'green':
-        //         console.log('green');
-        //         break;
-        //     case 'blue':
-        //         console.log('blue');
-        //         break;
-        //     case 'orange':
-        //         console.log('orange');
-        //         break;
-        //     case 'pink':
-        //         console.log('pink');
-        //         break;
-        //     default:
-        //         console.log('tan');
-        // }
+    const handleClick = (color) => {
+        setBackgroundColor(color);
+        console.log(color);
     };
 
     // Close the dropdown menu if the user clicks outside of it **NOT WORKING**

@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState } from "react";
+import { CustomPicker } from 'react-color';
 
 // imports pages
 import Homepage from "./pages/Homepage";
@@ -15,17 +16,16 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  Redirect,
 } from "react-router-dom";
 
 function App() {
-  // const [backgroundColor, setBackgroundColor] = useState('')
+  const [backgroundColor, setBackgroundColor] = useState('#F9B10A')
   return (
     <Router>
-      <div className="App">
+      <div style={{backgroundColor: backgroundColor, height: '100vh'}}>
       <DateTime className="DateTime"></DateTime>
         <div id='page-body'>
-          <Ink className="Ink"></Ink>
+          <Ink className="Ink" setBackgroundColor={setBackgroundColor}></Ink>
           <Switch>
             <Route exact path="/" component={Homepage} />
             <Route path="/about" component={About} />
@@ -39,4 +39,4 @@ function App() {
   );
 };
 
-export default App;
+export default CustomPicker(App);
