@@ -39,6 +39,8 @@ Here are a few resources that helped me get this project knocked out!
 * [w3 Schools Dropdown tutorial](https://www.w3schools.com/howto/howto_js_dropdown.asp)
 * [web dev simplified CSS dropdowns](https://www.youtube.com/watch?v=S-VeYcOCFZw
 * [DEV](https://dev.to/ceceliacreates/inline-styling-with-jsx-20k0)
+* https://www.w3schools.com/css/css_positioning.asp
+* https://casesandberg.github.io/react-color/
 
 ## License
 ©2021 Richard Seward. All Rights Reserved.
