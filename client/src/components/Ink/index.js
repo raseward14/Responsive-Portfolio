@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faTint, faEyeDropper } from '@fortawesome/free-solid-svg-icons'
 
 // exports Ink dropdown
 const Ink = ({ setBackgroundColor }) => {
-    const colors = ['tomato', 'green', 'blue', 'orange', 'pink', '#05F725'];
+    const colors = ['#FF6900', '#FCB900', '#7BDCB5', '#00D084', '#8ED1FC', '#0693E3', '#ABB8C3', '#EB144C', '#F78DA7', '#9900EF', '#05F725'];
 
     // When the user clicks on the button, toggle between hiding and showing the dropdown content
     const inkFunction = () => {
