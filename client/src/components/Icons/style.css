@@ -1,0 +1,6 @@
+.wrapper {
+    border: 1px dashed;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}

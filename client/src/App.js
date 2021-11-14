@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { CustomPicker } from 'react-color';
 
 // imports pages
@@ -19,7 +19,10 @@ import {
 } from "react-router-dom";
 
 function App() {
-  const [backgroundColor, setBackgroundColor] = useState('#F9B10A')
+  const [backgroundColor, setBackgroundColor] = useState('')
+  useEffect(() => {
+    setBackgroundColor('#F9B10A')
+  }, []);
   return (
     <Router>
       <div style={{backgroundColor: backgroundColor, height: '100vh'}}>

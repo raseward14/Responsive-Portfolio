@@ -10,7 +10,7 @@ function Homepage() {
 
     return (
         <>
-            <aside><Nav /> and useful icons and links</aside>
+            <aside><Nav /></aside>
             <h1 className="heading">Home</h1>
             <section>main content</section>
         </>

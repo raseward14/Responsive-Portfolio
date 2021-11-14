@@ -2,6 +2,8 @@ import "./style.css";
 import React from "react";
 import { Nav, NavItem, NavLink } from "reactstrap";
 
+import Icons from "../Icons";
+
 function Navbar() {
 
     return (
@@ -24,6 +26,7 @@ function Navbar() {
                     <NavLink href="/portfolio">Portfolio</NavLink>
                 </NavItem>
             </Nav>
+        <Icons />
         </div>
     );
 };

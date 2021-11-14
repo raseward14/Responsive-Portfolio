@@ -52,7 +52,7 @@ function Contact() {
 
     return (
         <>
-            <aside><Nav /> and useful icons and links</aside>
+            <aside><Nav /></aside>
             <h1 className="heading">Contact</h1>
             <section>
                 <Input

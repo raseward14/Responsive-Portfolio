@@ -1,7 +1,7 @@
 import React from "react";
 import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faTint, faEyeDropper } from '@fortawesome/free-solid-svg-icons'
+import { faTint, faEyeDropper } from '@fortawesome/free-solid-svg-icons'
 
 // exports Ink dropdown
 const Ink = ({ setBackgroundColor }) => {
