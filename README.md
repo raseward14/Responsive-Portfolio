@@ -41,6 +41,7 @@ Here are a few resources that helped me get this project knocked out!
 * [DEV](https://dev.to/ceceliacreates/inline-styling-with-jsx-20k0)
 * https://www.w3schools.com/css/css_positioning.asp
 * https://casesandberg.github.io/react-color/
+* https://upmostly.com/tutorials/changing-the-background-color-in-react
 
 ## License
 ©2021 Richard Seward. All Rights Reserved.
