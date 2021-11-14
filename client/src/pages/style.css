@@ -18,7 +18,7 @@ aside {
 }
 
 section {
-   position: relative;
+    position: relative;
     float: left;
     height: 90%;
     width: calc(4 * (100% / 5));
@@ -47,7 +47,6 @@ form {
 #Button {
     margin: 5px auto;
     font-size: 24px;
-    font-family: monospace;
 }
 
 #four {
