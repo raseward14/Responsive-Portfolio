@@ -1,12 +1,12 @@
 .heading {
     position: relative;
-    left: 20%;
     width: calc(4 * (100% / 5));
     height: 10%;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 20%;
     background-color: transparent;
     color: black;
     border: 1px solid black;
+    text-align: center;
 }
 
 aside {
