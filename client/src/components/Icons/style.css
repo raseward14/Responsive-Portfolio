@@ -1,6 +1,24 @@
 .wrapper {
-    border: 1px dashed;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    /* border: 1px dashed; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* gap: 10px; */
+}
+/*
+class -> size
+fa-xs .75em
+fa-sm .875em
+fa-lg 1.33em
+fa-2x 2em
+fa-3x 3em
+fa-4x 4em
+fa-5x 5em
+fa-6x 6em
+fa-7x 7em
+fa-8x 8em
+fa-9x 9em
+fa-10x 10em
+*/
+div a .six {
+    font-size: 24px !important;
 }

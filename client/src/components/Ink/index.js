@@ -5,7 +5,7 @@ import { faTint, faEyeDropper } from '@fortawesome/free-solid-svg-icons'
 
 // exports Ink dropdown
 const Ink = ({ setBackgroundColor }) => {
-    const colors = ['#FF6900', '#FCB900', '#7BDCB5', '#00D084', '#8ED1FC', '#0693E3', '#ABB8C3', '#EB144C', '#F78DA7', '#9900EF', '#05F725'];
+    const colors = ['#7BDCB5', '#00D084', '#8ED1FC', '#0693E3', '#ABB8C3', '#EB144C', '#F78DA7', '#9900EF', '#05F725', '#FCB900'];
 
     // When the user clicks on the button, toggle between hiding and showing the dropdown content
     const inkFunction = () => {
@@ -46,7 +46,7 @@ const Ink = ({ setBackgroundColor }) => {
                                 <FontAwesomeIcon className='fa-circle' icon={faTint} />
                             </span>
                         </div>
-                    )
+                    );
                 })}
             </div>
         </div>
