@@ -6,7 +6,7 @@ function Bio() {
     return (
 
       <div>
-
+        <p>Here is an INCREDIBLY brief bio.</p>
       </div>
 
       // custom bio
