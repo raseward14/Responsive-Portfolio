@@ -7,7 +7,6 @@ import Nav from "../components/Navbar/index";
 import "./style.css";
 
 function Homepage() {
-
     return (
         <>
             <aside><Nav /></aside>
