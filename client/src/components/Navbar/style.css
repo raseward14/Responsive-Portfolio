@@ -22,18 +22,28 @@ https://www.google.com/search?q=how+to+make+an+animated+hamburger+menu&oq=how+to
 
 /*We will use box-shadow property to make the dropdown menu look like a 'card'. We also use z-index to place the dropdown in front of other elements*/
 @media (max-width: 767px) {
+    .dropdown1 {
+        position: relative;
+        margin: auto;
+    }
+
     .navbar-content {
         opacity: 0;
         pointer-events: none;
         position: absolute;
         border-radius: 0.25rem;
         border: 1px solid black;
+        background-color: white;
         min-width: 100%;
         overflow: auto;
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
         z-index: 1;
         transform: translateY(-60px);
         transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+    }
+
+    .navbar-content .nav-link:hover {
+        background-color: darkgray;
     }
     
     .menu-button {
@@ -92,4 +102,28 @@ https://www.google.com/search?q=how+to+make+an+animated+hamburger+menu&oq=how+to
         transform: translateY(0);
         pointer-events: auto;
     }
+}
+
+@media (max-width: 467px) {
+    .menu-button {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .menu-button_burger {
+        width: 30px;
+        height: 6px;
+    }
+    
+    .menu-button_burger::before,
+    .menu-button_burger::after {
+        width: 30px;
+        height: 6px;
+    }
+    .nav-link{
+        color:black !important;
+        background-color: white;
+        font-size: 20px;
+    }
+    
 }

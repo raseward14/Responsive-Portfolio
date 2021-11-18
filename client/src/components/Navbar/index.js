@@ -18,8 +18,7 @@ function Navbar() {
         document.getElementById("navMenu").classList.toggle("show");
     };
     return (
-
-        <div>
+        <div className='dropdown1'>
             <div className='menu-button' onClick={hamburgerFunction}>
                 <div className='menu-button_burger'></div>
             </div>
