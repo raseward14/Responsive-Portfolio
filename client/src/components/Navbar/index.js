@@ -15,32 +15,36 @@ function Navbar() {
     // })
 
     const hamburgerFunction = () => {
-        document.getElementById('menu-button').classList.toggle('show')
-    }
+        document.getElementById("navMenu").classList.toggle("show");
+    };
     return (
 
         <div>
-            <div className='menu-button'>
-                <div className='menu-button_burger' onClick={()=> hamburgerFunction}></div>
+            <div className='menu-button' onClick={hamburgerFunction}>
+                <div className='menu-button_burger'></div>
             </div>
-            <Nav className="nav-bar-main">
-                <NavItem>
-                    <NavLink href="/" active>Home</NavLink>
-                </NavItem>
+            <div id="navMenu" className="navbar-content">
+                <Nav className="nav-bar-main">
+                    <NavItem>
+                        <NavLink href="/" active>Home</NavLink>
+                    </NavItem>
 
-                <NavItem>
-                    <NavLink href="/about">About</NavLink>
-                </NavItem>
+                    <NavItem>
+                        <NavLink href="/about">About</NavLink>
+                    </NavItem>
 
-                <NavItem className="float-right">
-                    <NavLink href="/contact">Contact</NavLink>
-                </NavItem>
+                    <NavItem className="float-right">
+                        <NavLink href="/contact">Contact</NavLink>
+                    </NavItem>
 
-                <NavItem className="float-right">
-                    <NavLink href="/portfolio">Portfolio</NavLink>
-                </NavItem>
-            </Nav>
-            <Icons />
+                    <NavItem className="float-right">
+                        <NavLink href="/portfolio">Portfolio</NavLink>
+                    </NavItem>
+                </Nav>
+                <Icons />
+            </div>
+
+            
         </div>
     );
 };

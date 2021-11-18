@@ -11,7 +11,6 @@
     background-color: white;
     font-size: 24px;
 }
-
 .menu-button {
     display: none;
 }
@@ -21,16 +20,9 @@
 https://www.google.com/search?q=how+to+make+an+animated+hamburger+menu&oq=how+to+build+a+hamburger+menu&aqs=chrome.2.69i57j0i22i30j0i390l2.11405j0j7&sourceid=chrome&ie=UTF-8#kpvalbx=_dsSTYZzpC7mkqtsP6vWk-A848
 */
 
-/* Show the dropdown menu (use JS to add this class to the dropdown-content container when the user clicks on the dropdown button)*/
-.show {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-}
-
 /*We will use box-shadow property to make the dropdown menu look like a 'card'. We also use z-index to place the dropdown in front of other elements*/
 @media (max-width: 767px) {
-    .nav-link {
+    .navbar-content {
         opacity: 0;
         pointer-events: none;
         position: absolute;
@@ -50,17 +42,23 @@ https://www.google.com/search?q=how+to+make+an+animated+hamburger+menu&oq=how+to
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         cursor: pointer;
         transition: all 0.5s ease-in-out;
         border: 3px solid #fff;
         box-shadow: 0 2px 5px rgba(255,101,47,.2);
-
     }
+
+    div.menu-button:hover {
+        background-color: antiquewhite;
+        pointer-events: auto;
+    }
+
     .menu-button_burger {
-        width: 50px;
+        width: 40px;
         height: 6px;
+        display: flex;
         background: #fff;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(255,101,47,.2);
@@ -71,7 +69,7 @@ https://www.google.com/search?q=how+to+make+an+animated+hamburger+menu&oq=how+to
     .menu-button_burger::after {
         content: '';
         position: absolute;
-        width: 50px;
+        width: 40px;
         height: 6px;
         background: #fff;
         border-radius: 5px;
@@ -81,10 +79,17 @@ https://www.google.com/search?q=how+to+make+an+animated+hamburger+menu&oq=how+to
     }
     
     .menu-button_burger::before {
-        transform: translateY(-16px) translateX(-25px);
+        transform: translateY(-16px) ;
     }
     
     .menu-button_burger::after {
-        transform: translateY(16px) translateX(-25px);
+        transform: translateY(16px);
+    }
+
+    /* Show the dropdown menu (use JS to add this class to the dropdown-content container when the user clicks on the dropdown button)*/
+    .show {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
     }
 }
