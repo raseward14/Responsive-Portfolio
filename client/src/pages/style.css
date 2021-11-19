@@ -53,3 +53,19 @@ form {
     background-color: inherit;
 }
 
+@media (max-width: 767px) {
+    aside {
+        width: 0%;
+        height: 0%;
+    }
+    section {
+        position: relative;
+        float: left;
+        height: 90%;
+        width: 100%;
+        border: 1px solid black;
+    }
+}
+
+@media (max-width: 467px) {
+}
