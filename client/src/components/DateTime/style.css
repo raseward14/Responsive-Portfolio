@@ -22,3 +22,29 @@ p {
     margin: auto;
     border: 1px black solid;
 }
+
+@media (max-width: 853px) {
+    .dateTime {
+        font-size: 18px;   
+    }
+    p {
+        width: 30%;
+        padding: 1%;  
+    }
+}
+@media (max-width: 689px) {
+    .dateTime {
+        font-size: 14px;   
+    }
+    p {
+        width: 30%;
+        padding: 1%;  
+    }
+}
+@media (max-width: 528px) {
+    
+    p {
+        width: 35%;
+        padding: 1%;  
+    }
+}
