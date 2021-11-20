@@ -22,7 +22,7 @@ function Navbar() {
             <div className='menu-button' onClick={hamburgerFunction}>
                 <div className='menu-button_burger'></div>
             </div>
-            <div id="navMenu" className="navbar-content">
+            <div id='navMenu' className="navbar-content">
                 <Nav className="nav-bar-main">
                     <NavItem>
                         <NavLink href="/" active>Home</NavLink>

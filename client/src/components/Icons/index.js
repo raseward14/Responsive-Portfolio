@@ -36,7 +36,7 @@ function Icons() {
             <div className="wrapper">
                 {iconsAndLinks.map((site, key) => {
                     return (
-                        <div key={key}>
+                        <div key={key} className='icon'>
                             <a target='null' href={site.link}>
                                 <FontAwesomeIcon className={`${key}`} icon={site.icon} /></a>
                         </div>

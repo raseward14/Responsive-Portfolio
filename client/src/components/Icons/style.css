@@ -1,9 +1,4 @@
-.wrapper {
-    /* border: 1px dashed; */
-    /* display: grid; */
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* gap: 10px; */
-}
+
 /*
 class -> size
 fa-xs .75em
@@ -19,6 +14,7 @@ fa-8x 8em
 fa-9x 9em
 fa-10x 10em
 */
-div a .six {
-    font-size: 24px !important;
+.icon a {
+    margin: auto;
+    font-size: 50px;
 }
