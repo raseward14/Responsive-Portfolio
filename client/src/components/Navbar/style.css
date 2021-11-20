@@ -127,3 +127,14 @@ https://www.google.com/search?q=how+to+make+an+animated+hamburger+menu&oq=how+to
     }
     
 }
+
+@media (max-width: 321px) {
+    .nav-bar-main{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 2.5rem;
+    }
+}
