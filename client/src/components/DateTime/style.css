@@ -12,7 +12,9 @@
 
 p {
     width: 20%;
-    padding: 1%;  
+    padding: 1%;
+    font-family: 'Dekko';
+  
 }
 
 .dateTime {
@@ -21,6 +23,18 @@ p {
     color: black;
     margin: auto;
     border: 1px black solid;
+}
+
+@media (max-width: 1176px) {
+    p {
+        width: 25%;
+    }
+}
+
+@media (max-width: 924px) {
+    p {
+        width: 30%;
+    }
 }
 
 @media (max-width: 853px) {
