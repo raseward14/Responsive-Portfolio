@@ -14,6 +14,7 @@ const Ink = ({ setBackgroundColor }) => {
 
     // When the user clicks a color, the background changes
     const handleClick = (color) => {
+        localStorage.setItem('your_color', color);
         setBackgroundColor(color);
         console.log(color);
     };

@@ -21,7 +21,12 @@ import {
 function App() {
   const [backgroundColor, setBackgroundColor] = useState('')
   useEffect(() => {
-    setBackgroundColor('#F9B10A')
+    let yourColor = localStorage.getItem('your_color');
+    if(yourColor !== null) {
+      setBackgroundColor(yourColor);
+    } else {
+      setBackgroundColor('#F9B10A');
+    };
   }, []);
   return (
     <Router>
