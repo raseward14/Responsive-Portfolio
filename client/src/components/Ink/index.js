@@ -16,7 +16,6 @@ const Ink = ({ setBackgroundColor }) => {
     const handleClick = (color) => {
         localStorage.setItem('your_color', color);
         setBackgroundColor(color);
-        console.log(color);
     };
 
     // Close the dropdown menu if the user clicks outside of it **NOT WORKING**
