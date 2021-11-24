@@ -14,7 +14,7 @@ fa-8x 8em
 fa-9x 9em
 fa-10x 10em
 */
-.icon a {
-    margin: auto;
-    font-size: 50px;
+a {
+    color: black;
+    font-size: 4em;
 }

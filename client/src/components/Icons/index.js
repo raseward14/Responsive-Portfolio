@@ -1,7 +1,8 @@
 import React from 'react';
+import './style.css'
 import Pdf from '../Documents/Richard_Seward_Web_Dev.docx.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faLink, faFile } from '@fortawesome/free-solid-svg-icons';
+import { faFile } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithubSquare, faHackerrank, faCodepen, faFreeCodeCamp } from '@fortawesome/free-brands-svg-icons'
 
 function Icons() {
@@ -36,9 +37,10 @@ function Icons() {
             <div className="wrapper">
                 {iconsAndLinks.map((site, key) => {
                     return (
-                        <div key={key} className='icon'>
-                            <a target='null' href={site.link}>
-                                <FontAwesomeIcon className={`${key}`} icon={site.icon} /></a>
+                        <div key={key}>
+                            <a target='null' href={`${site.link}`}>
+                                <FontAwesomeIcon className='icon' icon={site.icon} />
+                            </a>
                         </div>
                     );
                 })}
