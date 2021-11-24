@@ -11,6 +11,11 @@
     background-color: white;
     font-size: 24px;
 }
+.nav-link:hover{
+    color:black !important;
+    background-color: darkgrey;
+    font-size: 26px;
+}
 .menu-button {
     display: none;
 }
