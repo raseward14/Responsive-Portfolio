@@ -1,4 +1,4 @@
-.nav-bar-main{
+.nav-bar-main {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -6,12 +6,12 @@
     align-items: center;
     line-height: 4rem;
 }
-.nav-link{
+.nav-link {
     color:black !important;
     background-color: white;
     font-size: 24px;
 }
-.nav-link:hover{
+.nav-link:hover {
     color:black !important;
     background-color: darkgrey;
     font-size: 26px;
