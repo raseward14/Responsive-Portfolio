@@ -37,7 +37,7 @@ const Ink = ({ setBackgroundColor }) => {
 
     return (
         <div className="dropdown" data-dropdown>
-            <button onClick={inkFunction} className="dropbtn"><FontAwesomeIcon className="fa-circle" icon={faEyeDropper} style={{ backgroundColor: 'white' }} data-dropdown-button /></button>
+            <button onClick={inkFunction} className="dropbtn"><FontAwesomeIcon className="fa-circle" icon={faEyeDropper} data-dropdown-button /></button>
             <div id="inkDropdown" className="dropdown-content">
                 {colors.map((color, key) => {
                     return (
