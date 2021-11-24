@@ -11,7 +11,7 @@ function Homepage() {
         <>
             <aside><Nav /></aside>
             <h1 className="heading">Home</h1>
-            <section>main content</section>
+            <section>Hi! I'm Richard, and I build stuff.</section>
         </>
     );
 };
