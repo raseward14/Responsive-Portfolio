@@ -9,31 +9,36 @@ import {
 } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
+import Workout from './workout_tracker.png'
+import TeamProfileGenerator from './team_profile_generator.png'
+import MyReactBlog from './my_react_blog.jpg'
+import LoanShark from './loan_shark.png'
+import EmployeeDirectory from './employee_directory.png'
 function Cards() {
     const projects = [
         {
             title: 'My React Blog',
             subtitle: '',
-            image: '',
+            image: MyReactBlog,
             description: '',
-            githubLink: 'https://reactstrap.github.io/?path=/docs/components-card--card',
-            deployedLink: 'https://reactstrap.github.io/?path=/docs/components-card--card'
+            githubLink: 'https://github.com/raseward14/My_React_Blog',
+            deployedLink: 'http://ec2-18-189-3-248.us-east-2.compute.amazonaws.com'
         },
         {
             title: 'Loan Shark',
             subtitle: '',
-            image: '',
+            image: LoanShark,
             description: '',
-            githubLink: 'https://reactstrap.github.io/?path=/docs/components-card--card',
-            deployedLink: 'https://reactstrap.github.io/?path=/docs/components-card--card'
+            githubLink: 'https://github.com/raseward14/loan_shark',
+            deployedLink: 'https://loaning-sharks.herokuapp.com/'
         },
         {
             title: 'Employee Directory',
             subtitle: '',
-            image: '',
+            image: EmployeeDirectory,
             description: '',
-            githubLink: 'https://reactstrap.github.io/?path=/docs/components-card--card',
-            deployedLink: 'https://reactstrap.github.io/?path=/docs/components-card--card'
+            githubLink: 'https://github.com/raseward14/employee_directory2',
+            deployedLink: 'https://raseward14.github.io/employee_directory2/'
         },
         {
             title: 'Budget Tracker',
@@ -46,7 +51,7 @@ function Cards() {
         {
             title: 'Workout Tracker',
             subtitle: '',
-            image: '',
+            image: Workout,
             description: '',
             githubLink: 'https://reactstrap.github.io/?path=/docs/components-card--card',
             deployedLink: 'https://reactstrap.github.io/?path=/docs/components-card--card'
@@ -102,7 +107,7 @@ function Cards() {
         {
             title: 'Team Profile Generator',
             subtitle: '',
-            image: '',
+            image: TeamProfileGenerator,
             description: '',
             githubLink: 'https://reactstrap.github.io/?path=/docs/components-card--card',
             deployedLink: 'https://reactstrap.github.io/?path=/docs/components-card--card'
@@ -152,8 +157,9 @@ function Cards() {
         <>
             <div className='wrapper'>
                 {projects.map((project, key) => {
+                    console.log(project.image)
                     return (
-                        <div>
+                        <div key={key}>
                             <Card>
                                 <CardBody>
                                     <CardTitle tag="h5">
@@ -175,10 +181,10 @@ function Cards() {
                                     <CardText>
                                         {project.description}
                                     </CardText>
-                                    <CardLink href={`${project.deployedLink}`}>
-                                        Deployed App
+                                    <CardLink href={`${project.deployedLink}`} target='_blank'>
+                                        {project.title}
                                     </CardLink>
-                                    <CardLink href={`${project.githubLink}`}>
+                                    <CardLink href={`${project.githubLink}`} target='_blank'>
                                         Github
                                     </CardLink>
                                 </CardBody>
