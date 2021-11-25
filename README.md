@@ -42,8 +42,9 @@ Here are a few resources that helped me get this project knocked out!
 * https://www.w3schools.com/css/css_positioning.asp
 * https://casesandberg.github.io/react-color/
 * https://upmostly.com/tutorials/changing-the-background-color-in-react
-* https://www.w3schools.com/css/css_align.asp
+* [w3schools](https://www.w3schools.com/css/css_align.asp)
 * [Font Awesome](https://fontawesome.com/v6.0/icons?q=resume&s=solid%2Cbrands)
+* [teamtreehouse Using Local Storage](https://teamtreehouse.com/library/using-local-storage)
 
 ## License
 ©2021 Richard Seward. All Rights Reserved.
