@@ -21,7 +21,7 @@ function Icons() {
         },
         {
             icon: faCodepen,
-            link: 'https://www.freecodecamp.org/fcce7e5be83-605e-4df1-abe6-c86887f3dbb4'
+            link: 'https://codepen.io/your-work'
         },
         {
             icon: faFreeCodeCamp,
