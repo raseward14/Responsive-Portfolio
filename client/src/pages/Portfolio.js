@@ -1,5 +1,6 @@
 // import components
 import Nav from "../components/Navbar/index";
+import ProjectCards from "../components/ProjectCards/index";
 import "./style.css";
 
 function Portfolio() {
@@ -8,7 +9,7 @@ function Portfolio() {
         <>
             <aside><Nav /></aside>
             <h1 className="heading">Portfolio</h1>
-            <section>main content</section>
+            <section><ProjectCards /></section>
         </>
     );
 };
