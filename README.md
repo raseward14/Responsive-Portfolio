@@ -45,6 +45,7 @@ Here are a few resources that helped me get this project knocked out!
 * [w3schools](https://www.w3schools.com/css/css_align.asp)
 * [Font Awesome](https://fontawesome.com/v6.0/icons?q=resume&s=solid%2Cbrands)
 * [teamtreehouse Using Local Storage](https://teamtreehouse.com/library/using-local-storage)
+* [reactstrap](https://reactstrap.github.io/?path=/docs/home-installation--page)
 
 ## License
 ©2021 Richard Seward. All Rights Reserved.
