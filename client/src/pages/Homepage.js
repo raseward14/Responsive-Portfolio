@@ -8,11 +8,11 @@ import "./style.css";
 
 function Homepage() {
     return (
-        <>
+        <div className='container'>
             <aside><Nav /></aside>
             <h1 className="heading">Home</h1>
-            <section>Hi! I'm Richard, and I build stuff.</section>
-        </>
+            <section className='home'>Hi! I'm Richard, and I build stuff.</section>
+        </div>
     );
 };
 
