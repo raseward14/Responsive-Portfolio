@@ -1,0 +1,25 @@
+.card {
+    /* content: ""; */
+    /* clear: both; */
+    overflow: auto;
+    /*display table prevents the scroll bar*/
+    display: table;
+    overflow: auto;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 20px;
+    line-height: 32px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 5px 10px 18px black;
+    border-radius: 10px;
+    font-family: 'Dekko';
+    font-weight: bolder;
+}
+
+.wrapper {
+    display: grid;
+    /* overflow: auto; */
+
+}

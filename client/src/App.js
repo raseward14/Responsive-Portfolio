@@ -30,7 +30,7 @@ function App() {
   }, []);
   return (
     <Router>
-      <div style={{backgroundColor: backgroundColor, height: '100vh'}}>
+      <div style={{backgroundColor: backgroundColor, height: '100%'}}>
       <DateTime className="DateTime"></DateTime>
         <div id='page-body'>
           <Ink className="Ink" setBackgroundColor={setBackgroundColor}></Ink>
