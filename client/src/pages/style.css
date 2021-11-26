@@ -4,8 +4,7 @@
 .home {
     font-size: 30px;
     position: absolute;
-    margin-top: 10%;
-    
+    margin-top: 10%;  
 }
 .heading {
     position: relative;
@@ -62,6 +61,12 @@ form {
     background-color: inherit;
 }
 
+@media (max-width: 1400px) {
+    .home {
+        margin-left: 60px;
+    }
+}
+
 @media (max-width: 767px) {
     aside {
         width: 0%;
@@ -76,5 +81,15 @@ form {
     }
 }
 
-@media (max-width: 467px) {
+@media (max-width: 541px) {
+    .home {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 415px) {
+    .home {
+        font-size: 20px;
+        margin-left: 0px; 
+    }
 }
