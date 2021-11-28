@@ -9,28 +9,31 @@ import {
 } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
-import Workout from './workout_tracker.png'
-import TeamProfileGenerator from './team_profile_generator.png'
-import MyReactBlog from './my_react_blog.jpg'
-import LoanShark from './loan_shark.png'
-import EmployeeDirectory from './employee_directory.png'
-import BudgetTracker from './budget_tracker.png'
-import NoteTaker from './note_taker.jpg'
-import EmployeeTracker from './employee_tracker.png'
-import ECommerce from './e_commerce.png'
-import ReadMe from './readme.png'
-import TechBlog from './tech_blog.png'
-import DogOnTheMove from './dog_on_the_move.png'
-import BookFinder from './book_finder.png'
-import APIQuiz from './api_quiz.png'
-import WeatherDashboard from './weather_dashboard.png'
-import WorkdayScheduler from './scheduler.png'
-import PasswordGenerator from './password_generator.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFile } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithubSquare, faHackerrank, faCodepen, faFreeCodeCamp } from '@fortawesome/free-brands-svg-icons'
+import Workout from '../Images/workout_tracker.png'
+import TeamProfileGenerator from '../Images/team_profile_generator.png'
+import MyReactBlog from '../Images/my_react_blog.jpg'
+import LoanShark from '../Images/loan_shark.png'
+import EmployeeDirectory from '../Images/employee_directory.png'
+import BudgetTracker from '../Images/budget_tracker.png'
+import NoteTaker from '../Images/note_taker.jpg'
+import EmployeeTracker from '../Images/employee_tracker.png'
+import ECommerce from '../Images/e_commerce.png'
+import ReadMe from '../Images/readme.png'
+import TechBlog from '../Images/tech_blog.png'
+import DogOnTheMove from '../Images/dog_on_the_move.png'
+import BookFinder from '../Images/book_finder.png'
+import APIQuiz from '../Images/api_quiz.png'
+import WeatherDashboard from '../Images/weather_dashboard.png'
+import WorkdayScheduler from '../Images/scheduler.png'
+import PasswordGenerator from '../Images/password_generator.png'
 function Cards() {
     const projects = [
         {
             title: 'My React Blog',
-            subtitle: '',
+            subtitle: [faGithubSquare, faHackerrank],
             image: MyReactBlog,
             description: '',
             githubLink: 'https://github.com/raseward14/My_React_Blog',
@@ -181,7 +184,9 @@ function Cards() {
                                         className="mb-2 text-muted"
                                         tag="h6"
                                     >
-                                        {project.subtitle}
+                                        {/* {project.subtitle.map((icon, key) => {
+                                            <FontAwesomeIcon key={key} icon={icon}/>
+                                        })} */}
                                     </CardSubtitle>
                                 </CardBody>
                                 <img

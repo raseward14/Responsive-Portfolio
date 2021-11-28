@@ -3,6 +3,7 @@ import Nav from "../components/Navbar/index";
 import Bio from "../components/Bio/index";
 import "./style.css";
 
+
 function About() {
 
     return (
