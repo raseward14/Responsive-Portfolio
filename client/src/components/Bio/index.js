@@ -8,7 +8,7 @@ function Bio() {
   return (
 
     <div>
-      <p id="bio">            <img src={headshot}></img>
+      <p id="bio"><img className='my-headshot' src={headshot} />
         Hi! I live in Loveland, Colorado with my beautiful wife, and new born son, also named Richard! Its a family name that's been around for generations in my family. Outside of family, and work, I spend time fishing. I've recently picked up fly fishing, and I'd be lying if I said it wasn't my favorite. However, I won't say no to a good catfishing trip, or casual boat and bobber day!
 
         Other interests include running. I ran XC and Track and Field for Colorado Mesa University from 2010 to 2014, and enjoy getting in daily runs. I'm a huge car nerd, and recently rebuilt the transmission of my 70's era Schwinn bicycle.

@@ -3,7 +3,7 @@
     float: left;
 }
 
-img {
+.my-headshot {
     border-radius: 50%;
     shape-outside: ellipse();
     padding: 10px;
