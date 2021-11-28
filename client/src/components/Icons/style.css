@@ -15,6 +15,10 @@ fa-9x 9em
 fa-10x 10em
 */
 a {
-    color: rgb(43, 41, 41);
+    color: black;
     font-size: 2em;
+}
+
+a:hover {
+    font-size: 3em;
 }
