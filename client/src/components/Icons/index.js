@@ -38,16 +38,20 @@ function Icons() {
                 {iconsAndLinks.map((site, key) => {
                     return (
                         <div key={key}>
-                            <a target='null' href={`${site.link}`}>
-                                <FontAwesomeIcon className='icon' icon={site.icon} />
-                            </a>
+                            <span>
+                                <a target='null' href={`${site.link}`}>
+                                    <FontAwesomeIcon className='icon' icon={site.icon} />
+                                </a>
+                            </span>
                         </div>
                     );
                 })}
                 <div>
-                    <a target='_blank' href={Pdf} >
-                        <FontAwesomeIcon className='six' icon={faFile} />
-                    </a>
+                    <span>
+                        <a target='_blank' href={Pdf} >
+                            <FontAwesomeIcon className='six' icon={faFile} />
+                        </a>
+                    </span>
                 </div>
             </div>
         </>

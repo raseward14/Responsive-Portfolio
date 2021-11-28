@@ -14,9 +14,11 @@ fa-8x 8em
 fa-9x 9em
 fa-10x 10em
 */
-a {
+span a {
     color: black;
     font-size: 2em;
+    /* display: grid;
+    grid-template-rows: auto; */
 }
 
 a:hover {
