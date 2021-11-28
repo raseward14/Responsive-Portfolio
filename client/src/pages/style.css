@@ -4,7 +4,7 @@
 .home {
     font-size: 30px;
     position: absolute;
-    margin-top: 10%;  
+    margin-top: 10%;
 }
 .heading {
     position: relative;
@@ -83,6 +83,7 @@ form {
         float: left;
         height: 90%;
         width: 100%;
+        margin-left: 0px;
         /* border: 1px solid black; */
     }
 }

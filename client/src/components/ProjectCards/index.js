@@ -161,7 +161,7 @@ function Cards() {
         },
         {
             title: 'Password Generator',
-            subtitle: [faGithubSquare, faHackerrank],
+            subtitle: '',
             image: PasswordGenerator,
             description: '',
             githubLink: 'https://github.com/raseward14/Password-Generator',
@@ -173,7 +173,6 @@ function Cards() {
             <div className='wrapper'>
                 {projects.map((project, key) => {
                     console.log(project.subtitle[1])
-                    // project.subtitle.map(icon => { console.log(icon.iconName) })
                     return (
                         <div key={key}>
                             <Card className='card'>
@@ -185,12 +184,7 @@ function Cards() {
                                         className="mb-2 text-muted"
                                         tag="h6"
                                     >
-                                    
-                                        {/* {project.subtitle.map((icon, key) => {
-                                            <div> 
-                                            <FontAwesomeIcon icon={icon.iconName} /> 
-                                            </div>
-                                        })}  */}
+                                    {project.subtitle}
                                     </CardSubtitle>
                                 </CardBody>
                                 <img
