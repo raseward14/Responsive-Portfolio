@@ -67,6 +67,12 @@ form {
     }
 }
 
+@media (max-width: 768px) {
+    .home {
+        margin-left: 90px;
+    }
+}
+
 @media (max-width: 767px) {
     aside {
         width: 0%;

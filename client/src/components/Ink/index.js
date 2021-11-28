@@ -42,7 +42,7 @@ const Ink = ({ setBackgroundColor }) => {
                 {colors.map((color, key) => {
                     return (
                         <div key={key} data-color={color} onClick={() => handleClick(color)}>
-                            <span style={{ color: `${color}`, fontSize: '2em', backgroundColor: 'inherit' }}>
+                            <span style={{ color: `${color}`, fontSize: '2em', backgroundColor: 'inherit', position: 'relative', top: '10px' }}>
                                 <FontAwesomeIcon className='fa-circle' icon={faTint} />
                             </span>
                         </div>
