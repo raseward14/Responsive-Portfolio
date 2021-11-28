@@ -10,3 +10,17 @@ img {
     height: 15em;
     float: left;
 }
+
+@media (max-width: 415px) {
+    img {
+        padding: 5px;
+        height: 10em;
+    }
+}
+
+@media (max-width: 321px) {
+    img {
+        padding: 5px;
+        height: 7em;
+    }
+}
