@@ -1,11 +1,11 @@
 import React from 'react';
-import { 
-    Card, 
-    CardBody, 
-    CardTitle, 
-    CardSubtitle, 
-    CardText, 
-    CardLink 
+import {
+    Card,
+    CardBody,
+    CardTitle,
+    CardSubtitle,
+    CardText,
+    CardLink
 } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
@@ -33,7 +33,7 @@ function Cards() {
     const projects = [
         {
             title: 'My React Blog',
-            subtitle: [faGithubSquare, faHackerrank],
+            subtitle: '',
             image: MyReactBlog,
             description: '',
             githubLink: 'https://github.com/raseward14/My_React_Blog',
@@ -161,7 +161,7 @@ function Cards() {
         },
         {
             title: 'Password Generator',
-            subtitle: '',
+            subtitle: [faGithubSquare, faHackerrank],
             image: PasswordGenerator,
             description: '',
             githubLink: 'https://github.com/raseward14/Password-Generator',
@@ -172,7 +172,8 @@ function Cards() {
         <>
             <div className='wrapper'>
                 {projects.map((project, key) => {
-                    console.log(project.image)
+                    console.log(project.subtitle[1])
+                    // project.subtitle.map(icon => { console.log(icon.iconName) })
                     return (
                         <div key={key}>
                             <Card className='card'>
@@ -184,9 +185,12 @@ function Cards() {
                                         className="mb-2 text-muted"
                                         tag="h6"
                                     >
+                                    
                                         {/* {project.subtitle.map((icon, key) => {
-                                            <FontAwesomeIcon key={key} icon={icon}/>
-                                        })} */}
+                                            <div> 
+                                            <FontAwesomeIcon icon={icon.iconName} /> 
+                                            </div>
+                                        })}  */}
                                     </CardSubtitle>
                                 </CardBody>
                                 <img
