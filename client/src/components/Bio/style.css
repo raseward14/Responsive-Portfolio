@@ -12,14 +12,14 @@
 }
 
 @media (max-width: 415px) {
-    img {
+    .my-headshot {
         padding: 5px;
         height: 10em;
     }
 }
 
 @media (max-width: 321px) {
-    img {
+    .my-headshot {
         padding: 5px;
         height: 7em;
     }
