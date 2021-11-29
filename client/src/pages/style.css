@@ -3,8 +3,9 @@
 }
 .home {
     font-size: 30px;
-    position: absolute;
-    margin-top: 10%;
+    position: relative;
+    /* margin-top: 10%; */
+    overflow-wrap: break-word;
 }
 .heading {
     position: relative;
@@ -63,13 +64,13 @@ form {
 
 @media (max-width: 1400px) {
     .home {
-        margin-left: 60px;
+        /* margin-left: 60px; */
     }
 }
 
 @media (max-width: 768px) {
     .home {
-        margin-left: 90px;
+        margin-top: 20px;
     }
 }
 
