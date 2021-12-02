@@ -33,7 +33,7 @@ Here are a few resources that helped me get this project knocked out!
 * [stockoverflow downloadable PDF file](https://stackoverflow.com/questions/364946/how-to-make-pdf-file-downloadable-in-html-link)
 * [Yousef Ahmed](https://medium.com/create-a-clocking-in-system-on-react/create-a-react-app-displaying-the-current-date-and-time-using-hooks-21d946971556)
 * [w3 Schools Dropdown tutorial](https://www.w3schools.com/howto/howto_js_dropdown.asp)
-* [web dev simplified CSS dropdowns](https://www.youtube.com/watch?v=S-VeYcOCFZw
+* [web dev simplified CSS dropdowns](https://www.youtube.com/watch?v=S-VeYcOCFZw)
 * [DEV](https://dev.to/ceceliacreates/inline-styling-with-jsx-20k0)
 * https://www.w3schools.com/css/css_positioning.asp
 * https://casesandberg.github.io/react-color/
