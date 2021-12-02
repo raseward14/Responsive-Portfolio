@@ -18,14 +18,10 @@ The remaining challenges came from creating and formatting the hamburger menu ne
 2. Use this website to utilize CSS and Javascript in your webpage
 
 ## Usage
-* **Laptop and up 1100px.**  
-![Mobile Friendly](Assets/Images/Capture1100px.PNG)
-* **iPad 1000px.**  
-![Mobile Friendly](Assets/Images/Capture1000px.PNG)
-* **Mobile 768px.**  
-![Mobile Friendly](Assets/Images/Capture768px.PNG)
-* **iPhone6 360px.**  
-![Mobile Friendly](Assets/Images/Capture360px.PNG)
+* **Responsive**  
+![Mobile Friendly](client/src/components/Images/responsive_screenshot.jpg)
+* **Desktop**  
+![Desktop](client/src/components/Images/fullsize_screenshot.jpg)
 
 ## Credits
 Here are a few resources that helped me get this project knocked out!
