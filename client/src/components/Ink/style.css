@@ -81,11 +81,6 @@
         left: 0rem;
     }
 }
-@media (max-width: 540px) {
-    .dropdown-content > div {
-        padding: 0.50rem;
-    }
-}
 
 @media (max-width: 467px) {
     .dropbtn {
@@ -98,16 +93,9 @@
     }
 }
 @media (max-width: 361px) {
-    .dropdown-content > div {
-        padding: 0.15rem;
-    }
     .fa-circle {
         background-color: inherit;
         font-size: 20px;
-    }
-    .dropdown-content > div {
-        height: 3.4em;
-        width: 2.25em;
     }
 }
 
