@@ -1,23 +1,31 @@
-# Mobile Responsiveness Bootstrap Webpage
+# Mobile Responsive Personal Portfolio
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Description
-This webpage is designed to be my personal portfolio. It gives basic information about me, my contact information, a means of getting in contact with me, and links to projects i've worked on in the past. It utilizes HTML as the framework, and Bootstrap CSS for design. The portfolio page integrates basic Javascript, linked to Bootstrap. I had a tough time figuring out how to link my HTML document to Bootstraps Javascript features, but managed to find the link after exploring Bootstrap a bit more.
+A personal portfolio of my work as a developer. The Front End was created with node.js to run JavaScript outside the browser, or from the command line, npm to allow us to easily install packages for our front end, and a generator to quickly and easily get our React app off the ground; Create React App. React Router, URL Parameters, and Switch are used for navigation between pages. Each pages is comprised of various components, several of which utilize the React Hooks useState, and useEffect. Background changes are powered by useState, and localStorage is used to capture the value of your selection, store it, and persist it as you navigate from one page to another, through a conditional statement wrapped in a useEffect. 
 
-All of the Bootstrap features come from version 4.5. This is the version we spent the most time on in class, and its the version I am most familiar with.
+A node.js, along with express.js are used on the Back End. We skip over installing body-parser to allow our server to extract JSON data that we send in our requests, because the most recent version of express.js includes body-parser, meaning there is no need to install it. Postman is used to test our routes, nodemon is used to restart our server as its being built, and data is persisted in a non-relational, MongoDB database, as it lends itself well to relatively unstructured, JSON JavaScript requests. Mongoose.js allows us to connect to our local database, ReactStrap was used for the project cards, fontawesome is used for icons, and the entire build is hosted by Heroku.
+
+A custom built hamburger menu is included on narrow viewports, with hover classes for the nav links, translate and transform css properties to animate this menu, and custom box-shadows.
+
 **[Check it out Here!](https://sleepy-reaches-69699.herokuapp.com/)**
-
-The remaining challenges came from creating and formatting the hamburger menu needed for Mobile Responsiveness. I included several breakpoints to increase responsiveness; one at 1100px, another at 1000px, and two form mobile devices; one at 768px and another at 415px (both of which utilize the hamburger menu for navigation).
 
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
-* [Credits](#credits)
-* [License](#license)
+* [License](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
 ## Installation
-1. Visit [getbootstrap.com](https://getbootstrap.com/)
-2. Use this website to utilize CSS and Javascript in your webpage
+1. From GitHub, fork the repository, and run npm install from the root directory. 
+2. Then, from the client directory, run npm install for the front end packages. 
+3. From there, run npm start from your local machine to run the code locally.
 
 ## Usage
+Visit on desktop, or mobile. This app is fully responsive.
+
 * **Responsive**  
 ![Mobile Friendly](client/src/components/Images/responsive_screenshot.jpg)
 * **Desktop**  
@@ -32,16 +40,47 @@ Here are a few resources that helped me get this project knocked out!
 * [Night Sky Gaming](https://www.facebook.com/N%C4%ABght-Sk%C3%BF-Gaming-105017864808391/)
 * [stockoverflow downloadable PDF file](https://stackoverflow.com/questions/364946/how-to-make-pdf-file-downloadable-in-html-link)
 * [Yousef Ahmed](https://medium.com/create-a-clocking-in-system-on-react/create-a-react-app-displaying-the-current-date-and-time-using-hooks-21d946971556)
-* [w3 Schools Dropdown tutorial](https://www.w3schools.com/howto/howto_js_dropdown.asp)
+* [w3schools Dropdown tutorial](https://www.w3schools.com/howto/howto_js_dropdown.asp)
 * [web dev simplified CSS dropdowns](https://www.youtube.com/watch?v=S-VeYcOCFZw)
 * [DEV](https://dev.to/ceceliacreates/inline-styling-with-jsx-20k0)
-* https://www.w3schools.com/css/css_positioning.asp
-* https://casesandberg.github.io/react-color/
-* https://upmostly.com/tutorials/changing-the-background-color-in-react
-* [w3schools](https://www.w3schools.com/css/css_align.asp)
+* [w3schools positioning](https://www.w3schools.com/css/css_positioning.asp)
+* [react-color](https://casesandberg.github.io/react-color/)
+* [upmostly](https://upmostly.com/tutorials/changing-the-background-color-in-react)
+* [w3schools css align](https://www.w3schools.com/css/css_align.asp)
 * [Font Awesome](https://fontawesome.com/v6.0/icons?q=resume&s=solid%2Cbrands)
 * [teamtreehouse Using Local Storage](https://teamtreehouse.com/library/using-local-storage)
 * [reactstrap](https://reactstrap.github.io/?path=/docs/home-installation--page)
 
 ## License
-©2021 Richard Seward. All Rights Reserved.
+* Link for more information: (https://opensource.org/licenses/MIT)
+* MIT License
+
+      Copyright (c) [year] [fullname]
+      
+      Permission is hereby granted, free of charge, to any person obtaining a copy
+      of this software and associated documentation files (the "Software"), to deal
+      in the Software without restriction, including without limitation the rights
+      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+      copies of the Software, and to permit persons to whom the Software is
+      furnished to do so, subject to the following conditions:
+      
+      The above copyright notice and this permission notice shall be included in all
+      copies or substantial portions of the Software.
+      
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+      SOFTWARE.
+
+## Contributing
+No contributions
+
+## Tests
+N/A
+
+## Questions
+* Questions? Visit my GitHub: [raseward14](https://github.com/raseward14) 
+* With additional questions, feel free to email me at: raseward14@gmail.com
