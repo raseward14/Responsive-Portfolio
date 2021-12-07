@@ -52,6 +52,7 @@ Here are a few resources that helped me get this project knocked out!
 * [reactstrap](https://reactstrap.github.io/?path=/docs/home-installation--page)
 * [icons8](https://icons8.com/icons/set/express)
 * [devicon](https://devicon.dev/)
+* [MDN CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 
 ## License
 * Link for more information: (https://opensource.org/licenses/MIT)
