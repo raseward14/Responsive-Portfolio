@@ -1,5 +1,30 @@
-.mern {
-    /* position: relative; */
-    bottom: 0px;
-    /* clear: both; */
+
+.wrapper {
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto); */
+}
+
+
+img {
+    height: 24px;
+}
+
+.one {
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+}
+.two {
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+
+}
+.three {
+    grid-column: 3;
+    grid-row: 1;
+}
+.four {
+    grid-column: 4;
+    grid-row: 1;
 }
