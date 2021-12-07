@@ -50,6 +50,8 @@ Here are a few resources that helped me get this project knocked out!
 * [Font Awesome](https://fontawesome.com/v6.0/icons?q=resume&s=solid%2Cbrands)
 * [teamtreehouse Using Local Storage](https://teamtreehouse.com/library/using-local-storage)
 * [reactstrap](https://reactstrap.github.io/?path=/docs/home-installation--page)
+* [icons8](https://icons8.com/icons/set/express)
+* [devicon](https://devicon.dev/)
 
 ## License
 * Link for more information: (https://opensource.org/licenses/MIT)
