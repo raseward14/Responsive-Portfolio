@@ -28,7 +28,7 @@ function Icons() {
             link: 'https://www.freecodecamp.org/fcce7e5be83-605e-4df1-abe6-c86887f3dbb4'
         },
         {
-            icon: faFile.icon,
+            icon: faFile,
             link: Document
         }
     ];
@@ -46,13 +46,6 @@ function Icons() {
                         </div>
                     );
                 })}
-                <div>
-                    <span>
-                        <a target='_blank' href={Pdf} >
-                            <FontAwesomeIcon className='six' icon={faFile} />
-                        </a>
-                    </span>
-                </div>
             </div>
         </>
     );
