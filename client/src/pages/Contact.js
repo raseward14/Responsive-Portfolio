@@ -5,7 +5,7 @@ import "./style.css";
 // import components
 import Nav from "../components/Navbar/index";
 import { Input, FormBtn, TextArea } from "../components/Form";
-import { Col, Row, Card } from 'reactstrap';
+// import { Col, Row, Card } from 'reactstrap';
 // import API functions
 import * as contactAPIFunctions from "../utils/contactAPI";
 
@@ -29,68 +29,9 @@ function Contact() {
         setFormObject({ ...formObject, [name]: value });
     }
 
-    function postClickUp() {
-        var myHeaders = new Headers();
-        myHeaders.append("Authorization", "pk_14917287_C01GVS3FA1OD9YG1CWV64YI515GS09QD");
-        myHeaders.append("Content-Type", "application/json");
-
-        var raw = JSON.stringify({
-            "name": formObject.name,
-            "description": "New contact, follow up with email!",
-            "assignees": [
-                14917287
-            ],
-            "tags": [
-                "contact"
-            ],
-            "status": "To do",
-            "priority": null,
-            "due_date": 1508369194377,
-            "due_date_time": false,
-            "time_estimate": 8640000,
-            "start_date": 1567780450202,
-            "start_date_time": false,
-            "notify_all": true,
-            "parent": null,
-            "links_to": null,
-            "check_required_custom_fields": true,
-            "custom_fields": [
-                {
-                    "id": "041c6ec7-59d6-45c7-9cad-67f54d677be4",
-                    "value": formObject.email
-                },
-                {
-                    "id": "546bbe4b-2fa6-49e9-bb7c-3c111aec15eb",
-                    "value": formObject.message
-                },
-                {
-                    "id": "865c7fe2-d4c9-4464-9d71-cc4d190eab98",
-                    "value": `+1 ${formObject.phone}`
-                }
-            ]
-        });
-        console.log(raw)
-        var requestOptions = {
-            method: 'POST',
-            headers: myHeaders,
-            mode: 'no-cors',
-            body: raw,
-            redirect: 'follow'
-        };
-
-        fetch("https://api.clickup.com/api/v2/list/116273262/task", requestOptions)
-            .then((response) => {
-                console.log(response)
-                response.text()
-            })
-            .then(result => console.log(result))
-            .catch(error => console.log('error', error));
-    };
-
     function handleFormSubmit(event) {
         event.preventDefault();
         if (formObject.name && formObject.phone || formObject.email) {
-            postClickUp();
             contactAPIFunctions
                 .saveContact({
                     name: formObject.name,
