@@ -13,10 +13,6 @@ function Contact() {
     const [formObject, setFormObject] = useState({});
     const [buttonText, setButtonText] = useState('Submit');
 
-    function handleClick(id) {
-
-    };
-
     // resets component state to null on submit
     function clearState() {
         document.getElementById('name').value = '';
@@ -42,7 +38,7 @@ function Contact() {
             "name": formObject.name,
             "description": "New contact, follow up with email!",
             "assignees": [
-                183
+                14917287
             ],
             "tags": [
                 "contact"
@@ -73,7 +69,7 @@ function Contact() {
                 }
             ]
         });
-
+        console.log(raw)
         var requestOptions = {
             method: 'POST',
             headers: myHeaders,
@@ -83,7 +79,10 @@ function Contact() {
         };
 
         fetch("https://api.clickup.com/api/v2/list/116273262/task", requestOptions)
-            .then(response => response.text())
+            .then((response) => {
+                console.log(response)
+                response.text()
+            })
             .then(result => console.log(result))
             .catch(error => console.log('error', error));
     };
@@ -91,6 +90,7 @@ function Contact() {
     function handleFormSubmit(event) {
         event.preventDefault();
         if (formObject.name && formObject.phone || formObject.email) {
+            postClickUp();
             contactAPIFunctions
                 .saveContact({
                     name: formObject.name,
