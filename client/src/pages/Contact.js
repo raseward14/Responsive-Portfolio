@@ -1,5 +1,6 @@
 // import React
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
+import { useHistory } from 'react-router-dom';
 // import style
 import "./style.css";
 // import components
@@ -12,22 +13,128 @@ import * as contactAPIFunctions from "../utils/contactAPI";
 function Contact() {
     const [formObject, setFormObject] = useState({});
     const [buttonText, setButtonText] = useState('Submit');
+    let history = useHistory();
 
     // resets component state to null on submit
-    function clearState() {
+    async function clearState() {
+        // var raw = JSON.stringify({
+        //     "name": formObject.name,
+        //     "description": "New Task Description",
+        //     "assignees": [
+        //         14917287
+        //     ],
+        //     "tags": [
+        //         "contact"
+        //     ],
+        //     "status": "To do",
+        //     "priority": null,
+        //     "due_date": 1508369194377,
+        //     "due_date_time": false,
+        //     "time_estimate": 8640000,
+        //     "start_date": 1567780450202,
+        //     "start_date_time": false,
+        //     "notify_all": true,
+        //     "parent": null,
+        //     "links_to": null,
+        //     "check_required_custom_fields": true,
+        //     "custom_fields": [
+        //         {
+        //             "id": "041c6ec7-59d6-45c7-9cad-67f54d677be4",
+        //             "value": formObject.email
+        //         },
+        //         {
+        //             "id": "546bbe4b-2fa6-49e9-bb7c-3c111aec15eb",
+        //             "value": formObject.message
+        //         },
+        //         {
+        //             "id": "865c7fe2-d4c9-4464-9d71-cc4d190eab98",
+        //             "value": `+1 ${formObject.phone}`
+        //         }
+        //     ]
+        // });
+
+        // const requestOptions = {
+        //     method: 'POST',
+        //     headers: {
+        //         'Authorization': 'pk_14917287_C01GVS3FA1OD9YG1CWV64YI515GS09QD',
+        //         'Content-Type': 'application/json'
+        //     },
+        //     mode: 'no-cors',
+        //     body: raw,
+        //     redirect: 'follow'
+        // };
+
+        // const response = await fetch("https://api.clickup.com/api/v2/list/116273262/task", requestOptions)
+        // const data = await response.text();
+
         document.getElementById('name').value = '';
         document.getElementById('email').value = '';
         document.getElementById('phone').value = '';
         document.getElementById('message').value = '';
         setButtonText('Thank You!');
         document.getElementById("Button").disabled = true;
-    }
+    };
 
     // updates component state when the user types in input field
     function handleInputChange(event) {
         const { name, value } = event.target;
         setFormObject({ ...formObject, [name]: value });
-    }
+    };
+
+    function postClickUp() {
+        var myHeaders = new Headers();
+        myHeaders.append("Authorization", "pk_14917287_C01GVS3FA1OD9YG1CWV64YI515GS09QD");
+        myHeaders.append("Content-Type", "application/json");
+
+        var raw = JSON.stringify({
+            "name": formObject.name,
+            "description": "New Task Description",
+            "assignees": [
+                14917287
+            ],
+            "tags": [
+                "contact"
+            ],
+            "status": "To do",
+            "priority": null,
+            "due_date": 1508369194377,
+            "due_date_time": false,
+            "time_estimate": 8640000,
+            "start_date": 1567780450202,
+            "start_date_time": false,
+            "notify_all": true,
+            "parent": null,
+            "links_to": null,
+            "check_required_custom_fields": true,
+            "custom_fields": [
+                {
+                    "id": "041c6ec7-59d6-45c7-9cad-67f54d677be4",
+                    "value": formObject.email
+                },
+                {
+                    "id": "546bbe4b-2fa6-49e9-bb7c-3c111aec15eb",
+                    "value": formObject.message
+                },
+                {
+                    "id": "865c7fe2-d4c9-4464-9d71-cc4d190eab98",
+                    "value": `+1 ${formObject.phone}`
+                }
+            ]
+        });
+
+        var requestOptions = {
+            method: 'POST',
+            headers: myHeaders,
+            mode: 'no-cors',
+            body: raw,
+            redirect: 'follow'
+        };
+
+        fetch("https://api.clickup.com/api/v2/list/116273262/task", requestOptions)
+            .then(response => response.text())
+            .then(result => console.log(result))
+            .catch(error => console.log('error', error));
+    };
 
     function handleFormSubmit(event) {
         event.preventDefault();
@@ -78,7 +185,10 @@ function Contact() {
                 <FormBtn
                     id='Button'
                     disabled={!(formObject.name && formObject.message && (formObject.phone || formObject.email))}
-                    onClick={handleFormSubmit}
+                    onClick={() => {
+                        handleFormSubmit();
+                        history.push('/about');
+                    }}
                 >{buttonText}</FormBtn>
             </section>
         </>
