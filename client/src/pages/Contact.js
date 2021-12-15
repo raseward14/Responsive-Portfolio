@@ -139,7 +139,7 @@ function Contact() {
                     disabled={!(formObject.name && formObject.message && (formObject.phone || formObject.email))}
                     onClick={(event) => {
                         handleFormSubmit(event);
-                        postClickUp(event);
+                        // postClickUp(event);
                     }}
                 >{buttonText}</FormBtn>
             </section>
