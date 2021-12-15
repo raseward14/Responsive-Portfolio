@@ -2,10 +2,6 @@ import './App.css';
 import React, { useState, useEffect } from "react";
 import { CustomPicker } from 'react-color';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTint, faEyeDropper } from '@fortawesome/free-solid-svg-icons'
-
-
 // imports pages
 import Homepage from "./pages/Homepage";
 import About from "./pages/About";
