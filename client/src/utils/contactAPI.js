@@ -12,6 +12,6 @@ const saveContact = (contactData) => {
 // delete a contact
 const deleteContact = (id) => {
   return axios.delete("/api/contact/" + id)
-}
+};
 
 export { saveContact, getContacts, deleteContact };
