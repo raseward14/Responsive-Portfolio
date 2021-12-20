@@ -87,7 +87,9 @@ function Contact() {
         document.getElementById("Button").disabled = true;
     };
 
+    // good onchange syntax example https://reactgo.com/post-request-react-hooks/
     // updates component state when the user types in input field
+    // more reading https://stackoverflow.com/questions/43871637/no-access-control-allow-origin-header-is-present-on-the-requested-resource-whe/43881141#43881141
     function handleInputChange(event) {
         const { name, value } = event.target;
         setFormObject({ ...formObject, [name]: value });
@@ -100,6 +102,8 @@ function Contact() {
         var myHeaders = new Headers();
         myHeaders.append("Authorization", "pk_14917287_C01GVS3FA1OD9YG1CWV64YI515GS09QD");
         myHeaders.append("Content-Type", "application/json");
+        myHeaders.append("Accept", "application/json");
+
 
         var raw = JSON.stringify({
             "name": formObject.name,
@@ -140,8 +144,9 @@ function Contact() {
         var requestOptions = {
             method: 'POST',
             headers: myHeaders,
-            mode: 'no-cors',
             body: raw,
+            mode: 'no-cors',
+            credentials: 'same-origin',
             redirect: 'follow'
         };
 
@@ -151,22 +156,99 @@ function Contact() {
             .catch(error => console.log('error', error));
     };
 
-    function handleFormSubmit(event) {
+    async function handleFormSubmit(event) {
         event.preventDefault();
         if (formObject.name && formObject.phone || formObject.email) {
-            contactAPIFunctions
-                .saveContact({
+            try {
+                await contactAPIFunctions.saveContact({
                     name: formObject.name,
                     phone: formObject.phone,
                     email: formObject.email,
                     message: formObject.message
-                })
-                .then(() => {
-                    clearState();
-                })
-                .catch((err) => console.log(err));
+                });
+
+                const data = {}
+                const options ={
+                    method: 'POST'
+                }
+                const response = await fetch("https://api.clickup.com/api/v2/list/116273262/task", options)
+
+
+                clearState();
+            } catch (error) {
+                console.log(error)
+            }
+            // const data = {
+            //     "name": formObject.name,
+            //     "description": "New Task Description",
+            //     "assignees": [
+            //         14917287
+            //     ],
+            //     "tags": [
+            //         "contact"
+            //     ],
+            //     "status": "To do",
+            //     "priority": null,
+            //     "due_date": 1508369194377,
+            //     "due_date_time": false,
+            //     "time_estimate": 8640000,
+            //     "start_date": 1567780450202,
+            //     "start_date_time": false,
+            //     "notify_all": true,
+            //     "parent": null,
+            //     "links_to": null,
+            //     "check_required_custom_fields": true,
+            //     "custom_fields": [
+            //         {
+            //             "id": "041c6ec7-59d6-45c7-9cad-67f54d677be4",
+            //             "value": formObject.email
+            //         },
+            //         {
+            //             "id": "546bbe4b-2fa6-49e9-bb7c-3c111aec15eb",
+            //             "value": formObject.message
+            //         },
+            //         {
+            //             "id": "865c7fe2-d4c9-4464-9d71-cc4d190eab98",
+            //             "value": `+1 ${formObject.phone}`
+            //         }
+            //     ]
+            // };
+
+
+
+            // contactAPIFunctions
+            //     .saveContact({
+            //         name: formObject.name,
+            //         phone: formObject.phone,
+            //         email: formObject.email,
+            //         message: formObject.message
+            //     })
+            //     .then(() => {
+            //         clearState();
+            //     })
+            //     .catch((err) => console.log(err));
         };
     };
+
+    // REST APIs in React with Fetch and Axios
+    // https://www.smashingmagazine.com/2020/06/rest-api-react-fetch-axios/
+    function getTasks(event) {
+        event.preventDefault();
+        var myHeaders = new Headers();
+        myHeaders.append("Authorization", "pk_14917287_C01GVS3FA1OD9YG1CWV64YI515GS09QD");
+
+        var requestOptions = {
+            method: 'GET',
+            headers: myHeaders,
+            redirect: 'follow',
+            mode: 'no-cors'
+        };
+
+        fetch("https://api.clickup.com/api/v2/list/116273262/task", requestOptions)
+            .then(response => response.json())
+            .then(data => console.log('This is your data', data))
+            .catch(error => console.log('error', error));
+    }
 
     return (
         <>
@@ -203,7 +285,9 @@ function Contact() {
                     onClick={(event) => {
                         handleFormSubmit(event);
                         // postTask(event);
-                        postAxios(event);
+                        // postAxios(event);
+                        // getTasks(event);
+                        // fetchpost();
                     }}
                 >{buttonText}</FormBtn>
             </section>
