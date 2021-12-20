@@ -53,6 +53,9 @@ Here are a few resources that helped me get this project knocked out!
 * [icons8](https://icons8.com/icons/set/express)
 * [devicon](https://devicon.dev/)
 * [MDN CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+* [MDN async await](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await)
+* [MDN using fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+* [The Coding Train, HTTP Post Request with fetch](https://www.youtube.com/watch?v=Kw5tC5nQMRY&t=6s)
 
 ## License
 * Link for more information: (https://opensource.org/licenses/MIT)
