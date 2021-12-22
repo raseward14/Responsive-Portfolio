@@ -156,6 +156,9 @@ function Contact() {
             .catch(error => console.log('error', error));
     };
 
+    // async awaid MDN https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await
+    // MDN POST implementation https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch 
+    // youtube 8:05 video i left off on https://www.youtube.com/watch?v=Kw5tC5nQMRY&t=6s 
     async function handleFormSubmit(event) {
         event.preventDefault();
         if (formObject.name && formObject.phone || formObject.email) {
@@ -167,52 +170,61 @@ function Contact() {
                     message: formObject.message
                 });
 
-                const data = {}
-                const options ={
-                    method: 'POST'
+                const data = {
+                    name: formObject.name,
+                    description: "New Task Description",
+                    assignees: [
+                        14917287
+                    ],
+                    tags: [
+                        "contact"
+                    ],
+                    status: "To do",
+                    priority: null,
+                    due_date: 1508369194377,
+                    due_date_time: false,
+                    time_estimate: 8640000,
+                    start_date: 1567780450202,
+                    start_date_time: false,
+                    notify_all: true,
+                    parent: null,
+                    links_to: null,
+                    check_required_custom_fields: true,
+                    custom_fields: [
+                        {
+                            id: "041c6ec7-59d6-45c7-9cad-67f54d677be4",
+                            value: formObject.email
+                        },
+                        {
+                            id: "546bbe4b-2fa6-49e9-bb7c-3c111aec15eb",
+                            value: formObject.message
+                        },
+                        {
+                            id: "865c7fe2-d4c9-4464-9d71-cc4d190eab98",
+                            value: `+1 ${formObject.phone}`
+                        }
+                    ]
+                };
+                const options = {
+                    method: 'POST',
+                    // mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        // 'Authorization': 'pk_14917287_C01GVS3FA1OD9YG1CWV64YI515GS09QD',
+                    },
+                    body: JSON.stringify(data) // I want this data to be send as JSON, im telling you its json, post it to api
                 }
-                const response = await fetch("https://api.clickup.com/api/v2/list/116273262/task", options)
-
+                console.log(options.body)
+                // const response = await fetch("https://api.clickup.com/api/v2/list/116273262/task", options)
+                let response = await fetch("https://hook.integromat.com/fbohq3cuw4xqkhys8gij8rcarvfxp2p5", options);
+                let myContact = await response.text();
+                console.log(myContact);
 
                 clearState();
             } catch (error) {
                 console.log(error)
-            }
-            // const data = {
-            //     "name": formObject.name,
-            //     "description": "New Task Description",
-            //     "assignees": [
-            //         14917287
-            //     ],
-            //     "tags": [
-            //         "contact"
-            //     ],
-            //     "status": "To do",
-            //     "priority": null,
-            //     "due_date": 1508369194377,
-            //     "due_date_time": false,
-            //     "time_estimate": 8640000,
-            //     "start_date": 1567780450202,
-            //     "start_date_time": false,
-            //     "notify_all": true,
-            //     "parent": null,
-            //     "links_to": null,
-            //     "check_required_custom_fields": true,
-            //     "custom_fields": [
-            //         {
-            //             "id": "041c6ec7-59d6-45c7-9cad-67f54d677be4",
-            //             "value": formObject.email
-            //         },
-            //         {
-            //             "id": "546bbe4b-2fa6-49e9-bb7c-3c111aec15eb",
-            //             "value": formObject.message
-            //         },
-            //         {
-            //             "id": "865c7fe2-d4c9-4464-9d71-cc4d190eab98",
-            //             "value": `+1 ${formObject.phone}`
-            //         }
-            //     ]
-            // };
+            };
+
 
 
 
@@ -248,7 +260,8 @@ function Contact() {
             .then(response => response.json())
             .then(data => console.log('This is your data', data))
             .catch(error => console.log('error', error));
-    }
+    };
+
 
     return (
         <>
@@ -288,6 +301,7 @@ function Contact() {
                         // postAxios(event);
                         // getTasks(event);
                         // fetchpost();
+                        // callWebhook(event);
                     }}
                 >{buttonText}</FormBtn>
             </section>
