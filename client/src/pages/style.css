@@ -50,6 +50,8 @@ form {
 
 #Button {
     margin: 5px auto;
+    height: 55px;
+    width: 100px;
     border-radius: 50%;
     font-size: 24px;
     /* text-align: center; */
