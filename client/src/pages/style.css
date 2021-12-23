@@ -22,7 +22,6 @@
 aside {
     float: left;
     width: calc(100% / 5);
-    /* height: 100%; */
     background-color: white;
 }
 
@@ -36,9 +35,6 @@ section {
 
 /*Form Styling*/
 .form-control {
-    /* justify-content: center;
-    align-items: center;
-    justify-content: center !important; */
     width: 50% !important;
     margin-top: 10px;
 
@@ -68,7 +64,6 @@ form {
         width: 80% !important;
         margin-top: 10px;
       }
-
 }
 
 @media (max-width: 768px) {
