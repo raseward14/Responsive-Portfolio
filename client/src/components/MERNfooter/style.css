@@ -5,9 +5,10 @@ div.icon-wrapper {
     gap: 10px;
     grid-auto-rows: minmax(50px, auto);
     text-align: center;
-    max-width: 1000px;
+    margin-top: 50%;
+    position: absolute;
+    bottom: 0;
 }
-
 
 .mern-icon {
     height: 48px;
@@ -40,13 +41,12 @@ div.icon-wrapper {
         height: 30px;
         margin: auto;
     }
-    
 }
+
 
 @media (max-width: 500px) {
     .mern-icon {
         height: 24px;
         margin: auto;
-    }
-    
+    }   
 }

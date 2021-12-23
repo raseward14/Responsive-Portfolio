@@ -4,7 +4,6 @@
 
 .home {
     font-size: 30px;
-    position: relative;
     /* margin-top: 10%; */
     overflow-wrap: break-word;
     text-align: center;
@@ -25,16 +24,13 @@ aside {
     float: left;
     width: calc(100% / 5);
     height: 100%;
-    /* border: 1px solid black; */
     background-color: white;
 }
 
 section {
-    position: relative;
     float: left;
     height: 90%;
     width: calc(4 * (100% / 5));
-    /* border: 1px solid black; */
     background-color: transparent;
     color: black;
 }
@@ -69,9 +65,6 @@ form {
 }
 
 @media (max-width: 1400px) {
-    .home {
-        /* margin-left: 60px; */
-    }
     .form-control {
         /* justify-content: center;
         align-items: center;
@@ -102,14 +95,11 @@ form {
         height: 0%;
     }
     section {
-        position: relative;
         float: left;
         height: 90%;
         width: 100%;
         margin-left: 0px;
-        /* border: 1px solid black; */
     }
-
 }
 
 @media (max-width: 541px) {
