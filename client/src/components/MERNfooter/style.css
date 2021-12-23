@@ -17,6 +17,7 @@ div.icon-wrapper {
 .one {
     grid-template-columns: 1;
     grid-template-rows: 1;
+    
 }
 .two {
     grid-template-columns: 2;
@@ -26,10 +27,12 @@ div.icon-wrapper {
 .three {
     grid-column: 3;
     grid-row: 1;
+    color: hsl(184, 78%, 53%) !important;
 }
 .four {
     grid-column: 4;
     grid-row: 1;
+    color: #34d649 !important;
 }
 
 @media (max-width: 1280px) {
