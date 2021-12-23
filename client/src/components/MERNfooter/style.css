@@ -3,11 +3,14 @@ div.icon-wrapper {
     display: grid; 
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    grid-auto-rows: minmax(50px, auto);
+    grid-auto-rows: minmax(75px, auto);
+    width: 100%;
     text-align: center;
-    margin-top: 50%;
     position: absolute;
     bottom: 0;
+    left: -1vw;
+    justify-items: center;
+    align-items: center;
 }
 
 .mern-icon {
