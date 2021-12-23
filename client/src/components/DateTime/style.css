@@ -86,3 +86,10 @@ p {
         width: 44%;
     }
 }
+
+@media (max-width: 280px) {
+    p {
+        width: 50%;
+        font-size: 12px;   
+    }
+}

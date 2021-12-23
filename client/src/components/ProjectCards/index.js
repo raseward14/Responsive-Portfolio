@@ -10,7 +10,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFile } from '@fortawesome/free-solid-svg-icons';
+import { faFile, faLink } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithubSquare, faHackerrank, faCodepen, faFreeCodeCamp } from '@fortawesome/free-brands-svg-icons'
 import Workout from '../Images/workout_tracker.png'
 import TeamProfileGenerator from '../Images/team_profile_generator.png'
@@ -163,7 +163,7 @@ function Cards() {
             title: 'Password Generator',
             subtitle: '',
             image: PasswordGenerator,
-            description: 'testing',
+            description: [faLinkedin, faFile],
             githubLink: 'https://github.com/raseward14/Password-Generator',
             deployedLink: 'https://raseward14.github.io/Password-Generator/'
         },
@@ -195,7 +195,10 @@ function Cards() {
                                     />
                                 <CardBody>
                                     <CardText>
-                                        {project.description}
+                                        {[...project.description].forEach((tech, key) => {
+                                            console.log(tech);
+                                            <FontAwesomeIcon icon={tech} key={key} />
+                                        })}
                                     </CardText>
                                     <CardLink href={`${project.deployedLink}`} target='_blank'>
                                         {project.title}
