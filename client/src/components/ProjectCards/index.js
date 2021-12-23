@@ -163,7 +163,7 @@ function Cards() {
             title: 'Password Generator',
             subtitle: '',
             image: PasswordGenerator,
-            description: '',
+            description: 'testing',
             githubLink: 'https://github.com/raseward14/Password-Generator',
             deployedLink: 'https://raseward14.github.io/Password-Generator/'
         },
@@ -184,14 +184,15 @@ function Cards() {
                                         className="mb-2 text-muted"
                                         tag="h6"
                                     >
-                                    {project.subtitle}
+                                        {project.subtitle}
                                     </CardSubtitle>
                                 </CardBody>
-                                <img
-                                    alt="Card image cap"
-                                    src={`${project.image}`}
-                                    width="100%"
-                                />
+                                    <img
+                                        alt="Card image cap"
+                                        src={`${project.image}`}
+                                        width='100%'
+                                        height='auto'
+                                    />
                                 <CardBody>
                                     <CardText>
                                         {project.description}

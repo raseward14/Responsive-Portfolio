@@ -1,12 +1,14 @@
 .container {
     position: relative;
 }
+
 .home {
     font-size: 30px;
     position: relative;
     /* margin-top: 10%; */
     overflow-wrap: break-word;
 }
+
 .heading {
     position: relative;
     width: calc(4 * (100% / 5));
