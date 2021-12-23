@@ -170,7 +170,7 @@ function Cards() {
     ]
     return (
         <>
-            <div className='wrapper'>
+            <div className='project-wrapper'>
                 {projects.map((project, key) => {
                     console.log(project.subtitle[1])
                     return (

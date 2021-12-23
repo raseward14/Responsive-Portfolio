@@ -58,6 +58,11 @@ https://www.google.com/search?q=how+to+make+an+animated+hamburger+menu&oq=how+to
         transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
     }
 
+    /*remove the nav link box shadow when the hamburger menu opens up*/
+    .nav-link {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+    }
+
     .navbar-content .nav-link:hover {
         background-color: antiquewhite;
         pointer-events: auto;
