@@ -11,7 +11,7 @@
 .heading {
     position: relative;
     width: calc(4 * (100% / 5));
-    height: 10%;
+    height: 5%;
     margin: 0px 0px 0px 20%;
     background-color: transparent;
     color: black;
@@ -35,8 +35,8 @@ section {
 /*Form Styling*/
 .form-control {
     width: 50% !important;
-    margin-top: 10px;
-
+    margin: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
   }
 
 form {
@@ -46,10 +46,11 @@ form {
   
 .form-group {
     justify-content: center;
+
 }
 
 #Button {
-    margin: 5px auto;
+    margin: auto;
     height: 55px;
     width: 100px;
     border-radius: 50%;
@@ -59,7 +60,7 @@ form {
     color: black;
     border: 3px solid #fff;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-    border-radius: 0.25rem;
+    border-radius: 1rem;
 }
 
 #Button:hover {

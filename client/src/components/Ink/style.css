@@ -8,7 +8,7 @@
     border: none;
     margin: auto;
     position: relative;
-    /* border: 1px solid black; */
+    border: 3px solid #fff;
     font-size: 2em;
     color: black;
     background-color: white;
@@ -59,7 +59,7 @@
 
 /* Change color of dropdown links on hover */
 .dropdown-content div:hover {
-    background-color: darkgray;
+    background-color: antiquewhite;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */

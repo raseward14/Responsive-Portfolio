@@ -28,6 +28,9 @@ a:hover {
 .wrapper {
     text-align: center;
     align-items: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
+
 }
 
 .wrapper div {

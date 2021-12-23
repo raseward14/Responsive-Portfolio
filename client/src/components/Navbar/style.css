@@ -13,12 +13,17 @@
     color:black !important;
     background-color: white;
     font-size: 24px;
-
+    border: 3px solid #fff;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
 }
 .nav-link:hover {
     color:black !important;
-    background-color: darkgrey;
+    background-color: antiquewhite;
+    pointer-events: auto;
     font-size: 26px;
+
 }
 .menu-button {
     display: none;
@@ -54,8 +59,9 @@ https://www.google.com/search?q=how+to+make+an+animated+hamburger+menu&oq=how+to
     }
 
     .navbar-content .nav-link:hover {
-        background-color: darkgray;
-    }
+        background-color: antiquewhite;
+        pointer-events: auto;
+        }
     
     .menu-button {
         opacity: 1;
