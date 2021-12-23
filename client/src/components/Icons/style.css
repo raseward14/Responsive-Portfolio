@@ -19,8 +19,13 @@ span a {
     font-size: 2em;
     /* display: grid;
     grid-template-rows: auto; */
+    
 }
 
 a:hover {
     font-size: 3em;
+}
+
+.wrapper {
+    text-align: center;
 }
