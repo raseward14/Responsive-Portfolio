@@ -9,7 +9,6 @@ import { Input, FormBtn, TextArea } from "../components/Form";
 // import { Col, Row, Card } from 'reactstrap';
 // import API functions
 import * as contactAPIFunctions from "../utils/contactAPI";
-import axios from "axios";
 
 function Contact() {
     const [formObject, setFormObject] = useState({});

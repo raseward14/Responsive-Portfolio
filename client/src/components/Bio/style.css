@@ -9,6 +9,7 @@
     padding: 10px;
     height: 15em;
     float: left;
+    box-shadow: inset(20px 50px 10px 0 round 50px);
 }
 
 @media (max-width: 415px) {
