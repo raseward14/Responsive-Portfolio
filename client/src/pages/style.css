@@ -27,7 +27,6 @@ aside {
 
 section {
     float: left;
-    height: 90%;
     width: calc(4 * (100% / 5));
     background-color: transparent;
     color: black;
@@ -51,8 +50,20 @@ form {
 
 #Button {
     margin: 5px auto;
+    border-radius: 50%;
     font-size: 24px;
-    text-align: left !important;
+    /* text-align: center; */
+    background-color: inherit;
+    color: black;
+    border: 3px solid #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 0.25rem;
+}
+
+#Button:hover {
+    background-color: antiquewhite;
+    pointer-events: auto;
+    font-size: 26px;
 }
 
 #four {

@@ -18,14 +18,18 @@ span a {
     color: black;
     font-size: 2em;
     /* display: grid;
-    grid-template-rows: auto; */
-    
+    grid-template-rows: auto; */  
 }
 
 a:hover {
-    font-size: 3em;
+    font-size: 2.25em;
 }
 
 .wrapper {
     text-align: center;
+    align-items: center;
+}
+
+.wrapper div {
+    height: 50px;
 }
