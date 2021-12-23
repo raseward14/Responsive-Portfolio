@@ -156,6 +156,6 @@ https://www.google.com/search?q=how+to+make+an+animated+hamburger+menu&oq=how+to
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        line-height: 2.5rem;
+        line-height: 2rem;
     }
 }

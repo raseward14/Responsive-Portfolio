@@ -1,15 +1,17 @@
 
 div.icon-wrapper {
-    /* display: grid;
+    display: grid; 
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    grid-auto-rows: minmax(100px, auto); */
+    grid-auto-rows: minmax(50px, auto);
     text-align: center;
+    max-width: 1000px;
 }
 
 
 .mern-icon {
-    height: 24px;
+    height: 48px;
+    margin: auto;
 }
 
 .one {
@@ -28,4 +30,20 @@ div.icon-wrapper {
 .four {
     grid-column: 4;
     grid-row: 1;
+}
+
+@media (max-width: 1280px) {
+    .mern-icon {
+        height: 30px;
+        margin: auto;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .mern-icon {
+        height: 24px;
+        margin: auto;
+    }
+    
 }
