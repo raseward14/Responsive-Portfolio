@@ -25,80 +25,20 @@ aside {
     background-color: white;
 }
 
-section {
-    float: left;
-    width: calc(4 * (100% / 5));
-    background-color: transparent;
-    color: black;
-}
-
-/*Form Styling*/
-.form-control {
-    width: 50% !important;
-    margin: 10px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-  }
-
-form {
-    margin: 0 auto !important;
-    text-align: -webkit-center;
-}
-  
-.form-group {
-    justify-content: center;
-}
-
- #Button {
-    margin: auto;
-    height: 55px;
-    width: 150px;
-    border-radius: 50%;
-    font-size: 24px;
-    /* text-align: center; */
-    background-color: inherit;
-    color: black;
-    border: 3px solid #fff;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-    border-radius: 1rem;
-} 
-
-#Button:hover {
-    background-color: antiquewhite;
-    pointer-events: auto;
-    font-size: 26px;
-}
-
 #four {
     background-color: inherit;
-}
-
-@media (max-width: 1400px) {
-    .form-control {
-        width: 80% !important;
-        margin-top: 10px;
-      }
 }
 
 @media (max-width: 768px) {
     .home {
         margin-top: 20px;
     }
-    .form-control {
-        width: 100% !important;
-        margin-top: 10px;
-      }
 }
 
 @media (max-width: 767px) {
     aside {
         width: 0%;
         height: 0%;
-    }
-    section {
-        float: left;
-        height: 90%;
-        width: 100%;
-        margin-left: 0px;
     }
 }
 
