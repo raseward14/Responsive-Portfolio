@@ -1,3 +1,8 @@
+.bio-section {
+        width: calc(4 * (100% / 5));
+        float: left;
+}
+
 #bio {
     width: 100%;
     float: left;

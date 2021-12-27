@@ -1,0 +1,14 @@
+.contact-form-icons {
+    float: left;
+}
+
+#code-icons {
+    float: left;
+    margin: auto;
+}
+
+@media (max-width: 1300px) {
+    .span {
+        display: none;
+    }
+}

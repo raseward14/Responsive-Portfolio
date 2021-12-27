@@ -1,16 +1,16 @@
-section {
+.contact-section {
     float: left;
-    width: calc(4 * (100% / 5));
+    width: calc(2 * (100% / 5));
     background-color: transparent;
     color: black;
 }
 
 /*Form Styling*/
 .form-control {
-    width: 50% !important;
+    width: 100% !important;
     margin: 10px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-  }
+}
 
 form {
     margin: 0 auto !important;
@@ -41,25 +41,20 @@ form {
     font-size: 26px;
 }
 
-@media (max-width: 1400px) {
-    .form-control {
-        width: 80% !important;
-        margin-top: 10px;
-      }
-}
-
-@media (max-width: 768px) {
-    .form-control {
-        width: 100% !important;
-        margin-top: 10px;
-      }
+@media (max-width: 1300px) {
+    .contact-section {
+        width: calc(4 * (100% / 5));
+    }
 }
 
 @media (max-width: 767px) {
-    section {
+    .form-control {
+        margin-left: 0px;
+    }
+    .contact-section {
+        margin-left: 0px;
         float: left;
         height: 90%;
         width: 100%;
-        margin-left: 0px;
     }
 }

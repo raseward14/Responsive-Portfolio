@@ -154,7 +154,7 @@ function AddContact() {
 
     return (
         <>
-            <section>
+            <section className='contact-section'>
                 <Input
                     id='name'
                     onChange={handleInputChange}

@@ -7,7 +7,7 @@ function Bio() {
 
   return (
 
-    <div>
+    <div className="bio-section">
       <p id="bio"><img className='my-headshot' src={headshot} />
         Hi! My name is Richard, and I live in Loveland, Colorado with my beautiful wife, and new born son, also named Richard! Its a family name that has been passed down for five generations. Outside of family, and work, I spend time fishing. I've recently picked up fly fishing, and I'd be lying if I said it wasn't my favorite. However, I won't say no to a good catfishing trip, or casual boat and bobber day!
 
