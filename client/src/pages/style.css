@@ -46,10 +46,9 @@ form {
   
 .form-group {
     justify-content: center;
-
 }
 
-#Button {
+ #Button {
     margin: auto;
     height: 55px;
     width: 150px;
@@ -61,7 +60,7 @@ form {
     border: 3px solid #fff;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
     border-radius: 1rem;
-}
+} 
 
 #Button:hover {
     background-color: antiquewhite;

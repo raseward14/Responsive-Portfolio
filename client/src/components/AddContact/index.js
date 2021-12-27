@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Input, FormBtn, TextArea } from '../Form';
-import * as contactAPIFunctions from '../../utils'
+import * as contactAPIFunctions from '../../utils/contactAPI';
 import './style.css';
 function AddContact() {
     const [formObject, setFormObject] = useState({});

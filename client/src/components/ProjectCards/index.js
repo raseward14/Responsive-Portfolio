@@ -61,7 +61,7 @@ function Cards() {
             image: BudgetTracker,
             description: '',
             githubLink: 'https://reactstrap.github.io/?path=/docs/components-card--card',
-            deployedLink: 'https://reactstrap.github.io/?path=/docs/components-card--card'
+            deployedLink: 'https://serene-thicket-18374.herokuapp.com/'
         },
         {
             title: 'Workout Tracker',

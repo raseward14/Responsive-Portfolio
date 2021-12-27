@@ -5,6 +5,7 @@ import { useHistory } from 'react-router-dom';
 import "./style.css";
 // import components
 import Nav from "../components/Navbar/index";
+import AddContact from "../components/AddContact";
 import { Input, FormBtn, TextArea } from "../components/Form";
 // import { Col, Row, Card } from 'reactstrap';
 // import API functions
@@ -163,6 +164,7 @@ function Contact() {
         <>
             <aside><Nav /></aside>
             <h1 className="heading">Contact</h1>
+            <AddContact />
             <section>
                 <Input
                     id='name'
