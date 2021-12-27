@@ -1,14 +1,15 @@
 .contact-form-icons {
     float: left;
+    width: calc(2 * (100% / 5));
 }
 
 #code-icons {
     float: left;
-    margin: auto;
+    margin-left: 40%;
 }
 
 @media (max-width: 1300px) {
-    .span {
+    #code-icons {
         display: none;
     }
 }

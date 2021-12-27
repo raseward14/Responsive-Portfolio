@@ -16,7 +16,7 @@ function Contact() {
             <aside><Nav /></aside>
             <h1 className="heading">Contact</h1>
             <AddContact />
-            {/* <ContactIcons /> */}
+            <ContactIcons />
         </>
     );
 };
