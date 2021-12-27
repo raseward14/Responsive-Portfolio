@@ -6,6 +6,7 @@
 #code-icons {
     float: left;
     margin-left: 40%;
+    font-size: 30px;
 }
 
 @media (max-width: 1300px) {
