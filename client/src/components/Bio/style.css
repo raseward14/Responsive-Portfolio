@@ -22,20 +22,20 @@
 }
 
 .subheading1 {
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: bold;
     display: inline-block;
 }
 
 .subheading2 {
-    font-size: 1.25em;
+    font-size: 1.5em;
     color: maroon;
     display: inline-block;
 
 }
 
 .subheading3 {
-    font-size: 1em;
+    font-size: 1.25em;
     display: inline-block;
 
 }
@@ -51,6 +51,17 @@
     text-align: center;
 }
 
+@media (max-width: 950px) {
+    .image-container {
+        float: none;
+        width: 100%;
+    }
+    #bio {
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+}
 
 @media (max-width: 415px) {
     .my-headshot {
