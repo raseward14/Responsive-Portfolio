@@ -7,8 +7,15 @@ function Bio() {
 
   return (
 
-    <div className="bio-section">
-      <p id="bio"><img className='my-headshot' src={headshot} />
+    <div className="bio-container">
+      <div className="image-container">
+        <img className='my-headshot' src={headshot} />
+        <div className="subheading-name">Richard A. Seward</div>
+        <div className="subheading1">Certified Full Stack Web Developer</div>
+        <div className="subheading3">2U Coding Bootcamp Graduate 2021</div>
+        <div className="subheading2">University of Denver</div>
+      </div>
+      <p id="bio">
         Hi! My name is Richard, and I live in Loveland, Colorado with my beautiful wife, and new born son, also named Richard! Its a family name that has been passed down for five generations. Outside of family, and work, I spend time fishing. I've recently picked up fly fishing, and I'd be lying if I said it wasn't my favorite. However, I won't say no to a good catfishing trip, or casual boat and bobber day!
 
         Other interests include running. I ran XC and Track and Field for Colorado Mesa University from 2010 to 2014, and enjoy getting in daily runs. I'm a huge car nerd, and recently rebuilt the transmission of my 70's era Schwinn bicycle.

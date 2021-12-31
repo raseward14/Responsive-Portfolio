@@ -6,7 +6,7 @@ import "./style.css";
 // import components
 import Nav from "../components/Navbar/index";
 import AddContact from "../components/AddContact";
-import ContactIcons from "../components/ContactTechIcons";
+import Skills from "../components/Skills";
 // import { Col, Row, Card } from 'reactstrap';
 
 function Contact() {
@@ -16,7 +16,7 @@ function Contact() {
             <aside><Nav /></aside>
             <h1 className="heading">Contact</h1>
             <AddContact />
-            <ContactIcons />
+            <Skills />
         </>
     );
 };

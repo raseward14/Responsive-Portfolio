@@ -1,21 +1,56 @@
-.bio-section {
+.image-container {
+    float: left;
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+}
+
+.my-headshot {
+    border-radius: 50%;
+    /* shape-outside: ellipse(); */
+    padding: 10px;
+    height: 15em;
+    /* float: left; */
+    box-shadow: inset(20px 50px 10px 0 round 50px);
+}
+
+.subheading-name {
+    font-weight: bold;
+    color: mediumturquoise;
+    font-size: 2.10em;
+    display: inline-block;
+}
+
+.subheading1 {
+    font-size: 1.25em;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.subheading2 {
+    font-size: 1.25em;
+    color: maroon;
+    display: inline-block;
+
+}
+
+.subheading3 {
+    font-size: 1em;
+    display: inline-block;
+
+}
+
+.bio-container {
         width: calc(4 * (100% / 5));
         float: left;
 }
 
 #bio {
-    width: 100%;
+    width: 50%;
     float: left;
+    text-align: center;
 }
 
-.my-headshot {
-    border-radius: 50%;
-    shape-outside: ellipse();
-    padding: 10px;
-    height: 15em;
-    float: left;
-    box-shadow: inset(20px 50px 10px 0 round 50px);
-}
 
 @media (max-width: 415px) {
     .my-headshot {
