@@ -3,6 +3,7 @@ import React from "react";
 // import components
 import Nav from "../components/Navbar/index";
 import MERN from "../components/MERNfooter";
+import Skills from "../components/Skills";
 
 // import style
 import "./style.css";

@@ -1,0 +1,16 @@
+.connect-form {
+    float: left;
+    width: calc(2 * (100% / 5));
+}
+
+#connect-text {
+    float: left;
+    margin-left: 40%;
+    font-size: 30px;
+}
+
+@media (max-width: 1300px) {
+    #code-icons {
+        display: none;
+    }
+}
