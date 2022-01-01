@@ -15,19 +15,17 @@ function Bio() {
         <div className="subheading3">2U Coding Bootcamp Graduate 2021</div>
         <div className="subheading2">University of Denver</div>
       </div>
-      <p id="bio">
-        Hi! My name is Richard, and I live in Loveland, Colorado with my beautiful wife, and new born son, also named Richard! Its a family name that has been passed down for five generations. Outside of family, and work, I spend time fishing. I've recently picked up fly fishing, and I'd be lying if I said it wasn't my favorite. However, I won't say no to a good catfishing trip, or casual boat and bobber day!
+      <div className="about-container">
+        <p className="about">Hi, my name is Richard, and I'm a full stack web developer based in Loveland, Colorado.</p>
+        <p className="about">In June of 2021, I graduated from 2U's Full Stack Web Development Bootcamp as a JavaScript developer. As a language that can be leveraged in both Front, and Backend development, I've spent time crafting comprehensive, and intuitive web based solutions to real-world, every day problems.</p>
+        <p className="about">To build the best tools, I strongly believe in foundational technologies that deliver speed, flexibility, and ease of use. I've found full MERN builds comprised of MongoDB to persist data on the backend, node.js and express.js to power the server, and React.js to.. 'react' from client requests on the frontend, accomplish these goals</p>
+        <p className="about">Seeing these building blocks come together, to form quick, reliable, consistent web applications is where my passion for development stems from.</p>
+        <p className="about">However, there is another side to development that truely hits home for me, aside from the satisfaction of constructing fast, and smooth applications. As a lifelong artist, Studio Art Minor from Colorado Mesa University, longtime ex-pat, and lover of foreign language, I offer unique perspective, with an underlying eye for the design, and beauty that makes you want to interact with a webpage.</p>
+        <p className="about">In the future, I hope to continue finding new, and exciting ways to integrate the oil paintings, and charcoal drawings of my physical 2D world, into the virtual frontier of the future.</p>
+        <p className="about"></p>
+      </div>
 
-        Other interests include running. I ran XC and Track and Field for Colorado Mesa University from 2010 to 2014, and enjoy getting in daily runs. I'm a huge car nerd, and recently rebuilt the transmission of my 70's era Schwinn bicycle.
 
-        My first car was a 1980 Mazda rx7 that I bought when I was 16 (with money I saved for YEARS), and I still have it! I plan to get her back on the road one day.
-
-        I'm always down to knock out a good 14'er, and recently started hunting with my stepfather who's big time into independent lifestyles.
-
-        Fun fact about me, I met my wife in Siem Reap Cambodia, where I lived, and worked for 3 years! I do speak a bit of Khmer, so if you know any, lets practice. I loved Cambodia, and cannot wait to get back to Asia, and do some more exploring.
-
-        So, there's a few fun facts, shoot me a message if you have any questions, and want to connect!
-      </p>
     </div>
 
     // custom bio

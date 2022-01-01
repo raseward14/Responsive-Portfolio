@@ -45,18 +45,25 @@
         float: left;
 }
 
-#bio {
+.about-container {
     width: 50%;
     float: left;
     text-align: center;
 }
 
+.about {
+    width: auto;
+}
+
 @media (max-width: 950px) {
+    .bio-container {
+        width: calc(5 * (100% / 5));
+}
     .image-container {
         float: none;
         width: 100%;
     }
-    #bio {
+    .about-container {
         width: 100%;
         float: left;
         text-align: center;
