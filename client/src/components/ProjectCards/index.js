@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
     Card,
     CardBody,
@@ -7,6 +7,7 @@ import {
     CardText,
     CardLink
 } from 'reactstrap';
+import { Input } from '../Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -30,12 +31,13 @@ import WeatherDashboard from '../Images/weather_dashboard.png'
 import WorkdayScheduler from '../Images/scheduler.png'
 import PasswordGenerator from '../Images/password_generator.png'
 function Cards() {
+    const [searchTerm, setSearchTerm] = useState('');
     const projects = [
         {
             title: 'My React Blog',
             subtitle: '',
             image: MyReactBlog,
-            description: '',
+            description: 'MERN, MongoDB, express.js, react.js, node.js, AWS, RESTful API, JavaScript, CSS, HTML',
             githubLink: 'https://github.com/raseward14/My_React_Blog',
             deployedLink: 'http://ec2-18-189-3-248.us-east-2.compute.amazonaws.com'
         },
@@ -43,7 +45,7 @@ function Cards() {
             title: 'Loan Shark',
             subtitle: '',
             image: LoanShark,
-            description: '',
+            description: 'MERN, React.js, Reactstrap, MongoDB, express.js, node.js, RESTful API, heroku, victory',
             githubLink: 'https://github.com/raseward14/loan_shark',
             deployedLink: 'https://loaning-sharks.herokuapp.com/'
         },
@@ -123,7 +125,7 @@ function Cards() {
             title: 'Team Profile Generator',
             subtitle: '',
             image: TeamProfileGenerator,
-            description: '',
+            description: 'JavaScript, CSS, HTML, Test Driven Development, npm jest & inquirer, node.js',
             githubLink: 'https://reactstrap.github.io/?path=/docs/components-card--card',
             deployedLink: 'https://reactstrap.github.io/?path=/docs/components-card--card'
         },
@@ -131,7 +133,7 @@ function Cards() {
             title: 'My Cheap Book Finder',
             subtitle: '',
             image: BookFinder,
-            description: '',
+            description: 'JavaScript, CSS, HTML, GoogleBooks API, Ebay API, Bulma, JQuery, OAuth',
             githubLink: 'https://github.com/raseward14/My_Cheap_Book_Finder',
             deployedLink: 'https://raseward14.github.io/My_Cheap_Book_Finder/'
         },
@@ -139,7 +141,7 @@ function Cards() {
             title: 'Web API Quiz',
             subtitle: '',
             image: APIQuiz,
-            description: '',
+            description: 'JavaScript, CSS, HTML, LocalStorage',
             githubLink: 'https://github.com/raseward14/Web-API-Quiz',
             deployedLink: 'https://raseward14.github.io/Web-API-Quiz/'
         },
@@ -147,7 +149,7 @@ function Cards() {
             title: 'Weather Dashboard',
             subtitle: '',
             image: WeatherDashboard,
-            description: '',
+            description: 'JavaScript, CSS, HTML, JQuery, Openweather API, LocalStorage',
             githubLink: 'https://github.com/raseward14/Weather-Dashboard',
             deployedLink: 'https://raseward14.github.io/Weather-Dashboard/'
         },
@@ -155,7 +157,7 @@ function Cards() {
             title: 'Workday Scheduler',
             subtitle: '',
             image: WorkdayScheduler,
-            description: '',
+            description: 'JavaScript, CSS, HTML, moment.js, JQuery',
             githubLink: 'https://github.com/raseward14/Work-Day-Scheduler',
             deployedLink: 'https://raseward14.github.io/Work-Day-Scheduler/'
         },
@@ -163,16 +165,44 @@ function Cards() {
             title: 'Password Generator',
             subtitle: '',
             image: PasswordGenerator,
-            description: [faLinkedin, faFile],
+            description: 'JavaScript, CSS, HTML',
             githubLink: 'https://github.com/raseward14/Password-Generator',
             deployedLink: 'https://raseward14.github.io/Password-Generator/'
         },
     ]
+    const [resultsArray, setResultsArray] = useState(projects);
+    let newArray = [];
+
+    useEffect(() => {
+        if (searchTerm !== '') {
+            resultsArray.filter((project) => {
+                let tech = project.description.toLocaleLowerCase();
+                let search = searchTerm.toLowerCase();
+                if (tech.includes(search)) {
+                    newArray.push(project);
+                    setResultsArray(newArray);
+                } else {
+                    return;
+                };
+            });
+        } else {
+            setResultsArray(projects);
+        };
+        console.log(resultsArray);
+    }, [searchTerm])
+
+
     return (
         <>
             <div className='project-wrapper'>
-                {projects.map((project, key) => {
-                    console.log(project.subtitle[1])
+                <Input
+                    placeholder="search"
+                    name="Search for a skill"
+                    onChange={(event) => {
+                        setSearchTerm(event.target.value);
+                    }}
+                />
+                {resultsArray.map((project, key) => {
                     return (
                         <div key={key}>
                             <Card className='card'>
@@ -187,18 +217,18 @@ function Cards() {
                                         {project.subtitle}
                                     </CardSubtitle>
                                 </CardBody>
-                                    <img
-                                        alt="Card image cap"
-                                        src={`${project.image}`}
-                                        width='100%'
-                                        height='auto'
-                                    />
+                                <img
+                                    alt="Card image cap"
+                                    src={`${project.image}`}
+                                    width='100%'
+                                    height='auto'
+                                />
                                 <CardBody>
                                     <CardText>
-                                        {[...project.description].forEach((tech, key) => {
+                                        {/* {[...project.description].forEach((tech, key) => {
                                             console.log(tech);
                                             <FontAwesomeIcon icon={tech} key={key} />
-                                        })}
+                                        })} */}
                                     </CardText>
                                     <CardLink href={`${project.deployedLink}`} target='_blank'>
                                         {project.title}
