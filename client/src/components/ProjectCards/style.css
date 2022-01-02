@@ -18,6 +18,23 @@
     font-weight: bolder;
 }
 
+.search {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-left: 12%;
+    line-height: 32px;
+    box-shadow: 5px 10px 18px black;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+
+}
+
+.card-text {
+    width: 100%;
+}
+
 .project-wrapper {
     display: grid;
     /* overflow: auto; */
@@ -40,6 +57,13 @@
     .card-link:hover {
         font-size: 1.75rem;
     }
+}
+
+@media (max-width: 768px) {
+    .search {
+        width: 50%;    
+    }
+    
 }
 
 @media (max-width: 541px) {

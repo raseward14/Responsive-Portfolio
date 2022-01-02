@@ -201,6 +201,7 @@ function Cards() {
                     onChange={(event) => {
                         setSearchTerm(event.target.value);
                     }}
+                    className="search"
                 />
                 {resultsArray.map((project, key) => {
                     return (
@@ -225,10 +226,7 @@ function Cards() {
                                 />
                                 <CardBody>
                                     <CardText>
-                                        {/* {[...project.description].forEach((tech, key) => {
-                                            console.log(tech);
-                                            <FontAwesomeIcon icon={tech} key={key} />
-                                        })} */}
+                                        {project.description}
                                     </CardText>
                                     <CardLink href={`${project.deployedLink}`} target='_blank'>
                                         {project.title}
