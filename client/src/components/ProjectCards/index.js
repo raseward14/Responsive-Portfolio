@@ -45,7 +45,7 @@ function Cards() {
             title: 'Loan Shark',
             subtitle: '',
             image: LoanShark,
-            description: 'MERN, React.js, Reactstrap, MongoDB, express.js, node.js, RESTful API, heroku, victory',
+            description: 'JavaScript, CSS, HTML, MERN, React.js, Reactstrap, MongoDB, express.js, node.js, RESTful API, heroku, victory, Mongoose.js',
             githubLink: 'https://github.com/raseward14/loan_shark',
             deployedLink: 'https://loaning-sharks.herokuapp.com/'
         },
@@ -53,7 +53,7 @@ function Cards() {
             title: 'Employee Directory',
             subtitle: '',
             image: EmployeeDirectory,
-            description: '',
+            description: 'JavaScript, CSS, HTML, node.js, React.js, Bootstrap, axios, Random User API',
             githubLink: 'https://github.com/raseward14/employee_directory2',
             deployedLink: 'https://raseward14.github.io/employee_directory2/'
         },
@@ -61,7 +61,7 @@ function Cards() {
             title: 'Budget Tracker',
             subtitle: '',
             image: BudgetTracker,
-            description: '',
+            description: 'JavaScript, CSS, HTML, Webpack, PWA, Service worker, babel.js, node.js, compression, express.js, MongoDB, Mongoose.js',
             githubLink: 'https://reactstrap.github.io/?path=/docs/components-card--card',
             deployedLink: 'https://serene-thicket-18374.herokuapp.com/'
         },
