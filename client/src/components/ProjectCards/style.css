@@ -22,13 +22,30 @@
     width: 30%;
     margin: auto;
     margin-bottom: 10px;
-    margin-left: 12%;
     line-height: 32px;
     box-shadow: 5px 10px 18px black;
     border-radius: 10px;
     padding: 10px;
     border: none;
+    outline: none;
+}
 
+.input-container {
+    position: relative;
+    height: 84%;
+
+}
+
+.input-container .i{
+    position: absolute;
+    left: 61%;
+    top: 20px;
+    color: gray;
+    height: 10;
+}
+
+.search-span {
+    padding: 15px;
 }
 
 .card-text {
@@ -38,6 +55,7 @@
 .project-wrapper {
     display: grid;
     /* overflow: auto; */
+    text-align: center;
 }
 
 .card-link {
@@ -62,6 +80,9 @@
 @media (max-width: 768px) {
     .search {
         width: 50%;    
+    }
+    .input-container .i{
+        left: 65%;
     }
     
 }

@@ -11,7 +11,7 @@ import { Input } from '../Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFile, faLink } from '@fortawesome/free-solid-svg-icons';
+import { faFile, faLink, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithubSquare, faHackerrank, faCodepen, faFreeCodeCamp } from '@fortawesome/free-brands-svg-icons'
 import Workout from '../Images/workout_tracker.png'
 import TeamProfileGenerator from '../Images/team_profile_generator.png'
@@ -37,7 +37,7 @@ function Cards() {
             title: 'My React Blog',
             subtitle: '',
             image: MyReactBlog,
-            description: 'MERN, MongoDB, express.js, react.js, node.js, AWS, RESTful API, JavaScript, CSS, HTML',
+            description: 'JavaScript, CSS, HTML, MERN, MongoDB, express.js, react.js, node.js, AWS, RESTful API',
             githubLink: 'https://github.com/raseward14/My_React_Blog',
             deployedLink: 'http://ec2-18-189-3-248.us-east-2.compute.amazonaws.com'
         },
@@ -195,14 +195,18 @@ function Cards() {
     return (
         <>
             <div className='project-wrapper'>
+                <span className='search-span'>Looking for something specific? Search for a language, technology, or skill that your team needs to filter the projects below.</span>
+                <div className='input-container'>
                 <Input
-                    placeholder="search"
-                    name="Search for a skill"
+                    placeholder="Search"
+                    name="search"
                     onChange={(event) => {
                         setSearchTerm(event.target.value);
                     }}
                     className="search"
                 />
+                <FontAwesomeIcon className='i' icon={faMagnifyingGlass} />
+                </div>
                 {resultsArray.map((project, key) => {
                     return (
                         <div key={key}>
