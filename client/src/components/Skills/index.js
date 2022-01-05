@@ -1,92 +1,95 @@
 import React from 'react';
 import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFile, faCodePullRequest, faCodeMerge, faCodeBranch, faTerminal, faCode } from '@fortawesome/free-solid-svg-icons';
-import { faReact, faNodeJs, faJsSquare, faCss3, faHtml5, faAws, faGithub, faGitlab, faNpm, faStackOverflow, faBootstrap, faFontAwesome, faGitSquare } from '@fortawesome/free-brands-svg-icons'
-import MySQL from '../Images/mysql_icon.png';
+import { faCodePullRequest, faCodeMerge, faCodeBranch, faTerminal, faFontAwesome } from '@fortawesome/free-solid-svg-icons';
+import { faReact, faNodeJs, faGithub, faGitlab, faNpm, faBootstrap } from '@fortawesome/free-brands-svg-icons'
 import JQuery from '../Images/jquery.png';
-import VSCode from '../Images/vscode.png';
-import Postman from '../Images/postman_icon.png';
+import stackOverflow from '../Images/stack_overflow_icon.png';
+import aws from '../Images/aws.png';
+import mySQL from '../Images/mysql_icon.png';
+import git from '../Images/git.png';
+import postman from '../Images/postman.png';
+import vscode from '../Images/visual-studio-code.png';
+import html from '../Images/html.png';
+import js from '../Images/js.png';
+import RESTfulAPI from '../Images/rest-api.png';
+import css from '../Images/css.png';
 
 export default function Skills() {
     return (
         <>
             <div className='grid-container'>
                 <div className='grid-item'>
-                    <FontAwesomeIcon icon={faJsSquare} />
+                    <img src={js} />
                 </div>
                 <div className='grid-item'>
-                    <FontAwesomeIcon icon={faCss3} />
+                    <FontAwesomeIcon icon={faReact} style={{ color: '#00ffff' }} />
                 </div>
                 <div className='grid-item'>
-                    <FontAwesomeIcon icon={faHtml5} />
-
+                    <img src={css} />
                 </div>
                 <div className='grid-item'>
-                    <FontAwesomeIcon icon={faReact} />
-
+                    <img src={html} />
                 </div>
                 <div className='grid-item'>
-                    <FontAwesomeIcon icon={faNodeJs} />
-                </div>
-
-                <div className='grid-item'>
-                    <img src={JQuery} />
+                    <FontAwesomeIcon icon={faNodeJs} style={{ color: '#00ff00' }} />
                 </div>
                 <div className='grid-item'>
-                <FontAwesomeIcon icon={faAws} />
-                </div>
-
-                <div className='grid-item'>
-                    <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png" />
+                    <FontAwesomeIcon icon={faNpm} style={{ color: '#dc143c' }} />
                 </div>
                 <div className='grid-item'>
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
                 </div>
                 <div className='grid-item'>
-                    <img src={MySQL} />
+                    <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png" />
                 </div>
                 <div className='grid-item'>
-                <FontAwesomeIcon icon={faGithub} />
+                    <img src={mySQL} />
                 </div>
                 <div className='grid-item'>
-                <FontAwesomeIcon icon={faGitlab} />
+                    <img src={RESTfulAPI} />
                 </div>
                 <div className='grid-item'>
-                <FontAwesomeIcon icon={faNpm} />
+                    <FontAwesomeIcon icon={faGithub} />
                 </div>
                 <div className='grid-item'>
-                <FontAwesomeIcon icon={faCodeBranch} />
+                    <FontAwesomeIcon icon={faGitlab} style={{ color: '#ff8c00' }} />
                 </div>
                 <div className='grid-item'>
-                <FontAwesomeIcon icon={faCodePullRequest} />
+                    <img src={JQuery} />
                 </div>
                 <div className='grid-item'>
-                <FontAwesomeIcon icon={faCodeMerge} />
+                    <FontAwesomeIcon icon={faBootstrap} style={{ color: '#7b68ee' }} />
                 </div>
                 <div className='grid-item'>
-                <FontAwesomeIcon icon={faStackOverflow} />
+                    <FontAwesomeIcon icon={faFontAwesome} style={{ color: '#1e90ff' }} />
                 </div>
                 <div className='grid-item'>
-                <FontAwesomeIcon icon={faBootstrap} />
+                    <img src={aws} />
                 </div>
                 <div className='grid-item'>
-                <FontAwesomeIcon icon={faFontAwesome} />
+                    <img src={git} />
                 </div>
                 <div className='grid-item'>
-                    <img src={VSCode} />
+                    <FontAwesomeIcon icon={faCodeMerge} style={{ color: '#eb5f34' }} />
                 </div>
                 <div className='grid-item'>
-                    <img src={Postman} />
+                    <FontAwesomeIcon icon={faCodePullRequest} style={{ color: '#eb5f34' }} />
                 </div>
                 <div className='grid-item'>
-                <FontAwesomeIcon icon={faCode} />
+                    <FontAwesomeIcon icon={faCodeBranch} style={{ color: '#eb5f34' }} />
                 </div>
                 <div className='grid-item'>
-                <FontAwesomeIcon icon={faGitSquare} />
+                    <img src={postman} />
                 </div>
                 <div className='grid-item'>
-                <FontAwesomeIcon icon={faTerminal} />
+                    <img src={vscode} />
+                </div>
+                <div className='grid-item'>
+                    <FontAwesomeIcon icon={faTerminal} />
+                </div>
+                <div className='grid-item'>
+                    <img src={stackOverflow} />
                 </div>
 
 

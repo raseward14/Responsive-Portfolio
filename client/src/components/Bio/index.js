@@ -18,10 +18,10 @@ function Bio() {
       <div className="about-container">
         <p className="about">Hi, my name is Richard, and I'm a full stack web developer based in Loveland, Colorado.</p>
         <p className="about">In June of 2021, I graduated from 2U's Full Stack Web Development Bootcamp as a JavaScript developer. As a language that can be leveraged in both Front, and Backend development, I've spent time crafting comprehensive, and intuitive web based solutions to real-world, every day problems.</p>
-        <p className="about">To build the best tools, I strongly believe in foundational technologies that deliver speed, flexibility, and ease of use. I've found full MERN builds comprised of MongoDB to persist data on the backend, node.js and express.js to power the server, and React.js to.. 'react' from client requests on the frontend, accomplish these goals</p>
+        <p className="about">To build the best tools, I strongly believe in foundational technologies that deliver speed, flexibility, and ease of use. I've found full MERN builds comprised of MongoDB to persist data on the backend, node.js and express.js to power the server, and React.js to.. 'react' from client requests on the frontend, accomplish these goals.</p>
         <p className="about">Seeing these building blocks come together, to form quick, reliable, consistent web applications is where my passion for development stems from.</p>
         <p className="about">However, there is another side to development that truely hits home for me, aside from the satisfaction of constructing fast, and smooth applications. As a lifelong artist, Studio Art Minor from Colorado Mesa University, longtime ex-pat, and lover of foreign language, I offer unique perspective, with an underlying eye for the design, and beauty that makes you want to interact with a webpage.</p>
-        <p className="about">In the future, I hope to continue finding new, and exciting ways to integrate the oil paintings, and charcoal drawings of my physical 2D world, into the virtual frontier of the future.</p>
+        <p className="about">In the future, I hope to continue finding new, and exciting ways to integrate the oil paintings, and charcoal drawings of my physical 2D world, into unique, full stack applications.</p>
         <p className="about"></p>
       </div>
 
