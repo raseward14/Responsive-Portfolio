@@ -53,7 +53,7 @@ function Cards() {
             title: 'Employee Directory',
             subtitle: '',
             image: EmployeeDirectory,
-            description: 'JavaScript, CSS, HTML, node.js, React.js, Bootstrap, axios, Random User API, GitHub pages',
+            description: 'JavaScript, CSS, HTML, node.js, React.js, axios, Random User API, GitHub pages',
             githubLink: 'https://github.com/raseward14/employee_directory2',
             deployedLink: 'https://raseward14.github.io/employee_directory2/'
         },
@@ -61,7 +61,7 @@ function Cards() {
             title: 'Budget Tracker',
             subtitle: '',
             image: BudgetTracker,
-            description: 'JavaScript, CSS, HTML, Webpack, PWA, Service worker, babel.js, node.js, compression, express.js, MongoDB, Mongoose.js, IndexedDB, RESTful API, Heroku',
+            description: 'JavaScript, CSS, Bootstrap, HTML, Webpack, PWA, Service worker, babel.js, node.js, compression, express.js, MongoDB, Mongoose.js, IndexedDB, RESTful API, Heroku',
             githubLink: 'https://reactstrap.github.io/?path=/docs/components-card--card',
             deployedLink: 'https://serene-thicket-18374.herokuapp.com/'
         },
@@ -69,7 +69,7 @@ function Cards() {
             title: 'Workout Tracker',
             subtitle: '',
             image: Workout,
-            description: 'JavaScript, CSS, HTML, MongoDB, Mongoose.js, express.js, node.js, RESTful API, Heroku',
+            description: 'JavaScript, CSS, Bootstrap, HTML, MongoDB, Mongoose.js, express.js, node.js, RESTful API, Heroku',
             githubLink: 'https://github.com/raseward14/Workout_Tracker',
             deployedLink: 'https://damp-wildwood-72230.herokuapp.com/'
         },
@@ -77,7 +77,7 @@ function Cards() {
             title: 'Note Taker',
             subtitle: '',
             image: NoteTaker,
-            description: 'JavaScript, CSS, HTML, node.js, express.js, RESTful API, uuid npm, Heroku',
+            description: 'JavaScript, CSS, Bootstrap, HTML, node.js, express.js, RESTful API, uuid npm, Heroku',
             githubLink: 'https://github.com/raseward14/Note_Taker',
             deployedLink: 'https://enigmatic-garden-40710.herokuapp.com/'
         },
@@ -109,7 +109,7 @@ function Cards() {
             title: 'Tech Blog',
             subtitle: '',
             image: TechBlog,
-            description: 'JavaScript, CSS, HTML, RESTful API, MVC paradigm, express.js, node.js, sequelize, MySQL, handlebars.js, bcrypt npm, Heroku, express-session npm, Sequelize, MySQL, handlebars.js',
+            description: 'JavaScript, CSS, Bootstrap, HTML, RESTful API, MVC paradigm, express.js, node.js, sequelize, MySQL, handlebars.js, bcrypt npm, Heroku, express-session npm, Sequelize, MySQL, handlebars.js',
             githubLink: 'https://github.com/raseward14/Tech_Blog',
             deployedLink: 'https://mighty-taiga-53972.herokuapp.com/login'
         },
@@ -117,7 +117,7 @@ function Cards() {
             title: 'Dog on the Move',
             subtitle: '',
             image: DogOnTheMove,
-            description: 'JavaScript, CSS, HTML, node.js, express.js, MySQL, Sequelize, RESTful API, bcrypt npm, express-session npm, MVC paradigm, handlebars.js, Heroku',
+            description: 'JavaScript, CSS, Bootstrap, HTML, node.js, express.js, MySQL, Sequelize, RESTful API, bcrypt npm, express-session npm, MVC paradigm, handlebars.js, Heroku',
             githubLink: 'https://github.com/raseward14/pet_services',
             deployedLink: 'https://radiant-basin-77736.herokuapp.com/'
         },
@@ -125,7 +125,7 @@ function Cards() {
             title: 'Team Profile Generator',
             subtitle: '',
             image: TeamProfileGenerator,
-            description: 'JavaScript, CSS, HTML, command-line application, Test Driven Development, jest & inquirer npm, node.js',
+            description: 'JavaScript, CSS, Bootstrap, HTML, command-line application, Test Driven Development, jest & inquirer npm, node.js',
             githubLink: 'https://reactstrap.github.io/?path=/docs/components-card--card',
             deployedLink: 'https://reactstrap.github.io/?path=/docs/components-card--card'
         },
@@ -141,7 +141,7 @@ function Cards() {
             title: 'Web API Quiz',
             subtitle: '',
             image: APIQuiz,
-            description: 'JavaScript, CSS, HTML, LocalStorage, GitHub pages',
+            description: 'JavaScript, CSS, Bootstrap, HTML, LocalStorage, GitHub pages',
             githubLink: 'https://github.com/raseward14/Web-API-Quiz',
             deployedLink: 'https://raseward14.github.io/Web-API-Quiz/'
         },
@@ -149,7 +149,7 @@ function Cards() {
             title: 'Weather Dashboard',
             subtitle: '',
             image: WeatherDashboard,
-            description: 'JavaScript, CSS, HTML, JQuery, Openweather API, LocalStorage, GitHub pages',
+            description: 'JavaScript, CSS, Bootstrap, HTML, JQuery, Openweather API, LocalStorage, GitHub pages',
             githubLink: 'https://github.com/raseward14/Weather-Dashboard',
             deployedLink: 'https://raseward14.github.io/Weather-Dashboard/'
         },
