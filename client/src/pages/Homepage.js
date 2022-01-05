@@ -14,6 +14,7 @@ function Homepage() {
             <aside><Nav /></aside>
             <h1 className="heading">Home</h1>
             <section className='home'>Hi! I'm Richard, and I build stuff.
+            <Skills />
             <MERN />
             </section>
         </div>

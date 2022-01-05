@@ -1,0 +1,19 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #21a6f3;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    box-sizing: unset;
+}
+
+.grid-item img {
+    height: 30px;
+}
