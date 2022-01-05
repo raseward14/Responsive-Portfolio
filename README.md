@@ -58,6 +58,7 @@ Here are a few resources that helped me get this project knocked out!
 * [The Coding Train, HTTP Post Request with fetch](https://www.youtube.com/watch?v=Kw5tC5nQMRY&t=6s)
 * [Integromat](https://www.integromat.com/scenario/2817866/edit#)
 * [icons8](https://icons8.com/icons)
+* [uwwing](https://uxwing.com/?s=)
 
 ## License
 * Link for more information: (https://opensource.org/licenses/MIT)
