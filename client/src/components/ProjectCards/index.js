@@ -176,6 +176,24 @@ function Cards() {
     useEffect(() => {
         if (searchTerm !== '') {
             resultsArray.filter((project) => {
+                // resultsArray contains all projects, until something is entered into the search field
+                // once there is a value in the search field, for each project, change description to lowercase, and split on spaces
+                let descriptionArray = project.description.toLowerCase().split(' ');
+                let terms = searchTerm.toLowerCase().split(' ');
+                console.log(terms);
+
+                // i want to map through the array and make sure that each search term is present
+                // terms.forEach(term => {
+                //     descriptionArray.map((description) => {
+                //         if(description.includes(term)) {
+                //             newArray.push(project)
+                //         }
+                //     })
+                // });
+                
+
+
+
                 let tech = project.description.toLocaleLowerCase();
                 let search = searchTerm.toLowerCase();
                 if (tech.includes(search)) {
