@@ -99,9 +99,9 @@ function Cards() {
         },
         {
             title: 'README Generator',
-            subtitle: 'JavaScript, command-line application, inquirer npm',
+            subtitle: '',
             image: ReadMe,
-            description: '',
+            description: 'JavaScript, command-line application, inquirer npm',
             githubLink: 'https://github.com/raseward14/README_Generator',
             deployedLink: 'https://drive.google.com/file/d/1i6kpVcWCndl1QFa8j1u-M8yVi3oyn36U/view'
         },
@@ -178,32 +178,30 @@ function Cards() {
             resultsArray.filter((project) => {
                 // resultsArray contains all projects, until something is entered into the search field
                 // once there is a value in the search field, for each project, change description to lowercase, and split on spaces
-                let descriptionArray = project.description.toLowerCase().split(' ');
-                let terms = searchTerm.toLowerCase().split(' ');
-                console.log(terms);
+                let descriptionArray = project.description.toLowerCase().split(', ');
+                let termsArray = searchTerm.toLowerCase().split(' ');
 
-                // i want to map through the array and make sure that each search term is present
-                // terms.forEach(term => {
-                //     descriptionArray.map((description) => {
-                //         if(description.includes(term)) {
-                //             newArray.push(project)
-                //         }
-                //     })
-                // });
-                
+                // if the description array has all the search terms, then true, otherwise, false
+                // console.log(termsArray.every(term => descriptionArray.includes(term)));
+                // for every term in the term array, find a substring in each description of the description array
+                // if its included, return true, otherwise, exit the loop and and return
+                const result = termsArray.every(term =>
+                    descriptionArray.find(description => {
+                        if (description.includes(term)) {
+                            return true;
+                        };
+                    }));
 
-
-
-                let tech = project.description.toLocaleLowerCase();
-                let search = searchTerm.toLowerCase();
-                if (tech.includes(search)) {
+                // if the result is true, push the whole project to the new array and set the resultsArray state variable to the new array, otherwise return exiting the loop
+                if(result) {
                     newArray.push(project);
                     setResultsArray(newArray);
                 } else {
                     return;
-                };
+                }
             });
         } else {
+            // if none of the search term substrings exist in the description arrays, set results array to all projects object above
             setResultsArray(projects);
         };
         console.log(resultsArray);
@@ -215,15 +213,15 @@ function Cards() {
             <div className='project-wrapper'>
                 <span className='search-span'>Looking for something specific? Search for a language, technology, or skill that your team needs to filter the projects below.</span>
                 <div className='input-container'>
-                <Input
-                    placeholder="Search"
-                    name="search"
-                    onChange={(event) => {
-                        setSearchTerm(event.target.value);
-                    }}
-                    className="search"
-                />
-                <FontAwesomeIcon className='i' icon={faMagnifyingGlass} />
+                    <Input
+                        placeholder="Search"
+                        name="search"
+                        onChange={(event) => {
+                            setSearchTerm(event.target.value);
+                        }}
+                        className="search"
+                    />
+                    <FontAwesomeIcon className='i' icon={faMagnifyingGlass} />
                 </div>
                 {resultsArray.map((project, key) => {
                     return (
