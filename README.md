@@ -59,6 +59,8 @@ Here are a few resources that helped me get this project knocked out!
 * [Integromat](https://www.integromat.com/scenario/2817866/edit#)
 * [icons8](https://icons8.com/icons)
 * [uwwing](https://uxwing.com/?s=)
+* [Borislav Hadzhiev Check if Array of strings contains a substring in JS](https://bobbyhadz.com/blog/javascript-check-if-array-contains-substring-match)
+* [Daniyal Hamid How to Check if an Array Has All Elements of Another Array in JavaScript](https://www.designcise.com/web/tutorial/how-to-check-if-an-array-contains-all-elements-of-another-array-in-javascript)
 
 ## License
 * Link for more information: (https://opensource.org/licenses/MIT)
