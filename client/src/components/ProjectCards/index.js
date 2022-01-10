@@ -12,7 +12,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithubSquare, faHackerrank, faCodepen, faFreeCodeCamp } from '@fortawesome/free-brands-svg-icons'
 import Workout from '../Images/workout_tracker.png'
 import TeamProfileGenerator from '../Images/team_profile_generator.png'
 import MyReactBlog from '../Images/my_react_blog.jpg'
