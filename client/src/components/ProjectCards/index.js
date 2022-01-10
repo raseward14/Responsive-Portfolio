@@ -11,7 +11,7 @@ import { Input } from '../Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFile, faLink, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithubSquare, faHackerrank, faCodepen, faFreeCodeCamp } from '@fortawesome/free-brands-svg-icons'
 import Workout from '../Images/workout_tracker.png'
 import TeamProfileGenerator from '../Images/team_profile_generator.png'
@@ -31,7 +31,6 @@ import WeatherDashboard from '../Images/weather_dashboard.png'
 import WorkdayScheduler from '../Images/scheduler.png'
 import PasswordGenerator from '../Images/password_generator.png'
 function Cards() {
-    const [searchTerm, setSearchTerm] = useState('');
     const projects = [
         {
             title: 'My React Blog',
@@ -170,41 +169,44 @@ function Cards() {
             deployedLink: 'https://raseward14.github.io/Password-Generator/'
         },
     ]
+    const [searchTerm, setSearchTerm] = useState('');
     const [resultsArray, setResultsArray] = useState(projects);
-    let newArray = [];
-
+    
     useEffect(() => {
+        // if search term exists
         if (searchTerm !== '') {
-            resultsArray.filter((project) => {
-                // resultsArray contains all projects, until something is entered into the search field
-                // once there is a value in the search field, for each project, change description to lowercase, and split on spaces
+            // filter the projects
+            const filteredResults = projects.filter((project) => {
+                // descriptionArray is an array of project description strings to lowercase
+                // hold the remaining, filtered results in a new variable, so we can update the state with this array
                 let descriptionArray = project.description.toLowerCase().split(', ');
+                // termsArray is an array of search term strings split by spaces to lowercase
                 let termsArray = searchTerm.toLowerCase().split(' ');
-
-                // if the description array has all the search terms, then true, otherwise, false
-                // console.log(termsArray.every(term => descriptionArray.includes(term)));
-                // for every term in the term array, find a substring in each description of the description array
-                // if its included, return true, otherwise, exit the loop and and return
+                
+                // .every() search term
+                // .find() in each description of the descriptionArray
+                // if the description .includes() the search term substring
+                // if so, return true, setting the result variable to true
                 const result = termsArray.every(term =>
                     descriptionArray.find(description => {
                         if (description.includes(term)) {
                             return true;
                         };
-                    }));
+                    })
+                );
 
-                // if the result is true, push the whole project to the new array and set the resultsArray state variable to the new array, otherwise return exiting the loop
-                if(result) {
-                    newArray.push(project);
-                    setResultsArray(newArray);
+                // if result is true, return this project to be included in the resulting filtered array, else return to break the loop
+                if (result) {
+                    return project;
                 } else {
                     return;
-                }
+                };
             });
+            setResultsArray(filteredResults)
         } else {
             // if none of the search term substrings exist in the description arrays, set results array to all projects object above
             setResultsArray(projects);
         };
-        console.log(resultsArray);
     }, [searchTerm])
 
 
