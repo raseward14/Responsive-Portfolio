@@ -27,9 +27,9 @@ A custom built hamburger menu is included on narrow viewports, with hover classe
 Visit on desktop, or mobile. This app is fully responsive.
 
 * **Responsive**  
-![Mobile Friendly](client/src/components/Images/responsive_screenshot.jpg)
+![Mobile Friendly](client/src/components/Images/finalMobileScreenshot.jpg)
 * **Desktop**  
-![Desktop](client/src/components/Images/fullsize_screenshot.jpg)
+![Desktop](client/src/components/Images/finalScreenshot.jpg)
 
 ## Credits
 Here are a few resources that helped me get this project knocked out!
