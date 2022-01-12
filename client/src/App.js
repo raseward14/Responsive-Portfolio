@@ -25,7 +25,7 @@ function App() {
     if(yourColor !== null) {
       setBackgroundColor(yourColor);
     } else {
-      setBackgroundColor('#F9B10A');
+      setBackgroundColor('#8ED1FC');
     };
   }, []);
   return (
