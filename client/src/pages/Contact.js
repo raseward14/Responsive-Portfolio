@@ -10,7 +10,7 @@ import LetsConnect from "../components/LetsConnect";
 // import { Col, Row, Card } from 'reactstrap';
 
 function Contact() {
-    // let history = useHistory();
+    let history = useHistory();
     const goBackHanler = () => {
         history.goBack();
     };
