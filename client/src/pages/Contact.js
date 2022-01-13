@@ -7,7 +7,6 @@ import "./style.css";
 import Nav from "../components/Navbar/index";
 import AddContact from "../components/AddContact";
 import LetsConnect from "../components/LetsConnect";
-// import { Col, Row, Card } from 'reactstrap';
 
 function Contact() {
     let history = useHistory();
