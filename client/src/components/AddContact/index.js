@@ -7,6 +7,7 @@ function AddContact() {
     const [buttonText, setButtonText] = useState('Submit');
     // use history to redirect back home after submit -- not working
     // let history = useHistory();
+    
 
     // resets component state to null on submit
     function clearState() {
@@ -144,7 +145,6 @@ function AddContact() {
                 let response = await fetch("https://hook.integromat.com/fbohq3cuw4xqkhys8gij8rcarvfxp2p5", options);
                 let myContact = await response.text();
                 console.log(myContact);
-
                 clearState();
             } catch (error) {
                 console.log(error)

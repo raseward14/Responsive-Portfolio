@@ -11,6 +11,9 @@ import LetsConnect from "../components/LetsConnect";
 
 function Contact() {
     // let history = useHistory();
+    const goBackHanler = () => {
+        history.goBack();
+    };
     return (
         <>
             <aside><Nav /></aside>
