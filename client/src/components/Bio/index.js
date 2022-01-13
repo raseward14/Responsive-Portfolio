@@ -97,13 +97,6 @@ function Bio() {
     //             low skilled labor, although we do occasionally recruit for skilled administrative, and production
     //             work. I hope to move forward with a more technical position centered around the foundation I build in
     //             this class.
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </aside>
-    // </div>
-    // end custom bio
   );
 };
 
