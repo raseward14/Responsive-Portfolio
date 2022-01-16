@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Input, FormBtn, TextArea } from '../Form';
 import * as contactAPIFunctions from '../../utils/contactAPI';
 import './style.css';
 function AddContact() {
     const [formObject, setFormObject] = useState({});
     const [buttonText, setButtonText] = useState('Submit');
-    // use history to redirect back home after submit -- not working
-    // let history = useHistory();
-    
+    // navigate replaces useHistory
+    const navigate = useNavigate();    
+
+    const goBackHandler = () => {
+        // redirect to homepage
+        // return navigate.push("/", { from: "Contact" }); becomes
+        navigate('/');
+    };
+
 
     // resets component state to null on submit
     function clearState() {
@@ -146,6 +153,8 @@ function AddContact() {
                 let myContact = await response.text();
                 console.log(myContact);
                 clearState();
+                // wait 2 seconds to show Thank You button, then navigate back home
+                setTimeout(goBackHandler, 2000);
             } catch (error) {
                 console.log(error)
             };

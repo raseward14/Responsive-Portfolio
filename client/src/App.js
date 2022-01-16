@@ -15,7 +15,7 @@ import Ink from './components/Ink';
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
+  Routes,
 } from "react-router-dom";
 
 function App() {
@@ -34,13 +34,13 @@ function App() {
       <DateTime className="DateTime"></DateTime>
         <div id='page-body'>
           <Ink className="Ink" setBackgroundColor={setBackgroundColor}></Ink>
-          <Switch>
-            <Route exact path="/" component={Homepage} />
-            <Route path="/about" component={About} />
-            <Route path="/portfolio" component={Portfolio} />
-            <Route path="/contact" component={Contact} />
-            <Route component={Four} />
-          </Switch>
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route element={<Four />} />
+          </Routes>
         </div>
         <div style={{height: '13vh'}}></div>
       </div>
