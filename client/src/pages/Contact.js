@@ -1,6 +1,5 @@
 // import React
 import React from "react";
-import { useHistory } from 'react-router-dom';
 // import style
 import "./style.css";
 // import components
@@ -9,10 +8,6 @@ import AddContact from "../components/AddContact";
 import LetsConnect from "../components/LetsConnect";
 
 function Contact() {
-    let history = useHistory();
-    const goBackHanler = () => {
-        history.goBack();
-    };
     return (
         <>
             <aside><Nav /></aside>
