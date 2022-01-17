@@ -29,15 +29,15 @@ function Navbar() {
                     </NavItem>
 
                     <NavItem>
-                        <NavLink href="/about">About</NavLink>
+                        <NavLink href="about">About</NavLink>
                     </NavItem>
 
                     <NavItem className="float-right">
-                        <NavLink href="/contact">Contact</NavLink>
+                        <NavLink href="contact">Contact</NavLink>
                     </NavItem>
 
                     <NavItem className="float-right">
-                        <NavLink href="/portfolio">Portfolio</NavLink>
+                        <NavLink href="portfolio">Portfolio</NavLink>
                     </NavItem>
                 </Nav>
                 <Icons />

@@ -11,7 +11,6 @@ function AddContact() {
 
     const goBackHandler = () => {
         // redirect to homepage
-        // return navigate.push("/", { from: "Contact" }); becomes
         navigate('/');
     };
 
