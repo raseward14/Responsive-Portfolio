@@ -35,7 +35,7 @@ function AddContact() {
 
     // POST HTTP request to post clickup task -- not working
     function postTask(event) {
-        event.preventDefault();
+        event.preventDefault()
         var myHeaders = new Headers();
         myHeaders.append("Authorization", "pk_14917287_C01GVS3FA1OD9YG1CWV64YI515GS09QD");
         myHeaders.append("Content-Type", "application/json");
@@ -81,8 +81,6 @@ function AddContact() {
             method: 'POST',
             headers: myHeaders,
             body: raw,
-            mode: 'no-cors',
-            credentials: 'same-origin',
             redirect: 'follow'
         };
 
@@ -151,6 +149,7 @@ function AddContact() {
                 let response = await fetch("https://hook.integromat.com/fbohq3cuw4xqkhys8gij8rcarvfxp2p5", options);
                 let myContact = await response.text();
                 console.log(myContact);
+
                 clearState();
                 // wait 2 seconds to show Thank You button, then navigate back home
                 setTimeout(goBackHandler, 2000);
