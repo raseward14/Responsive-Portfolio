@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import BlurbBook from '../Images/google_books_search.png'
 import Workout from '../Images/workout_tracker.png'
 import TeamProfileGenerator from '../Images/team_profile_generator.png'
 import MyReactBlog from '../Images/my_react_blog.jpg'
@@ -31,6 +32,14 @@ import WorkdayScheduler from '../Images/scheduler.png'
 import PasswordGenerator from '../Images/password_generator.png'
 function Cards() {
     const projects = [
+        {
+            title: 'Blurb Books',
+            subtitle: '',
+            image: BlurbBook,
+            description: 'JavaScript, CSS, HTML, MERN, MongoDB, express.js, axios, react.js, node.js, Heroku, RESTful API, jsonwebtoken, bcrypt, if-env',
+            githubLink: 'https://github.com/raseward14/Google_Books_Search',
+            deployedLink: 'https://blurb-books.herokuapp.com/'
+        },
         {
             title: 'My React Blog',
             subtitle: '',
