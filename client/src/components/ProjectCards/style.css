@@ -84,6 +84,9 @@
     .input-container .i{
         left: 65%;
     }
+    .card-text {
+        display: none;
+    }
     
 }
 
