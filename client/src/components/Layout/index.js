@@ -12,7 +12,7 @@ const Layout = ({ backgroundColor, setBackgroundColor }) => {
                     <Ink className="Ink" setBackgroundColor={setBackgroundColor}></Ink>
                     <Outlet />
                 </div>
-                <div style={{ height: '13vh' }}></div>
+                <div style={{ height: '22vh' }}></div>
             </div>
     );
 };
