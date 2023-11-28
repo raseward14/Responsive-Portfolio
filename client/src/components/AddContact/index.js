@@ -161,7 +161,7 @@ function AddContact() {
                 // wait 2 seconds to show Thank You button, then navigate back home
                 setTimeout(goBackHandler, 2000);
             } catch (error) {
-                console.log(error)
+                console.log(error);
             };
         };
     };
