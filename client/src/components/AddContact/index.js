@@ -198,7 +198,7 @@ function AddContact() {
                     disabled={!(formObject.name && formObject.message && (formObject.phone || formObject.email))}
                     onClick={(event) => {
                         handleFormSubmit(event);
-                        postTask(event)
+                        postTask(event);
                     }}
                 >{buttonText}</FormBtn>
             </section>
