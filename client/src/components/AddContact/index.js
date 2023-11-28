@@ -44,7 +44,7 @@ function AddContact() {
                     myHeaders.append("Accept", "application/json");
         
                     var raw = JSON.stringify({
-                        "name": formObject.name,
+                        "name": formObject.name || 'unknown',
                         "description": "New Task Description",
                         "assignees": [
                             14917287
@@ -64,18 +64,20 @@ function AddContact() {
                         "links_to": null,
                         "check_required_custom_fields": true,
                         "custom_fields": [
+                            formObject.email ? 
                             {
                                 "id": "041c6ec7-59d6-45c7-9cad-67f54d677be4",
                                 "value": formObject.email
-                            },
+                            } : {},
                             {
                                 "id": "546bbe4b-2fa6-49e9-bb7c-3c111aec15eb",
                                 "value": formObject.message
                             },
+                            formObject.phone ?
                             {
                                 "id": "865c7fe2-d4c9-4464-9d71-cc4d190eab98",
                                 "value": `+1 ${formObject.phone}`
-                            }
+                            } : {}
                         ]
                     });
         
@@ -90,7 +92,7 @@ function AddContact() {
                         .then(response => response.text())
                         .then(result => console.log(result))
                         .catch(error => console.log('error', error));
-                        
+
                     clearState();
                     // wait 2 seconds to show Thank You button, then navigate back home
                     setTimeout(goBackHandler, 2000);
