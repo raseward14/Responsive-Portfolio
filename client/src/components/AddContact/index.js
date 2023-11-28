@@ -33,7 +33,7 @@ function AddContact() {
         setFormObject({ ...formObject, [name]: value });
     };
 
-    // POST HTTP request to post clickup task -- not working
+    // POST HTTP request to post clickup task -- now works
     function postTask(event) {
         event.preventDefault()
         var myHeaders = new Headers();
@@ -90,74 +90,74 @@ function AddContact() {
             .catch(error => console.log('error', error));
     };
 
-    async function handleFormSubmit(event) {
-        event.preventDefault();
-        if (formObject.name && formObject.phone || formObject.email) {
-            try {
-                // posts to my api
-                await contactAPIFunctions.saveContact({
-                    name: formObject.name,
-                    phone: formObject.phone,
-                    email: formObject.email,
-                    message: formObject.message
-                });
+    // async function handleFormSubmit(event) {
+    //     event.preventDefault();
+    //     if (formObject.name && formObject.phone || formObject.email) {
+    //         try {
+    //             // posts to my api
+    //             await contactAPIFunctions.saveContact({
+    //                 name: formObject.name,
+    //                 phone: formObject.phone,
+    //                 email: formObject.email,
+    //                 message: formObject.message
+    //             });
 
-                const data = {
-                    name: formObject.name,
-                    description: "New Task Description",
-                    assignees: [
-                        14917287
-                    ],
-                    tags: [
-                        "contact"
-                    ],
-                    status: "To do",
-                    priority: null,
-                    due_date: 1508369194377,
-                    due_date_time: false,
-                    time_estimate: 8640000,
-                    start_date: 1567780450202,
-                    start_date_time: false,
-                    notify_all: true,
-                    parent: null,
-                    links_to: null,
-                    check_required_custom_fields: true,
-                    custom_fields: [
-                        {
-                            id: "041c6ec7-59d6-45c7-9cad-67f54d677be4",
-                            value: formObject.email
-                        },
-                        {
-                            id: "546bbe4b-2fa6-49e9-bb7c-3c111aec15eb",
-                            value: formObject.message
-                        },
-                        {
-                            id: "865c7fe2-d4c9-4464-9d71-cc4d190eab98",
-                            value: `+1 ${formObject.phone}`
-                        }
-                    ]
-                };
+    //             const data = {
+    //                 name: formObject.name,
+    //                 description: "New Task Description",
+    //                 assignees: [
+    //                     14917287
+    //                 ],
+    //                 tags: [
+    //                     "contact"
+    //                 ],
+    //                 status: "To do",
+    //                 priority: null,
+    //                 due_date: 1508369194377,
+    //                 due_date_time: false,
+    //                 time_estimate: 8640000,
+    //                 start_date: 1567780450202,
+    //                 start_date_time: false,
+    //                 notify_all: true,
+    //                 parent: null,
+    //                 links_to: null,
+    //                 check_required_custom_fields: true,
+    //                 custom_fields: [
+    //                     {
+    //                         id: "041c6ec7-59d6-45c7-9cad-67f54d677be4",
+    //                         value: formObject.email
+    //                     },
+    //                     {
+    //                         id: "546bbe4b-2fa6-49e9-bb7c-3c111aec15eb",
+    //                         value: formObject.message
+    //                     },
+    //                     {
+    //                         id: "865c7fe2-d4c9-4464-9d71-cc4d190eab98",
+    //                         value: `+1 ${formObject.phone}`
+    //                     }
+    //                 ]
+    //             };
 
-                // integromat webhook that posts a task to clickup
-                const options = {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(data)
-                }
-                let response = await fetch("https://hook.integromat.com/fbohq3cuw4xqkhys8gij8rcarvfxp2p5", options);
-                let myContact = await response.text();
-                console.log(myContact);
+    //             // integromat webhook that posts a task to clickup
+    //             const options = {
+    //                 method: 'POST',
+    //                 headers: {
+    //                     'Content-Type': 'application/json',
+    //                 },
+    //                 body: JSON.stringify(data)
+    //             }
+    //             let response = await fetch("https://hook.integromat.com/fbohq3cuw4xqkhys8gij8rcarvfxp2p5", options);
+    //             let myContact = await response.text();
+    //             console.log(myContact);
 
-                clearState();
-                // wait 2 seconds to show Thank You button, then navigate back home
-                setTimeout(goBackHandler, 2000);
-            } catch (error) {
-                console.log(error)
-            };
-        };
-    };
+    //             clearState();
+    //             // wait 2 seconds to show Thank You button, then navigate back home
+    //             setTimeout(goBackHandler, 2000);
+    //         } catch (error) {
+    //             console.log(error)
+    //         };
+    //     };
+    // };
 
     return (
         <>
@@ -190,7 +190,8 @@ function AddContact() {
                     id='Button'
                     disabled={!(formObject.name && formObject.message && (formObject.phone || formObject.email))}
                     onClick={(event) => {
-                        handleFormSubmit(event);
+                        // handleFormSubmit(event);
+                        postTask(event)
                     }}
                 >{buttonText}</FormBtn>
             </section>
