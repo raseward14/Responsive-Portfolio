@@ -36,7 +36,6 @@ function AddContact() {
     // POST HTTP request to post clickup task -- now works
     function postTask(event) {
         event.preventDefault();
-        console.log(formObject.phone)
         try {
             var myHeaders = new Headers();
             myHeaders.append("Authorization", "pk_14917287_C01GVS3FA1OD9YG1CWV64YI515GS09QD");
