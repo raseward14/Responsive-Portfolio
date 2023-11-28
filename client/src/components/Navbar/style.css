@@ -7,7 +7,6 @@
     line-height: 4rem;
     width: 100%;
     text-align: center;
-
 }
 .nav-link {
     color:black !important;
@@ -23,7 +22,6 @@
     background-color: antiquewhite;
     pointer-events: auto;
     font-size: 26px;
-
 }
 .menu-button {
     display: none;
@@ -128,26 +126,19 @@ https://www.google.com/search?q=how+to+make+an+animated+hamburger+menu&oq=how+to
     }
 }
 
-@media (max-width: 467px) {
+@media (max-width: 769px) {
     .menu-button {
-        width: 40px;
-        height: 40px;
+        width:40px;
+        height: 40px;;
     }
-    
     .menu-button_burger {
         width: 30px;
         height: 6px;
     }
-    
     .menu-button_burger::before,
     .menu-button_burger::after {
         width: 30px;
         height: 6px;
-    }
-    .nav-link{
-        color:black !important;
-        background-color: white;
-        font-size: 20px;
     }
     .menu-button_burger::before {
         transform: translateY(-9px) ;
@@ -156,8 +147,15 @@ https://www.google.com/search?q=how+to+make+an+animated+hamburger+menu&oq=how+to
     .menu-button_burger::after {
         transform: translateY(9px);
     }
-    
 }
+
+@media (max-width: 467px) {
+    .nav-link{
+        color:black !important;
+        background-color: white;
+        font-size: 20px;
+    }
+ }
 
 @media (max-width: 321px) {
     .nav-bar-main{

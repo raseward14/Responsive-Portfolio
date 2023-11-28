@@ -255,7 +255,7 @@ function Cards() {
                                     height='auto'
                                 />
                                 <CardBody>
-                                    <CardText>
+                                    <CardText className='card-text'>
                                         {project.description}
                                     </CardText>
                                     <CardLink href={`${project.deployedLink}`} target='_blank'>

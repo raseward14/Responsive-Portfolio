@@ -16,12 +16,12 @@ function Bio() {
         <div className="subheading2">University of Denver</div>
       </div>
       <div className="about-container">
-        <p className="about">Hi, my name is Richard, and I'm a full stack web developer based in Loveland, Colorado.</p>
-        <p className="about">In June of 2021, I graduated from 2U's Full Stack Web Development Bootcamp as a JavaScript developer. As a language that can be leveraged in both Front, and Backend development, I've spent time crafting comprehensive, and intuitive web based solutions to real-world, every day problems.</p>
-        <p className="about">To build the best tools, I strongly believe in foundational technologies that deliver speed, flexibility, and ease of use. I've found full MERN builds comprised of MongoDB to persist data on the backend, node.js and express.js to power the server, and React.js to.. 'react' from client requests on the frontend, accomplish these goals.</p>
+        <p className="about">Hi, my name is Richard, and I'm a full stack web developer based in Greeley, Colorado.</p>
+        <p className="about">In June of 2021, I graduated from 2U's Full Stack Web Development Bootcamp as a JavaScript developer. As a language that can be leveraged in both Front, and Backend development, I've spent time building comprehensive, and intuitive web solutions to real-world, every day problems.</p>
+        <p className="about">To build the best tools, I strongly believe in using technologies that deliver speed, and flexibility, along with being easy to use. I specialize in the MERN stack, consisting of MongoDB to persist data on the backend, node.js and express.js to power the server, and React.js to.. 'react' from client requests on the frontend, accomplish these goals.</p>
         <p className="about">Seeing these building blocks come together, to form quick, reliable, consistent web applications is where my passion for development stems from.</p>
-        <p className="about">However, there is another side to development that truely hits home for me, aside from the satisfaction of constructing fast, and smooth applications. As a lifelong artist, Studio Art Minor from Colorado Mesa University, longtime ex-pat, and lover of foreign language, I offer unique perspective, with an underlying eye for the design, and beauty that makes you want to interact with a webpage.</p>
-        <p className="about">In the future, I hope to continue learning, and improving as a developer. A little progress every day, goes a long way!</p>
+        <p className="about">However, there is another side to development that truely hits home for me, aside from the satisfaction of constructing fast, and smooth applications. As a lifelong artist, with a Studio Art Minor, longtime ex-pat, and lover of foreign language, I offer unique perspective, with an underlying eye for the design, and beauty that makes you want to interact with a webpage. This, paired with my current experience in Technical Support, and QA, set the stage for a well rounded approach to development, that always keeps the end user in mind!</p>
+        <p className="about">In the future, I plan to continue learning, and improving as a developer. A little progress every day, goes a long way!</p>
         <p className="about"></p>
       </div>
 
