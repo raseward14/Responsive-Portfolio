@@ -13,6 +13,7 @@ import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import BlurbBook from '../Images/google_books_search.png'
+import ChromeExtension from '../Images/chrome-extension.png'
 import Workout from '../Images/workout_tracker.png'
 import TeamProfileGenerator from '../Images/team_profile_generator.png'
 import MyReactBlog from '../Images/my_react_blog.jpg'
@@ -36,9 +37,16 @@ function Cards() {
             title: 'Blurb Books',
             subtitle: '',
             image: BlurbBook,
-            description: 'JavaScript, CSS, HTML, MERN, MongoDB, express.js, axios, react.js, node.js, Heroku, RESTful API, jsonwebtoken, bcrypt, if-env',
+            description: 'JavaScript, Typescript, CSS, HTML, MERN, MongoDB, express.js, axios, react.js, node.js, Heroku, RESTful API, jsonwebtoken, bcrypt, if-env',
             githubLink: 'https://github.com/raseward14/Google_Books_Search',
             deployedLink: 'https://blurb-books.herokuapp.com/'
+        },
+        {
+            title: 'Calculator Chrome Extension',
+            description: 'React, Typescript, JavaScript, CSS, HTML, express.js, node.js',
+            image: ChromeExtension,
+            githubLink: 'https://github.com/raseward14/react-calculator-chrome-extension'
+
         },
         {
             title: 'My React Blog',
@@ -179,7 +187,7 @@ function Cards() {
     ]
     const [searchTerm, setSearchTerm] = useState('');
     const [resultsArray, setResultsArray] = useState(projects);
-    
+
     useEffect(() => {
         // if search term exists
         if (searchTerm !== '') {
@@ -190,7 +198,7 @@ function Cards() {
                 let descriptionArray = project.description.toLowerCase().split(', ');
                 // termsArray is an array of search term strings split by spaces to lowercase
                 let termsArray = searchTerm.toLowerCase().split(' ');
-                
+
                 // .every() search term
                 // .find() in each description of the descriptionArray
                 // if the description .includes() the search term substring
@@ -233,42 +241,44 @@ function Cards() {
                     />
                     <FontAwesomeIcon className='i' icon={faMagnifyingGlass} />
                 </div>
-                {resultsArray.map((project, key) => {
-                    return (
-                        <div key={key}>
-                            <Card className='card'>
-                                <CardBody>
-                                    <CardTitle tag="h5">
-                                        {project.title}
-                                    </CardTitle>
-                                    <CardSubtitle
-                                        className="mb-2 text-muted"
-                                        tag="h6"
-                                    >
-                                        {project.subtitle}
-                                    </CardSubtitle>
-                                </CardBody>
-                                <img
-                                    alt="Card image cap"
-                                    src={`${project.image}`}
-                                    width='100%'
-                                    height='auto'
-                                />
-                                <CardBody>
-                                    <CardText className='card-text'>
-                                        {project.description}
-                                    </CardText>
-                                    <CardLink href={`${project.deployedLink}`} target='_blank'>
-                                        {project.title}
-                                    </CardLink>
-                                    <CardLink href={`${project.githubLink}`} target='_blank'>
-                                        Github
-                                    </CardLink>
-                                </CardBody>
-                            </Card>
-                        </div>
-                    )
-                })}
+                <div className='card-wrapper'>
+                    {resultsArray.map((project, key) => {
+                        return (
+                            <div key={key} >
+                                <Card>
+                                    <CardBody>
+                                        <CardTitle tag="h5">
+                                            {project.title}
+                                        </CardTitle>
+                                        <CardSubtitle
+                                            className="mb-2 text-muted"
+                                            tag="h6"
+                                        >
+                                            {project.subtitle}
+                                        </CardSubtitle>
+                                    </CardBody>
+                                    <img
+                                        alt="Card image cap"
+                                        src={`${project.image}`}
+                                        width='100%'
+                                        height='auto'
+                                    />
+                                    <CardBody>
+                                        <CardText className='card-text'>
+                                            {project.description}
+                                        </CardText>
+                                        <CardLink href={`${project.deployedLink}`} target='_blank'>
+                                            {project.title}
+                                        </CardLink>
+                                        <CardLink href={`${project.githubLink}`} target='_blank'>
+                                            Github
+                                        </CardLink>
+                                    </CardBody>
+                                </Card>
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
         </>
     );
