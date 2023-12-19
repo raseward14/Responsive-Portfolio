@@ -31,6 +31,9 @@ import APIQuiz from '../Images/api_quiz.png'
 import WeatherDashboard from '../Images/weather_dashboard.png'
 import WorkdayScheduler from '../Images/scheduler.png'
 import PasswordGenerator from '../Images/password_generator.png'
+import 'react-tooltip/dist/react-tooltip.css'
+import { Tooltip as ReactTooltip } from "react-tooltip";
+
 function Cards() {
     const projects = [
         {
@@ -241,10 +244,15 @@ function Cards() {
                     />
                     <FontAwesomeIcon className='i' icon={faMagnifyingGlass} />
                 </div>
-                <div className='card-wrapper'>
+                <ReactTooltip id="techTip" />
+                <div className='card-wrapper'
+                >
                     {resultsArray.map((project, key) => {
                         return (
-                            <div key={key} >
+                            <div 
+                            key={key}
+                            data-tooltip-id="techTip"
+                            data-tooltip-content={`${project.description}`}>
                                 <Card>
                                     <CardBody>
                                         <CardTitle tag="h5">
@@ -264,9 +272,9 @@ function Cards() {
                                         height='auto'
                                     />
                                     <CardBody>
-                                        <CardText className='card-text'>
+                                        {/* <CardText className='card-text'>
                                             {project.description}
-                                        </CardText>
+                                        </CardText> */}
                                         <CardLink href={`${project.deployedLink}`} target='_blank'>
                                             {project.title}
                                         </CardLink>
