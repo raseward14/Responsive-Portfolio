@@ -70,9 +70,6 @@ img {
     color: white;
 }
 
-.card-link:hover {
-    font-size: blue;
-}
 
 @media (max-width: 768px) {
     .card-text {
