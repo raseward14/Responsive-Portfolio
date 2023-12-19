@@ -276,7 +276,7 @@ function Cards() {
                                             {project.description}
                                         </CardText> */}
                                         <CardLink href={`${project.deployedLink}`} target='_blank'>
-                                            {project.title}
+                                            Project link
                                         </CardLink>
                                         <CardLink href={`${project.githubLink}`} target='_blank'>
                                             Github
