@@ -101,7 +101,7 @@ function Cards() {
         },
         {
             title: 'Employee Tracker',
-            subtitle: 'JavaScript',
+            subtitle: '',
             image: EmployeeTracker,
             description: 'JavaScript, MySQL, node.js, inquirer npm, chalk npm, figlet npm, command-line application, console-table-printer npm',
             githubLink: 'https://github.com/raseward14/Employee_Tracker',
