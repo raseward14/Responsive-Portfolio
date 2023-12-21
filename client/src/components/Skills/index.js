@@ -14,6 +14,7 @@ import html from '../Images/html.png';
 import js from '../Images/js.png';
 import RESTfulAPI from '../Images/rest-api.png';
 import css from '../Images/css.png';
+import typescript from '../Images/typescript-icon.png';
 
 export default function Skills() {
     return (
@@ -23,7 +24,7 @@ export default function Skills() {
                     <img src={js} />
                 </div>
                 <div className='grid-item'>
-                    <FontAwesomeIcon icon={faReact} style={{ color: '#00ffff' }} />
+                    <img src={typescript}/>
                 </div>
                 <div className='grid-item'>
                     <img src={css} />
