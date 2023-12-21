@@ -242,7 +242,7 @@ function Cards() {
                         }}
                         className="search"
                     />
-                    <FontAwesomeIcon className='i' icon={faMagnifyingGlass} />
+                    {/* <FontAwesomeIcon className='i' icon={faMagnifyingGlass} /> */}
                 </div>
                 <ReactTooltip id="techTip" />
                 <div className='card-wrapper'

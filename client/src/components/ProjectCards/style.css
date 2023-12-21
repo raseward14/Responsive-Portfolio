@@ -32,6 +32,7 @@ a:hover {
 }
 
 .search {
+    position: relative;
     width: 50%;
     margin: auto;
     margin-bottom: 10px;
@@ -50,7 +51,7 @@ a:hover {
 
 .input-container .i{
     position: absolute;
-    right: 28%;
+    right: 17%;
     top: 20px;
     height: 10;
 }
@@ -78,5 +79,9 @@ a:hover {
     .card-text {
         display: none;
     }
+    .input-container .i{
+        display: none;
+    }
+    
     
 }

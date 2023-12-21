@@ -1,10 +1,14 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+
 
 // exports Input, TextArea, and FormBtn
 export function Input(props) {
     return (
         <div className="form-group">
             <input className="form-control" {...props} />
+            <FontAwesomeIcon className='i' icon={faMagnifyingGlass} />
         </div>
     );
 };
