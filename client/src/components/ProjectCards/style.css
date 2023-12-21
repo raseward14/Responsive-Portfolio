@@ -1,9 +1,10 @@
 .card-wrapper {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        width: 80%;
-        padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 80%;
+    padding: 10px;
 }
+
 .card {
     /* content: ""; */
     /* clear: both; */
@@ -25,8 +26,10 @@
 }
 
 img {
-    max-height: 100px;
+    height: 100px;
+
 }
+
 a:hover {
     font-size: 16px;
 }
@@ -49,7 +52,7 @@ a:hover {
     height: 84%;
 }
 
-.input-container .i{
+.input-container .i {
     position: absolute;
     right: 17%;
     top: 20px;
@@ -79,9 +82,10 @@ a:hover {
     .card-text {
         display: none;
     }
-    .input-container .i{
+
+    .input-container .i {
         display: none;
     }
-    
-    
+
+
 }
