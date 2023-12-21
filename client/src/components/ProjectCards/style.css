@@ -6,27 +6,25 @@
 }
 
 .card {
-    /* content: ""; */
-    /* clear: both; */
     overflow: auto;
     /*display table prevents the scroll bar*/
     display: table;
     overflow: auto;
     margin-bottom: 10px;
-    margin-right: 10px;
-    height: 300px;
+    max-width: 270px;
     width: 90%;
     background-color: black;
     color: white;
-    text-align: center;
     box-shadow: 5px 10px 18px black;
-    border-radius: 10px;
-    font-family: 'Dekko';
-    font-weight: bolder;
+    border-radius: 5px;
+}
+
+.card-title {
+    height: 40px;
 }
 
 img {
-    height: 100px;
+    height: 110px;
 
 }
 

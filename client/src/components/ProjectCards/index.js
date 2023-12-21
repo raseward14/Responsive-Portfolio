@@ -252,18 +252,21 @@ function Cards() {
                             <div 
                             key={key}
                             data-tooltip-id="techTip"
-                            data-tooltip-content={`${project.description}`}>
-                                <Card>
+                            data-tooltip-content={`${project.description}`}
+                            >
+                                <Card className='card'>
                                     <CardBody>
-                                        <CardTitle tag="h5">
+                                        <CardTitle 
+                                        tag="h5"
+                                        className="card-title">
                                             {project.title}
                                         </CardTitle>
-                                        <CardSubtitle
+                                        {/* <CardSubtitle
                                             className="mb-2 text-muted"
                                             tag="h6"
                                         >
                                             {project.subtitle}
-                                        </CardSubtitle>
+                                        </CardSubtitle> */}
                                     </CardBody>
                                     <img
                                         alt="Card image cap"
