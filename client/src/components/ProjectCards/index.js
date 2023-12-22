@@ -144,8 +144,8 @@ function Cards() {
             subtitle: '',
             image: TeamProfileGenerator,
             description: 'JavaScript, CSS, Bootstrap, HTML, command-line application, Test Driven Development, jest & inquirer npm, node.js',
-            githubLink: 'https://reactstrap.github.io/?path=/docs/components-card--card',
-            deployedLink: 'https://reactstrap.github.io/?path=/docs/components-card--card'
+            githubLink: 'https://github.com/raseward14/team_profile_generator/blob/main/README.md',
+            videoLink: 'https://drive.google.com/file/d/1rM6YT2DF8qofT7VaRBkXlUgak32Pdjg3/view'
         },
         {
             title: 'My Cheap Book Finder',
