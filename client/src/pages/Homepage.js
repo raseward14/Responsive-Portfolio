@@ -1,24 +1,31 @@
 // import React
-import React from "react";
+import React from 'react';
 // import components
-import Nav from "../components/Navbar/index";
-import MERN from "../components/MERNfooter";
-import Skills from "../components/Skills";
+import Nav from '../components/Navbar/index';
+import MERN from '../components/MERNfooter';
+import Skills from '../components/Skills';
+import Typewriter from '../components/Typewriter';
 
 // import style
-import "./style.css";
+import './style.css';
 
 function Homepage() {
-    return (
-        <div>
-            <aside><Nav /></aside>
-            <h1 className="heading">Home</h1>
-            <section className='home'>Hi! I'm Richard, and I'm a software engineer.
-            <Skills />
-            <MERN />
-            </section>
-        </div>
-    );
-};
+  return (
+    <div>
+      <aside>
+        <Nav />
+      </aside>
+      <h1 className="heading">Home</h1>
+      <section className="home">
+        <Typewriter
+          text="Hi! Im Richard, and I'm a software engineer."
+          delay={100}
+        />
+        <Skills />
+        <MERN />
+      </section>
+    </div>
+  );
+}
 
 export default Homepage;
