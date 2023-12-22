@@ -244,7 +244,9 @@ function Cards() {
                     />
                     {/* <FontAwesomeIcon className='i' icon={faMagnifyingGlass} /> */}
                 </div>
-                <ReactTooltip id="techTip" />
+                <ReactTooltip 
+                style={{'z-index': 1000}}
+                id="techTip" />
                 <div className='card-wrapper'
                 >
                     {resultsArray.map((project, key) => {
