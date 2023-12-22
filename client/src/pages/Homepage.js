@@ -13,7 +13,7 @@ function Homepage() {
         <div>
             <aside><Nav /></aside>
             <h1 className="heading">Home</h1>
-            <section className='home'>Hi! I'm Richard, and I build stuff.
+            <section className='home'>Hi! I'm Richard, and I'm a software engineer.
             <Skills />
             <MERN />
             </section>
