@@ -19,7 +19,6 @@
     border-radius: 5px;
     position: unset;
 }
-
 .card-title {
     height: 40px;
 }
@@ -46,16 +45,16 @@ a:hover {
     outline: none;
 }
 
-.input-container {
-    position: relative;
-    height: 84%;
-}
+/* .input-container {
+    position: relative; 
+    height: 84%; 
+}  */
 
 .input-container .i {
-    position: absolute;
-    right: 17%;
-    top: 20px;
-    height: 10;
+    /* position: absolute; */
+    /* right: 17%; */
+    /* top: 20px;
+    height: 10; */
 }
 
 .search-span {

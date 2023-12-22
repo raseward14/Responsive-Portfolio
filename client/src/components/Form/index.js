@@ -7,8 +7,10 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 export function Input(props) {
     return (
         <div className="form-group">
-            <input className="form-control" {...props} />
-            <FontAwesomeIcon className='i' icon={faMagnifyingGlass} />
+            <input className="form-control" {...props}/>
+            {/* <button>
+                <FontAwesomeIcon className='i' icon={faMagnifyingGlass} />
+            </button> */}
         </div>
     );
 };
