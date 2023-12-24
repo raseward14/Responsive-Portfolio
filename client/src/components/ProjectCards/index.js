@@ -50,7 +50,6 @@ function Cards() {
             image: ChromeExtension,
             githubLink: 'https://github.com/raseward14/react-calculator-chrome-extension',
             deployedLink: 'https://macos-calculator-react-clone.netlify.app/'
-
         },
         {
             title: 'My React Blog',
