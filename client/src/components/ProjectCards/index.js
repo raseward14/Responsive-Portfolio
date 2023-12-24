@@ -48,7 +48,8 @@ function Cards() {
             title: 'Calculator Chrome Extension',
             description: 'React, Typescript, JavaScript, CSS, HTML, express.js, node.js',
             image: ChromeExtension,
-            githubLink: 'https://github.com/raseward14/react-calculator-chrome-extension'
+            githubLink: 'https://github.com/raseward14/react-calculator-chrome-extension',
+            deployedLink: 'https://macos-calculator-react-clone.netlify.app/'
 
         },
         {
