@@ -38,7 +38,7 @@ a:hover {
     margin: auto;
     margin-bottom: 10px;
     line-height: 32px;
-    box-shadow: 5px 10px 10px black;
+    box-shadow: 5px 10px 10px 5px black;
     border-radius: 5px;
     padding: 10px;
     border: none;
