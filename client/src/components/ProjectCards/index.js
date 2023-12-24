@@ -8,10 +8,12 @@ import {
     CardLink
 } from 'reactstrap';
 import { Input } from '../Form';
+import ProjectFilters from '../ProjectFilters';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+// project images
 import BlurbBook from '../Images/google_books_search.png'
 import ChromeExtension from '../Images/chrome-extension.png'
 import Workout from '../Images/workout_tracker.png'
@@ -243,7 +245,9 @@ function Cards() {
                         className="search"
                     />
                     {/* <FontAwesomeIcon className='i' icon={faMagnifyingGlass} /> */}
+                
                 </div>
+                <ProjectFilters />
                 <ReactTooltip 
                 id="techTip" />
                 <div className='card-wrapper'

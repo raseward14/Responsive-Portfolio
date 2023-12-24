@@ -1,0 +1,12 @@
+.filter-wrapper {
+  width: 80%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 15px 10px 15px 10px;
+}
+.filter-tab {
+  border-bottom: 2px solid white;
+}
+.filter-tab:hover {
+  border-bottom: 2px solid red;
+}
