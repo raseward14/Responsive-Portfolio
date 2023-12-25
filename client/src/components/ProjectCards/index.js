@@ -36,7 +36,7 @@ import PasswordGenerator from '../Images/password_generator.png'
 import 'react-tooltip/dist/react-tooltip.css'
 import { Tooltip as ReactTooltip } from "react-tooltip";
 
-function Cards() {
+function Cards({ backgroundColor }) {
     const projects = [
         {
             title: 'Blurb Books',
@@ -247,7 +247,7 @@ function Cards() {
                     {/* <FontAwesomeIcon className='i' icon={faMagnifyingGlass} /> */}
                 
                 </div>
-                <ProjectFilters />
+                <ProjectFilters backgroundColor={backgroundColor} />
                 <ReactTooltip 
                 id="techTip" />
                 <div className='card-wrapper'

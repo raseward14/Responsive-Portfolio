@@ -35,7 +35,8 @@ function App() {
           setBackgroundColor={setBackgroundColor} />} >
           <Route index element={<Homepage />} />
           <Route path="about" element={<About />} />
-          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="portfolio" element={<Portfolio
+          backgroundColor={backgroundColor} />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<Four />} />
         </Route>

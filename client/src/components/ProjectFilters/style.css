@@ -6,6 +6,8 @@
 }
 .filter-tab {
   border-bottom: 2px solid white;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 .filter-tab:hover {
   border-bottom: 2px solid red;
