@@ -10,6 +10,6 @@
   border-top-left-radius: 5px;
 }
 .filter-tab:hover {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid black;
   cursor: pointer;
 }
