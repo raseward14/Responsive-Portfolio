@@ -3,224 +3,136 @@ import './style.css';
 
 const ProjectFilters = ({ backgroundColor }) => {
   const [activeTab, setActiveTab] = useState('all');
-  const tabs = ['all', 'react.js', 'relational', 'non-relational'];
+  const [tabStyle, setTabStyle] = useState('orange');
+  // const tabs = ['all', 'react.js', 'relational', 'non-relational'];
 
   const handleClick = (tab) => {
     setActiveTab(tab);
   };
 
   useEffect(() => {
+    switch (backgroundColor) {
+      case '#7BDCB5':
+        setTabStyle('teal');
+        break;
+      case '#00D084':
+        setTabStyle('green');
+        break;
+      case '#8ED1FC':
+        setTabStyle('light-blue');
+        break;
+      case '#0693E3':
+        setTabStyle('blue');
+        break;
+      case '#ABB8C3':
+        setTabStyle('gray');
+        break;
+      case '#EB144C':
+        setTabStyle('red');
+        break;
+      case '#F78DA7':
+        setTabStyle('pink');
+        break;
+      case '#9900EF':
+        setTabStyle('indigo');
+        break;
+      case '#05F725':
+        setTabStyle('lime');
+        break;
+      default:
+        setTabStyle('orange');
+        break;
+    }
     console.log(`from proj-filters ${backgroundColor}`);
   }, [backgroundColor]);
 
   return (
     <div className="filter-wrapper">
-      {tabs.map((value) => {
-        switch (backgroundColor) {
-          case '#7BDCB5' && activeTab === value:
+      {/* {tabs.map((value) => {
+        {
+          activeTab === value ? (
             <div
-              className="filter-tab teal"
+              className={`filter-tab ${tabStyle}`}
               style={{ 'background-color': backgroundColor }}
-              onClick={() => setActiveTab(value)}
+              onClick={() => setActiveTab('all')}
             >
               {value}
-            </div>;
-            break;
-          case ('#7BDCB5' && activeTab !== value):
+            </div>
+          ) : (
             <div
-              className="filter-tab teal"
-              onClick={() => setActiveTab(value)}
+              className={`filter-tab ${tabStyle}`}
+              onClick={() => setActiveTab('all')}
             >
               {value}
-            </div>;
-            break;
-          case '#00D084' && activeTab === value:
-            <div
-              className="filter-tab green"
-              style={{ 'background-color': backgroundColor }}
-              onClick={() => setActiveTab(value)}
-            >
-              {value}
-            </div>;
-            break;
-          case '#00D084' && activeTab !== value:
-            <div
-              className="filter-tab green"
-              onClick={() => setActiveTab(value)}
-            >
-              {value}
-            </div>;
-            break;
-          case '#8ED1FC' && activeTab === value:
-            <div
-              className="filter-tab light-blue"
-              style={{ 'background-color': backgroundColor }}
-              onClick={() => setActiveTab(value)}
-            >
-              {value}
-            </div>;
-            break;
-          case '#8ED1FC' && activeTab !== value:
-            <div
-              className="filter-tab light-blue"
-              onClick={() => setActiveTab(value)}
-            >
-              {value}
-            </div>;
-            break;
-          case '#0693E3' && activeTab === value:
-            <div
-              className="filter-tab blue"
-              style={{ 'background-color': backgroundColor }}
-              onClick={() => setActiveTab(value)}
-            >
-              {value}
-            </div>;
-            break;
-          case '#0693E3' && activeTab !== value:
-            <div
-              className="filter-tab blue"
-              onClick={() => setActiveTab(value)}
-            >
-              {value}
-            </div>;
-            break;
-          case '#ABB8C3' && activeTab === value:
-            <div
-              className="filter-tab gray"
-              style={{ 'background-color': backgroundColor }}
-              onClick={() => setActiveTab(value)}
-            >
-              {value}
-            </div>;
-            break;
-          case '#ABB8C3' && activeTab !== value:
-            <div
-              className="filter-tab gray"
-              onClick={() => setActiveTab(value)}
-            >
-              {value}
-            </div>;
-            break;
-          case '#EB144C' && activeTab === value:
-            <div
-              className="filter-tab red"
-              style={{ 'background-color': backgroundColor }}
-              onClick={() => setActiveTab(value)}
-            >
-              {value}
-            </div>;
-            break;
-          case '#EB144C' && activeTab !== value:
-            <div className="filter-tab red" onClick={() => setActiveTab(value)}>
-              {value}
-            </div>;
-            break;
-          case '#F78DA7' && activeTab === value:
-            <div
-              className="filter-tab pink"
-              style={{ 'background-color': backgroundColor }}
-              onClick={() => setActiveTab(value)}
-            >
-              {value}
-            </div>;
-            break;
-          case '#F78DA7' && activeTab !== value:
-            <div
-              className="filter-tab pink"
-              onClick={() => setActiveTab(value)}
-            >
-              {value}
-            </div>;
-            break;
-          case '#9900EF' && activeTab === value:
-            <div
-              className="filter-tab indigo"
-              style={{ 'background-color': backgroundColor }}
-              onClick={() => setActiveTab(value)}
-            >
-              {value}
-            </div>;
-            break;
-          case '#9900EF' && activeTab !== value:
-            <div
-              className="filter-tab indigo"
-              onClick={() => setActiveTab(value)}
-            >
-              {value}
-            </div>;
-            break;
-          case '#05F725' && activeTab === value:
-            <div
-              className="filter-tab lime"
-              style={{ 'background-color': backgroundColor }}
-              onClick={() => setActiveTab(value)}
-            >
-              {value}
-            </div>;
-            break;
-          case '#05F725' && activeTab !== value:
-            <div
-              className="filter-tab lime"
-              onClick={() => setActiveTab(value)}
-            >
-              {value}
-            </div>;
-            break;
-          case '#FCB900' && activeTab === value:
-            <div
-              className="filter-tab orange"
-              style={{ 'background-color': backgroundColor }}
-              onClick={() => setActiveTab(value)}
-            >
-              {value}
-            </div>;
-            break;
-          case '#FCB900' && activeTab !== value:
-            <div
-              className="filter-tab orange"
-              onClick={() => setActiveTab(value)}
-            >
-              {value}
-            </div>;
-            break;
+            </div>
+          );
         }
-      })}
+      })} */}
 
-      {/* {activeTab === 'all' ? 
-      <div
-      className="filter-tab"
-      style={{'background-color': backgroundColor}}
-      onClick={()=> setActiveTab('all')}>all</div>      
-      : 
-      <div
-      className="filter-tab"
-      onClick={()=> setActiveTab('all')}>all</div>
-      }
-      {activeTab === 'react.js' ? 
-      <div className="filter-tab"
-      style={{'background-color': backgroundColor}}
-      onClick={()=> setActiveTab('react.js')}>react.js</div>      
-      :       
-      <div className="filter-tab"
-      onClick={()=> setActiveTab('react.js')}>react.js</div>
-      }
-      {activeTab === 'relational' ? 
-      <div className="filter-tab"
-      style={{'background-color': backgroundColor}}
-      onClick={()=> setActiveTab('relational')}>relational</div>
-      :       
-      <div className="filter-tab"
-      onClick={()=> setActiveTab('relational')}>relational</div>
-      }
-      {activeTab === 'non-relational' ? 
-      <div className="filter-tab"
-      style={{'background-color': backgroundColor}}
-      onClick={()=> setActiveTab('non-relational')}>non-relational</div>
-      :      
-      <div className="filter-tab"
-      onClick={()=> setActiveTab('non-relational')}>non-relational</div>
-      } */}
+      {activeTab === 'all' ? (
+        <div
+          className={`filter-tab ${tabStyle}`}
+          style={{ 'background-color': backgroundColor }}
+          onClick={() => setActiveTab('all')}
+        >
+          all
+        </div>
+      ) : (
+        <div
+          className={`filter-tab ${tabStyle}`}
+          onClick={() => setActiveTab('all')}
+        >
+          all
+        </div>
+      )}
+      {activeTab === 'react.js' ? (
+        <div
+          className={`filter-tab ${tabStyle}`}
+          style={{ 'background-color': backgroundColor }}
+          onClick={() => setActiveTab('react.js')}
+        >
+          react.js
+        </div>
+      ) : (
+        <div
+          className={`filter-tab ${tabStyle}`}
+          onClick={() => setActiveTab('react.js')}
+        >
+          react.js
+        </div>
+      )}
+      {activeTab === 'relational' ? (
+        <div
+          className={`filter-tab ${tabStyle}`}
+          style={{ 'background-color': backgroundColor }}
+          onClick={() => setActiveTab('relational')}
+        >
+          relational
+        </div>
+      ) : (
+        <div
+          className={`filter-tab ${tabStyle}`}
+          onClick={() => setActiveTab('relational')}
+        >
+          relational
+        </div>
+      )}
+      {activeTab === 'non-relational' ? (
+        <div
+          className={`filter-tab ${tabStyle}`}
+          style={{ 'background-color': backgroundColor }}
+          onClick={() => setActiveTab('non-relational')}
+        >
+          non-relational
+        </div>
+      ) : (
+        <div
+          className={`filter-tab ${tabStyle}`}
+          onClick={() => setActiveTab('non-relational')}
+        >
+          non-relational
+        </div>
+      )}
     </div>
   );
 };
