@@ -11,6 +11,7 @@
 .nav-link {
     color:black !important;
     background-color: white;
+    border: 2px solid white;
     font-size: 24px;
     border-radius: 1rem;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
@@ -18,9 +19,9 @@
 }
 .nav-link:hover {
     color:black !important;
-    background-color: antiquewhite;
     pointer-events: auto;
-    font-size: 26px;
+    font-size: 24px;
+
 }
 .menu-button {
     display: none;
