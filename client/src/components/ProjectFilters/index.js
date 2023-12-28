@@ -74,8 +74,7 @@ const ProjectFilters = ({ backgroundColor }) => {
           className={`filter-tab ${tabStyle}`}
           style={{ 'background-color': backgroundColor }}
           onClick={() => setActiveTab('all')}
-        >
-          all
+        >all
         </div>
       ) : (
         <div

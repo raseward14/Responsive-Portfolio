@@ -9,6 +9,7 @@
   border-bottom: 2px solid white;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
+  z-index: 1;
 }
 .filter-tab:hover {
   border-bottom: 2px solid black;

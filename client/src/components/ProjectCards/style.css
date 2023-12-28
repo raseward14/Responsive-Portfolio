@@ -28,7 +28,7 @@ img {
 
 }
 
-a:hover {
+.card-link:hover {
     font-size: 16px;
 }
 
