@@ -4,11 +4,11 @@ import Bio from "../components/Bio/index";
 import "./style.css";
 
 
-function About() {
+function About({ backgroundColor }) {
 
     return (
         <>
-            <aside><Nav /></aside>
+            <aside><Nav backgroundColor={backgroundColor} /></aside>
             <h1 className="heading">About</h1>
             <section><Bio /></section>
         </>

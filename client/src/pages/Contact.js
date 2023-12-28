@@ -7,10 +7,10 @@ import Nav from "../components/Navbar/index";
 import AddContact from "../components/AddContact";
 import LetsConnect from "../components/LetsConnect";
 
-function Contact() {
+function Contact({ backgroundColor }) {
     return (
         <>
-            <aside><Nav /></aside>
+            <aside><Nav backgroundColor={backgroundColor} /></aside>
             <h1 className="heading">Contact</h1>
             <AddContact />
             <LetsConnect />

@@ -14,34 +14,3 @@
   border-bottom: 2px solid black;
   cursor: pointer;
 }
-
-.teal:hover {
-  border-bottom: 2px solid #7BDCB5;
-}
-.green:hover {
-  border-bottom: 2px solid #00D084;
-}
-.light-blue:hover {
-  border-bottom: 2px solid #8ED1FC;
-}
-.blue:hover {
-  border-bottom: 2px solid #0693E3;
-}
-.gray:hover {
-  border-bottom: 2px solid #ABB8C3;
-}
-.red:hover {
-  border-bottom: 2px solid #EB144C;
-}
-.pink:hover {
-  border-bottom: 2px solid #F78DA7;
-}
-.indigo:hover {
-  border-bottom: 2px solid #9900EF;
-}
-.lime:hover {
-  border-bottom: 2px solid #05F725;
-}
-.orange:hover {
-  border-bottom: 2px solid #FCB900;
-}

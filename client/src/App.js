@@ -33,11 +33,14 @@ function App() {
         <Route path="/" element={<Layout
           backgroundColor={backgroundColor}
           setBackgroundColor={setBackgroundColor} />} >
-          <Route index element={<Homepage />} />
-          <Route path="about" element={<About />} />
+          <Route index element={<Homepage
+          backgroundColor={backgroundColor} />} />
+          <Route path="about" element={<About
+          backgroundColor={backgroundColor} />} />
           <Route path="portfolio" element={<Portfolio
           backgroundColor={backgroundColor} />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="contact" element={<Contact
+          backgroundColor={backgroundColor} />} />
           <Route path="*" element={<Four />} />
         </Route>
       </Routes>

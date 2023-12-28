@@ -7,7 +7,7 @@ function Portfolio({ backgroundColor }) {
 
     return (
         <>
-            <aside><Nav /></aside>
+            <aside><Nav backgroundColor={backgroundColor} /></aside>
             <h1 className="heading">Portfolio</h1>
             <section><ProjectCards backgroundColor={backgroundColor} /></section>
         </>

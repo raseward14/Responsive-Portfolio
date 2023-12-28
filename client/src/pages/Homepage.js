@@ -9,11 +9,11 @@ import Typewriter from '../components/Typewriter';
 // import style
 import './style.css';
 
-function Homepage() {
+function Homepage({ backgroundColor }) {
   return (
     <div>
       <aside>
-        <Nav />
+        <Nav backgroundColor={backgroundColor} />
       </aside>
       <h1 className="heading">Home</h1>
       <section className="home">
