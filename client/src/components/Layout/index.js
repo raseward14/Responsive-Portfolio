@@ -13,7 +13,7 @@ const Layout = ({ backgroundColor, setBackgroundColor }) => {
         <Nav />
       </aside> */}
       <div id="page-body">
-        <Ink className="Ink" setBackgroundColor={setBackgroundColor}></Ink>
+        <Ink className="Ink" setBackgroundColor={setBackgroundColor} backgroundColor={backgroundColor}></Ink>
         <Outlet />
       </div>
       <div style={{ height: '22vh' }}></div>

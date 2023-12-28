@@ -8,14 +8,14 @@
     border: none;
     margin: auto;
     position: relative;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
     font-size: 2em;
     color: black;
     background-color: white;
 }
 /* Dropdown button on hover & focus */
 .dropbtn:hover {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     pointer-events: auto;
 }
 
@@ -58,8 +58,11 @@
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content div:hover {
+/* .dropdown-content div:hover {
     background-color: antiquewhite;
+} */
+.dropdown-content div {
+ border: 2px solid white;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
