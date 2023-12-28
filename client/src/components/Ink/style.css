@@ -73,9 +73,9 @@
     background-color: inherit;
 }
 
-.fa-circle:hover {
+/* .fa-circle:hover {
     font-size: 1.1em;
-}
+} */
 
 @media (max-width: 719px) {
     .dropdown {
