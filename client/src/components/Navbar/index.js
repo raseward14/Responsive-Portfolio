@@ -78,7 +78,7 @@ function Navbar({ backgroundColor }) {
                         <NavLink className={`${hoverStyle}`} href="portfolio">Portfolio</NavLink>
                     </NavItem>
                 </Nav>
-                <Icons />
+                <Icons backgroundColor={backgroundColor} />
             </div>
             
         </div>

@@ -96,3 +96,44 @@
 .orange-button:hover {
   border: 2px solid #FCB900;
 }
+
+/*link hover styles*/
+.teal-icon:hover {
+  color: #7BDCB5;
+}
+
+.green-icon:hover {
+  color: #00D084;
+}
+
+.light-blue-icon:hover {
+  color: #8ED1FC;
+}
+
+.blue-icon:hover {
+  color: #0693E3;
+}
+
+.gray-icon:hover {
+  color: #ABB8C3;
+}
+
+.red-icon:hover {
+  color: #EB144C;
+}
+
+.pink-icon:hover {
+  color: #F78DA7;
+}
+
+.indigo-icon:hover {
+  color: #9900EF;
+}
+
+.lime-icon:hover {
+  color: #05F725;
+}
+
+.orange-icon:hover {
+  color: #FCB900;
+}
