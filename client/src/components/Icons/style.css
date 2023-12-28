@@ -21,10 +21,6 @@ span a {
     grid-template-rows: auto; */  
 }
 
-a:hover {
-    font-size: 2.25em;
-}
-
 .wrapper {
     text-align: center;
     align-items: center;

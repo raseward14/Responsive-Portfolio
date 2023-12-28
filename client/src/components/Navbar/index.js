@@ -80,7 +80,6 @@ function Navbar({ backgroundColor }) {
                 </Nav>
                 <Icons />
             </div>
-
             
         </div>
     );
