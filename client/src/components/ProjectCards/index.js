@@ -193,6 +193,29 @@ function Cards({ backgroundColor }) {
     const [searchTerm, setSearchTerm] = useState('');
     const [resultsArray, setResultsArray] = useState(projects);
 
+    const nonRelationalFilter = () => {
+        const regex = new RegExp('mongodb', 'i')
+        let newArray = projects.filter((project) => regex.test(project.description))
+        setResultsArray(newArray);
+
+    };
+
+   const relationalFilter = () => {
+        const regex = new RegExp('sql', 'i')
+        let newArray = projects.filter((project) => regex.test(project.description))
+        setResultsArray(newArray);
+    }
+
+    const clearFilter = () => {
+        setResultsArray(projects);
+    };
+
+    const reactFilter = () => {
+        const regex = new RegExp('react', 'i')
+        let newArray = projects.filter((project) => regex.test(project.description))
+        setResultsArray(newArray);
+    };
+
     useEffect(() => {
         // if search term exists
         if (searchTerm !== '') {
@@ -245,25 +268,30 @@ function Cards({ backgroundColor }) {
                         className="search"
                     />
                     {/* <FontAwesomeIcon className='i' icon={faMagnifyingGlass} /> */}
-                
+
                 </div>
-                <ProjectFilters backgroundColor={backgroundColor} />
-                <ReactTooltip 
-                id="techTip" />
+                <ProjectFilters
+                    backgroundColor={backgroundColor}
+                    reactFilter={reactFilter}
+                    clearFilter={clearFilter}
+                    relationalFilter={relationalFilter}
+                    nonRelationalFilter={nonRelationalFilter} />
+                <ReactTooltip
+                    id="techTip" />
                 <div className='card-wrapper'
                 >
                     {resultsArray.map((project, key) => {
                         return (
-                            <div 
-                            key={key}
-                            data-tooltip-id="techTip"
-                            data-tooltip-content={`${project.description}`}
+                            <div
+                                key={key}
+                                data-tooltip-id="techTip"
+                                data-tooltip-content={`${project.description}`}
                             >
                                 <Card className='card'>
                                     <CardBody>
-                                        <CardTitle 
-                                        tag="h5"
-                                        className="card-title">
+                                        <CardTitle
+                                            tag="h5"
+                                            className="card-title">
                                             {project.title}
                                         </CardTitle>
                                         {/* <CardSubtitle

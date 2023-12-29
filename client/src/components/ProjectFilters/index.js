@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
 
-const ProjectFilters = ({ backgroundColor }) => {
+const ProjectFilters = ({ backgroundColor, reactFilter, clearFilter, relationalFilter, nonRelationalFilter }) => {
   const [activeTab, setActiveTab] = useState('all');
   const [tabStyle, setTabStyle] = useState('orange');
   // const tabs = ['all', 'react.js', 'relational', 'non-relational'];
@@ -79,7 +79,10 @@ const ProjectFilters = ({ backgroundColor }) => {
       ) : (
         <div
           className={`filter-tab ${tabStyle}`}
-          onClick={() => setActiveTab('all')}
+          onClick={() => {
+            setActiveTab('all');
+            clearFilter();
+          }}
         >
           all
         </div>
@@ -95,7 +98,10 @@ const ProjectFilters = ({ backgroundColor }) => {
       ) : (
         <div
           className={`filter-tab ${tabStyle}`}
-          onClick={() => setActiveTab('react.js')}
+          onClick={() =>  {
+            setActiveTab('react.js')
+            reactFilter();
+          }}
         >
           react.js
         </div>
@@ -111,7 +117,10 @@ const ProjectFilters = ({ backgroundColor }) => {
       ) : (
         <div
           className={`filter-tab ${tabStyle}`}
-          onClick={() => setActiveTab('relational')}
+          onClick={() => {
+            setActiveTab('relational')
+            relationalFilter()
+          }}
         >
           relational
         </div>
@@ -127,7 +136,10 @@ const ProjectFilters = ({ backgroundColor }) => {
       ) : (
         <div
           className={`filter-tab ${tabStyle}`}
-          onClick={() => setActiveTab('non-relational')}
+          onClick={() => {
+            setActiveTab('non-relational')
+            nonRelationalFilter();
+          }}
         >
           non-relational
         </div>
