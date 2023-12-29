@@ -74,7 +74,7 @@ const ProjectFilters = ({ backgroundColor }) => {
           className={`filter-tab ${tabStyle}`}
           style={{ 'background-color': backgroundColor }}
           onClick={() => setActiveTab('all')}
-        >all
+        ><span style={{ 'color': 'white' }}>all</span>
         </div>
       ) : (
         <div
@@ -90,7 +90,7 @@ const ProjectFilters = ({ backgroundColor }) => {
           style={{ 'background-color': backgroundColor }}
           onClick={() => setActiveTab('react.js')}
         >
-          react.js
+          <span style={{ 'color': 'white' }}>react.js</span>
         </div>
       ) : (
         <div
@@ -106,7 +106,7 @@ const ProjectFilters = ({ backgroundColor }) => {
           style={{ 'background-color': backgroundColor }}
           onClick={() => setActiveTab('relational')}
         >
-          relational
+          <span style={{ 'color': 'white' }}>relational</span>
         </div>
       ) : (
         <div
@@ -122,7 +122,7 @@ const ProjectFilters = ({ backgroundColor }) => {
           style={{ 'background-color': backgroundColor }}
           onClick={() => setActiveTab('non-relational')}
         >
-          non-relational
+          <span style={{ 'color': 'white' }}>non-relational</span>
         </div>
       ) : (
         <div
