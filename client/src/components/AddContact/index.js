@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { Input, FormBtn, TextArea } from '../Form';
 import * as contactAPIFunctions from '../../utils/contactAPI';
 import './style.css';
-function AddContact() {
+
+function AddContact({ backgroundColor }) {
     const [formObject, setFormObject] = useState({});
     const [buttonText, setButtonText] = useState('Submit');
     // navigate replaces useHistory
@@ -13,7 +14,6 @@ function AddContact() {
         // redirect to homepage
         navigate('/');
     };
-
 
     // resets component state to null on submit
     function clearState() {
@@ -199,6 +199,7 @@ function AddContact() {
                         handleFormSubmit(event);
                         postTask(event);
                     }}
+                    backgroundColor={backgroundColor}
                 >{buttonText}</FormBtn>
             </section>
         </>

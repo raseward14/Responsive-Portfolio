@@ -12,7 +12,7 @@ function Contact({ backgroundColor }) {
         <>
             <aside><Nav backgroundColor={backgroundColor} /></aside>
             <h1 className="heading">Contact</h1>
-            <AddContact />
+            <AddContact backgroundColor={backgroundColor} />
             <LetsConnect />
         </>
     );

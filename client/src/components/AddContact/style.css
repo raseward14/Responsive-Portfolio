@@ -30,16 +30,56 @@ form {
     /* text-align: center; */
     background-color: inherit;
     color: black;
-    border: 3px solid #fff;
+    /* border: 2px solid #fff; */
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
     border-radius: 1rem;
 }
 
-#Button:hover {
-    background-color: antiquewhite;
+/* #Button:hover {
     pointer-events: auto;
-    font-size: 26px;
-}
+} */
+
+/*button hover styles*/
+.teal-button:hover {
+    border: 2px solid #7BDCB5;
+  }
+  
+  .green-button:hover {
+    border: 2px solid #00D084;
+  }
+  
+  .light-blue-button:hover {
+    border: 2px solid #8ED1FC;
+  }
+  
+  .blue-button:hover {
+    border: 2px solid #0693E3;
+  }
+  
+  .gray-button:hover {
+    border: 2px solid #ABB8C3;
+  }
+  
+  .red-button:hover {
+    border: 2px solid #EB144C;
+  }
+  
+  .pink-button:hover {
+    border: 2px solid #F78DA7;
+  }
+  
+  .indigo-button:hover {
+    border: 2px solid #9900EF;
+  }
+  
+  .lime-button:hover {
+    border: 2px solid #05F725;
+  }
+  
+  .orange-button:hover {
+    border: 2px solid #FCB900;
+  }
+  
 
 @media (max-width: 1300px) {
     .contact-section {
