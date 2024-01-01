@@ -18,9 +18,9 @@ function Bio() {
       <div className="about-container">
         <p className="about">Hi, my name is Richard, and I'm a software engineer based in Greeley, Colorado.</p>
         <p className="about">In June of 2021, I graduated from 2U's Full Stack Web Development Bootcamp as a full stack web developer. Javascript is my primary language. Its versatility in both Front, and Backend development, makes it ideal for building comprehensive, and intuitive web solutions to real-world, every day problems.</p>
-        <p className="about">To build the best tools, I strongly believe in using technologies that deliver speed, flexibility, and ease of use. I specialize in the MERN stack, but love learning new things and am currently learning Typescript as a compliment to my Javascript based apps.</p>
+        <p className="about">To build the best tools, I strongly believe in using technologies that deliver speed, flexibility, and ease of use. I specialize in the MERN stack, but love learning new things. Currently, I'm learning Typescript as a compliment to my Javascript based apps.</p>
         <p className="about">Seeing these foundational technologies work together, to form quick, enjoyable, and reliable web applications is where my passion for development stems from.</p>
-        <p className="about">As a lifelong artist, longtime ex-pat, and lover of foreign language, I offer unique perspective, with an underlying eye for the design, and beauty that makes you want to interact with a webpage. This, paired with my current experience as a Senior Technical Support Specialist sets the stage for a well rounded approach to development, that always keeps the end user in mind!</p>
+        <p className="about">As a lifelong artist, longtime ex-pat, and lover of foreign language, I offer unique perspective, with an underlying eye for the design features that make you want to interact with a webpage. This, paired with my current experience as a Senior Technical Support Specialist serves as a solid foundation for a well rounded approach to development, that always keeps the end user in mind!</p>
         <p className="about">In the future, I plan to continue learning, and improving as a developer. A little progress every day, goes a long way!</p>
         <p className="about"></p>
       </div>
