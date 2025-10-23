@@ -18,7 +18,7 @@ function Homepage({ backgroundColor }) {
       <h1 className="heading">Home</h1>
       <section className="home">
         <Typewriter
-          text="Hi! Im Richard, and I'm a software engineer."
+          text="Hi! Im Richard, and I'm a Software Engineer."
           delay={100}
         />
         <Skills />
