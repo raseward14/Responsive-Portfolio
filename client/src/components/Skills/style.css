@@ -1,6 +1,6 @@
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     /* background-color: #21a6f3; */
     padding: 40px;
     border-radius: 5px;

@@ -15,16 +15,28 @@ import js from '../Images/js.png';
 import RESTfulAPI from '../Images/rest-api.png';
 import css from '../Images/css.png';
 import typescript from '../Images/typescript-icon.png';
+import angular from '../Images/angular-original.svg';
+import postgresql from '../Images/postgresql.png';
+import cursorAi from '../Images/cursor-ai.png';
+import docker from '../Images/docker.png';
+import react from '../Images/react.png';
+import python from '../Images/python.png';
 
 export default function Skills() {
     return (
         <>
             <div className='grid-container'>
                 <div className='grid-item'>
+                    <img src={angular} />
+                </div>
+                <div className='grid-item'>
                     <img src={js} />
                 </div>
                 <div className='grid-item'>
                     <img src={typescript}/>
+                </div>
+                <div className='grid-item'>
+                    <img src={react} />
                 </div>
                 <div className='grid-item'>
                     <img src={css} />
@@ -43,6 +55,9 @@ export default function Skills() {
                 </div>
                 <div className='grid-item'>
                     <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png" />
+                </div>
+                <div className='grid-item'>
+                    <img src={postgresql} />
                 </div>
                 <div className='grid-item'>
                     <img src={mySQL} />
@@ -84,13 +99,22 @@ export default function Skills() {
                     <img src={postman} />
                 </div>
                 <div className='grid-item'>
+                    <img src={cursorAi} />
+                </div>
+                <div className='grid-item'>
                     <img src={vscode} />
                 </div>
                 <div className='grid-item'>
                     <FontAwesomeIcon icon={faTerminal} />
                 </div>
                 <div className='grid-item'>
+                    <img src={docker} />
+                </div>
+                <div className='grid-item'>
                     <img src={stackOverflow} />
+                </div>
+                <div className='grid-item'>
+                    <img src={python} />
                 </div>
 
 
