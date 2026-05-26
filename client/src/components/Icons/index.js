@@ -28,8 +28,8 @@ function Icons({ backgroundColor }) {
             link: 'https://www.freecodecamp.org/fcce7e5be83-605e-4df1-abe6-c86887f3dbb4'
         },
         {
-            icon: faFile,
-            link: '/Assets/pdf/Richard_Seward.pdf'
+          icon: faFile,
+          link: '/Assets/Richard_Seward.pdf'
         }
     ];
 

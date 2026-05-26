@@ -20,7 +20,6 @@
 .nav-link:hover {
     color:black !important;
     pointer-events: auto;
-    font-size: 24px;
 
 }
 .menu-button {
