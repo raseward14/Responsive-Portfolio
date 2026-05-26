@@ -16,13 +16,16 @@ function Bio() {
         <div className="subheading2">University of Denver</div>
       </div>
       <div className="about-container">
-        <p className="about">Hi, my name is Richard, and I'm a Software Engineer based in Greeley, Colorado. I currently serve as a Technical Support Engineer at ClickUp, applying a developer's mindset to production issues.</p>
-        <p className="about">As a TSE, my focus is on deep-dive platform defect analysis and resolution. I architect and implement solutions for escalated client issues and build internal tooling to automate repetitive tasks, dramatically improving team efficiency.</p>
-        <p className="about">My technical stack is centered on PostgreSQL for generating complex user reports and executing corrective, high-impact database queries. I leverage Python and JavaScript to develop robust scripting solutions that automate repetitive workflows. Angular and Typescript are also heavy areas of focus when resolving platform bugs.</p>
-        <p className="about">I spearheaded a pivotal AI and LLM defect resolution pilot, successfully proving the efficacy of AI for bug fixes. This initiative has since scaled to include the entire Product and TSE teams. As a demonstration of its success, our 6-person TSE team now averages approximately 35 platform bug fixes weekly. I personally designed and led the upskilling session for the Product team on leveraging AI for improved efficiency.</p>
-        <p className="about">My contributions include direct feature development, such as smart space removal for user mentions, Calendar view search, and doc sidebar auto-scroll. I currently maintain a focused learning plan, mastering new TypeScript and Angular features daily, and I am actively working through Microsoft Learn’s 'AI Agents for Beginners' certification.</p>
-        <p className="about">My background as a lifelong artist and former ex-pat gives me a unique perspective on user interaction and design empathy. This artistic eye, combined with my current experience as a TSE solving real-world user pain points, results in a well-rounded approach to development that always prioritizes the end-user experience. I look forward to continuing this growth trajectory and applying daily progress to impactful engineering challenges.</p>
-        <p className="about"></p>
+        <p className="about">Hi, my name is Richard, and I'm a Software Engineer based in Greeley, Colorado. I most recently served as a Technical Support Engineer at ClickUp, applying a developer's mindset to production issues.</p>
+        <p className="about">As a TSE, my focus was on deep-dive platform defect analysis and resolution. I architect and implement robust solutions for escalated client issues, automate data pipelines, and build production-level AI infrastructure to dramatically scale team efficiency.</p>
+
+        <p className="about">My technical stack is centered on building modern web applications and internal tools. I heavily leverage Angular, TypeScript, Node.js, and PostgreSQL to resolve complex platform bugs and manage high-volume data operations. Additionally, I build custom orchestration tools using JavaScript and Python to eliminate repetitive workflows across global operations.</p>
+
+        <p className="about">I spearheaded a pivotal AI and LLM defect resolution pilot, selecting and testing advanced AI SWE tools like Cursor and Claude Code. As part of this initiative, I developed an autonomous defect triage UI utilizing the Semantic Kernel Agentic Framework and GitHub Models to analyze production errors and automatically surface optimal coding candidates. This pilot successfully scaled across the engineering org, helping accelerate our squad's output to over 30+ production fixes per week.</p>
+
+        <p className="about">My architectural contributions include designing a custom Model Context Protocol (MCP) server to automate workspace merge pre-checks, building a custom troubleshooting Chrome Extension utilized org-wide, and directly delivering features like Calendar view search and smart space user mentions.</p>
+
+        <p className="about">My background as a lifelong artist and former ex-pat gives me a unique perspective on user interaction and design empathy. This artistic eye, combined with my experience solving real-world production pain points, results in a well-rounded approach to development that always prioritizes the end-user experience. I look forward to continuing this growth trajectory and applying daily progress to impactful engineering challenges.</p>
       </div>
 
 
