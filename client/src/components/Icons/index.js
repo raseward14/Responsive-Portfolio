@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './style.css'
-import Pdf from '../Documents/Richard_Seward_Web_Dev.docx.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithubSquare, faHackerrank, faCodepen, faFreeCodeCamp } from '@fortawesome/free-brands-svg-icons'
@@ -30,7 +29,7 @@ function Icons({ backgroundColor }) {
         },
         {
             icon: faFile,
-            link: Document
+            link: '/Assets/pdf/Richard_Seward.pdf'
         }
     ];
 

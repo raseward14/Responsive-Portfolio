@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require("path");
 const mongoose = require("mongoose");
 const cookieParse = require("cookie-parser");
 const cors = require('cors');
@@ -13,10 +14,14 @@ app.use(express.json());
 app.use(cookieParse());
 // cross origin resource sharing
 app.use(cors());
-// Serve up static assets (usually on heroku)
+// Serve up static assets for the resume PDF and other assets
+app.use('/Assets', express.static(path.join(__dirname, 'Assets')));
+
+// Serve up React build files in production
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+
 // Add routes, both API and view
 app.use(routes);
 
