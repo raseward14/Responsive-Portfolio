@@ -11,9 +11,9 @@ function Bio() {
       <div className="image-container">
         <img className='my-headshot' src={headshot} />
         <div className="subheading-name">Richard A. Seward</div>
-        <div className="subheading1">Certified Full Stack Web Developer</div>
-        <div className="subheading3">2U Coding Bootcamp Graduate 2021</div>
-        <div className="subheading2">University of Denver</div>
+        <div className="subheading1">Software Engineer</div>
+        <div className="subheading3">Colorado Mesa University Alumnus</div>
+        <div className="subheading2">University of Denver • Full Stack Certificate</div>
       </div>
       <div className="about-container">
         <p className="about">Hi, my name is Richard, and I'm a Software Engineer based in Greeley, Colorado. I most recently served as a Technical Support Engineer at ClickUp, applying a developer's mindset to production issues.</p>
